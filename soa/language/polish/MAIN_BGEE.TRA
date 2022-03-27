@@ -1,0 +1,842 @@
+// BGEE specific texts
+
+//------------------------------------------------------------------------------------
+//  Creatures, characters, items, miscellaneous:
+//------------------------------------------------------------------------------------
+
+
+
+@2   = ~Kolczuga jest wykonana z przeplataj¹cych siê metalowych kó³eczek. Zawsze nak³ada siê j¹ na kubrak z pikowanego materia³u, ma to zapobiec bolesnym otarciom i z³agodziæ si³ê ciosów.
+
+PARAMETRY: 
+
+Klasa Pancerza: 5 (3 przeciw broniom siecznym, 7 przeciw obuchowym)
+
+Wymagania:
+– Si³a: 8
+
+Waga: 40
+
+~
+
+@3   = ~Ta kolczuga zosta³a wykonana dla z³otej elfki Mecorimy Sylerim, której ambicje siêga³y daleko poza elfie sfery. Obdarzona talentem dyplomatycznym, Mercorima potrzebowa³a dodatkowej ochrony przed konkurentami z innych frakcji. By to zapewniæ, stworzono kolczugê, która chroni³aby j¹ przed skrytobójcami, a dostojnicy poddawaliby siê jej woli.
+
+PARAMETRY:
+
+Specjalne: 
+- Nosz¹cy kolczugê otrzymuje +5 do rzutów obronnych przeciw œmiertelnej magii
+- Charyzma zwiêkszona o 2
+
+Klasa Pancerza: 3
+
+Wymagania:
+– Si³a: 5
+
+Waga: 20
+
+~
+
+
+@6   = ~Zbroja p³ytowa to po³¹czenie kolczugi z mocnymi blachami, które chroni¹ ¿ywotnie wa¿ne czêœci cia³a - klatkê piersiow¹, brzuch, krocze. Jej ciê¿ar jest równo roz³o¿ony na ca³e cia³o, zaœ ca³oœæ po³¹czona metalowymi spinkami i rzemieniami.
+
+PARAMETRY: 
+
+Klasa Pancerza: 3 (0 przeciw broniom siecznym)
+
+Wymagania:
+– Si³a: 12
+
+Waga: 50
+
+~
+
+@7   = ~Ta zbroja, gdy chwyci siê j¹ w rêkê, niemal¿e têtni ¿yciem. Wykonana z lekkiego materia³u, który przylega do twojego cia³a niczym miêkka skóra. Jedynym dowodem na jej pochodzenie jest imiê Kalindry, które wyryto wewn¹trz.
+
+PARAMETRY:
+
+Specjalne: 
+- Zwiêksza rzuty obronne o 1
+
+Klasa Pancerza: 2
+
+Wymagania:
+– Si³a: 10
+
+Waga: 30
+
+~
+
+
+@10  = ~Wekiera jest w prostej linii spadkobierczyni¹ zwyk³ej maczugi, bêd¹c po prostu drewnianym trzonem, na którym zosta³a osadzona kamienna lub metalowa g³owa o ró¿nym kszta³cie i ró¿nej jakoœci.
+
+PARAMETRY:
+
+Obra¿enia: 1K6 +1
+Typ obra¿eñ: obuchowe
+OpóŸnienie: 7
+Rodzaj bieg³oœci: maczuga
+Typ: 1-rêczna
+
+Wymagania:
+– Si³a: 10
+
+Waga: 8
+
+~
+
+@11  = ~Wekiera +1: „Wekiera nieustraszonych”
+Wielu wyznawców Chauntei nosi wekierê podobn¹ do tej. Najczêœciej dostaj¹ je nowi kap³ani, ale bardziej utalentowanym uczniom wrêcza siê umagicznion¹ broñ, tak¹ jak ta.
+
+PARAMETRY:
+
+Specjalne: 
+- Odpornoœæ na strach +30%
+
+Obra¿enia: 1K6 +3
+TraK0: +1
+Typ obra¿eñ: obuchowe
+OpóŸnienie: 5
+Rodzaj bieg³oœci: maczuga
+Typ: 1-rêczna
+
+Wymagania:
+– Si³a: 9
+
+Waga: 7
+
+~
+ 
+
+@14  = ~Kafar to ciê¿ki m³ot, stosowany w du¿ej mierze przy konstrukcjach statków i budynków. Jako narzêdzie domowego u¿ytku sta³ siê popularny w ca³ym Faerunie, zw³aszcza wœród szkutników z Waterdeep. Ciê¿ar i wywa¿enie, czyni¹ z niego œmierteln¹ broñ w walce.
+
+PARAMETRY:
+
+Obra¿enia: 1K4 +1
+Typ obra¿eñ: obuchowe
+OpóŸnienie: 4
+Rodzaj bieg³oœci: m³ot bojowy
+Typ: 1-rêczna
+
+Wymagania:
+– Si³a: 9
+
+Waga: 6
+
+~ 
+
+@15  = ~Kafar +2: „Rozgniatacz ogrów Tholina”
+Ten ciê¿ki kafar znany równie¿ jako 'Kafar Potêgi' przetrwa³ burze niezliczonych bitew i wojen. Pocz¹tkowo, by³ w³asnoœci¹ wodza Klanu £osia. Kafar wykuto w jednym tylko celu - zg³adziæ hordy ogrów i orków grasuj¹cych wzd³u¿ rzeki Dessariny.
+
+PARAMETRY:
+
+Obra¿enia: 1K4 +3, +3 przeciw olbrzymom
+TraK0: +2
+Typ obra¿eñ: obuchowe
+OpóŸnienie: 5
+Rodzaj bieg³oœci: m³ot bojowy
+Typ: 1-rêczna
+
+Wymagania:
+– Si³a: 10
+
+Waga: 7
+
+~
+
+
+
+@18  = ~Morgensztern to drewniany trzonek, zakoñczony metalowym okuciem z licznymi szpiczastymi æwiekami. Broñ ta ma oko³o 1,20 do 1,30 metra d³ugoœci. Ró¿ne jej rodzaje posiadaj¹ kulist¹, owaln¹ lub cylindryczn¹ g³owicê. Bez wzglêdu jednak na rodzaj, wiêkszoœæ morgenszternów jest zakoñczona d³ugim szpikulcem, przeznaczonym do k³ucia.
+
+PARAMETRY:
+
+Obra¿enia: 2K4
+Typ obra¿eñ: obuchowe
+OpóŸnienie: 7
+Rodzaj bieg³oœci: cep bojowy/morgensztern
+Typ: 1-rêczna
+
+Wymagania:
+– Si³a: 11
+
+Waga: 12
+
+~
+
+@19 = ~Morgensztern +2: „Dar Ishandara”
+Golain wiêkszoœæ swojej m³odoœci spêdzi³ z ojcem, badaj¹c góry Burzowe Rogi wokó³ Cormyru. Jego ojciec nauczy³ go walki i oceniania wartoœci gruntów.
+Maj¹c zami³owanie do przygód i geografii, sta³ siê królewskim badaczem rodziny Obarskyr. Podczas d³ugotrwa³ej ekspedycji wraz z zespo³em badaczy, robi¹c pomiary terenu w górach Grzmi¹cych Wierchów, zauwa¿y³ on niewielk¹ jaskiniê, która przyku³a jego uwagê. Pod¹¿aj¹c za liczn¹ grup¹ sprzeczaj¹cych siê orków, odkry³ on ma³¹ skrzyniê wype³nion¹ z³otem i morgensztern rozb³yskuj¹cy w ciemnoœciach. Morgensztern ten pozostawa³ przy Golainie przez jakiœ czas, a¿ do momentu, gdy walcz¹c z ogrami w górach Burzowe Rogi, straci³ ¿ycie.
+
+PARAMETRY:
+
+Obra¿enia: 2K4 +2
+TraK0: +2
+Typ obra¿eñ: obuchowe
+OpóŸnienie: 6
+Rodzaj bieg³oœci: cep bojowy/morgensztern
+Typ: 1-rêczna
+
+Wymagania:
+- Si³a: 11
+
+Waga: 10
+
+~
+
+
+@23  = ~Ksiêga p³omieni
+Niegdyœ ksiêga ta by³a w posiadaniu Czerwonego Arcymaga. Zosta³a skradziona przez uciekaj¹cego niewolnika i przeszmuglowana poza Thay w bezpieczne miejsce, do Krainy Dolin. Ksiêga jest oprawiona w ludzk¹ skórê - skutek niezliczonych eksperymentów na niewolnikach. Wynikiem tego jest aura, jaka z niej bije, dlatego te¿ mog¹ j¹ u¿ywaæ tylko z³e postacie.
+
+PARAMETRY:
+
+Specjalne: 
+- Po otwarciu ksiêgi, jêzyk p³omieni dociera do celu
+Obra¿enia: 2K3
+Zasiêg: 0
+Czas dzia³ania: natychmiastowy
+Czas rzucania: 1
+Obszar dzia³ania: rzucaj¹cy czar
+Rzut obronny: brak
+
+~
+
+
+@26 = ~£uki refleksyjne to ³uki krótkie lub d³ugie, których drzewce wykonano z kilku rodzajów drewna. Dziêki temu s¹ bardziej sprê¿yste i maj¹ wiêkszy zasiêg. Wynaleziono je po d³ugich ³ukach.
+
+PARAMETRY:
+
+Obra¿enia: +2
+TraK0: +1
+OpóŸnienie: 7
+Rodzaj bieg³oœci: d³ugi ³uk
+Typ broni: 2-rêczna
+
+Wymagania:
+- Si³a: 18
+
+Waga: 10
+
+~
+
+@27 = ~D³ugi ³uk refleksyjny +2: „Kl¹twa Meduzy”
+W Roku Z³amanego Ostrza narodzi³ siê Laeroth. Ju¿ w m³odzieñczych latach uchodzi³ w elfiej wiosce za mistrza ³ucznictwa i mia³ najcelniejsze oko. Mówi³o siê ongiœ o Meduzie skrywaj¹cej siê w pieczarze wœród pobliskich gór. Aby dowieœæ swej odwagi, musia³ przynieœæ ³eb tej¿e bestii. Po naradzie ze starszyzn¹ wykonano ³uk, który powali³by takiego przeciwnika. £uk stworzono z tajemniczego drzewca tak, aby jego w³aœciciel odporny by³ na wszelkie ataki powoduj¹ce petryfikacje, wliczaj¹c w to spojrzenie bazyliszka lub meduzy. Po d³ugiej podró¿y dotar³ on do legowiska Meduzy. Aby odnaleŸæ drogê w g³¹b pieczary, u¿y³ kamienia rozb³yskuj¹cego. Mijaj¹c kamienne pos¹gi - wynik licznych, nieudanych prób schwytania bestii, Laeroth w koñcu trafi³ na sw¹ zdobycz. Zetkn¹wszy siê z Meduz¹, uleg³ jej spojrzeniu. W pierwszej chwili zosta³ sparali¿owany, nie mog¹c wykonaæ ¿adnego ruchu. Posiadawszy jednak ³uk, dzia³anie zabójczego spojrzenia zosta³o zneutralizowane i rozpoczê³a siê walka na œmieræ i ¿ycie. Jeden ³ucznik przeciw drugiemu, obaj przeciwnicy staraj¹cy siê trafiæ jeden drugiego. Meduza wystrzeli³a jako pierwsza i zatruta strza³a utkwi³a w jego barku w chwili, gdy ³uk Lareotha samoistnie wypuœci³ strza³ê, trafiaj¹c prosto w ³eb Meduzy. Potwór wi³ siê w bólu, ale Laeroth w porê wypi³ antidotum, patrz¹c jak Meduza ginie, wal¹c siê na ziemiê. Z unieruchomion¹ rêk¹ podszed³ do stwora i uci¹³ ³eb. Po powrocie do swej wioski ³eb ukryto w bezpiecznym miejscu, aby kiedy przyjdzie czas, wykorzystaæ go przeciw orkom. Laeroth podró¿owa³ jeszcze w póŸniejszych latach, ale w koñcu sprzeda³ ³uk za spor¹ sumê z³ota.
+
+PARAMETRY:
+
+Specjalne: 
+- Ochrona przed petryfikacj¹
+
+Obra¿enia: +3
+TraK0: +2
+OpóŸnienie: 6
+Rodzaj bieg³oœci: d³ugi ³uk
+Typ broni: 2-rêczna
+
+Wymagania:
+- Si³a: 18
+
+Waga: 9
+
+~
+ 
+
+
+
+@31  = ~P³aszcz podró¿ny jest lekk¹ czêœci¹ stroju, chroni dodatkowo przed ¿ywio³ami. Ponadto daje on premiê do KP.
+
+PARAMETRY:
+
+Specjalne:
+- Klasa pancerza +1 
+- Odpornoœci na zimno i ogieñ: +20%
+
+Waga: 3
+
+~
+
+
+
+
+
+@35  = ~Na powierzchni tej bia³ej szaty wyszyte s¹ liczne wzory paj¹ków. Nosz¹ca j¹ osoba odporna jest na efekty wp³ywaj¹ce na ruch, takie jak: pajêczyna i spowolnienie. Zapobiega ona efektom parali¿u i unieruchomieniu. Szata pozwala równie¿ magowi rzucaæ czar unieruchomienie, ale czas dzia³ania ograniczony jest tylko do jednej rundy. 
+
+PARAMETRY:
+
+
+Specjalne:
+- Klasa Pancerza: 6
+- Noszona zapewnia swobodê dzia³ania - chroni maga przed czarami, które wp³ywaj¹ na ruch takimi jak Unieruchomienie i Pajêczyna
+
+W³aœciwoœci ³adunków:
+- Unieruchomienie
+  Zasiêg: pole widzenia
+  Czas dzia³ania: 1 tura
+  Obszar dzia³ania: specjalny
+  Rzut obronny: neguje
+  
+Waga: 6
+
+~
+ 
+
+
+@38 = ~Typowe sztylety posiadaj¹ ostro zakoñczone, dwusieczne ostrza, w odró¿nieniu od zwyk³ych no¿y, które s¹ jednosieczne i nieco krótsze.
+
+PARAMETRY:
+
+Obra¿enia: 1K4
+Typ obra¿eñ: k³ute
+OpóŸnienie: 2
+Rodzaj bieg³oœci: sztylet
+Typ broni: 1-rêczna
+
+Wymagania:
+- Si³a: 3
+
+Waga: 1
+
+~
+
+@39 = ~Sztylet +1: „Sztylet Oporu”
+Pierwsze tego rodzaju sztylety powsta³y w Myth Drannor. Szczycili siê nimi zw³aszcza ³otrzykowie, z³odzieje i podobni bandyci.
+
+PARAMETRY:
+Specjalne:
+- Niepodatnoœæ na Strach i Zauroczenie
+- Rzut obronny przeciw czarom: +2
+
+Obra¿enia: 1K4 +2
+TraK0: +1
+OpóŸnienie: 2
+Rodzaj bieg³oœci: sztylet
+Typ broni: 1-rêczna
+
+Wymagania:
+- Si³a: 3
+
+Waga: 1
+
+~
+ 
+
+
+
+@43  = ~Ma³y bêben lub werbel, to ulubiony instrument koboldów i krasnoludów. Trzyma siê go pod ramieniem lub w przedniej czêœci tu³owia. Bêben nadaje jednolite, rytmiczne tempo. DŸwiêk wielu takich bêbnów mo¿na pomyliæ z nacieraj¹c¹ niewielk¹ armi¹, która mo¿e wystraszyæ wiêkszoœæ stworzeñ w okolicy.
+
+PARAMETRY:
+
+Specjalne: 
+- Po zagraniu, ofiara musi wykonaæ rzut obronny z modyfikatorem -2 lub wpadnie w panikê
+Zasiêg: 40 metrów
+Czas dzia³ania: 2 rundy
+
+Waga: 5
+
+~
+
+
+@45  = ~Bêbny tego typu to konga, znane s¹ ze wzglêdu na niskie tony, s¹ ulubionym instrumentem wiêkszych stworzeñ w Faerunie jak: ogry czy olbrzymy. DŸwiêk wielu takich bêbnów daje wra¿enie armii maszeruj¹cej do walki, która mo¿e odstraszyæ wiêkszoœæ stworzeñ w okolicy. 
+
+PARAMETRY:
+
+Specjalne: 
+- Po zagraniu, ofiara musi wykonaæ rzut obronny z modyfikatorem -2 lub wpadnie w panikê
+Zasiêg: 60 metrów
+Czas dzia³ania: 2 rundy
+
+Waga: 8
+
+~
+
+
+
+
+@49  = ~Ta zwyk³a z pozoru per³a emanuje s³abym czarem, jeœli w pobli¿u wykryto magiê. W ka¿dym razie jest ona niezwykle piêknym kamieniem i na tej podstawie mo¿na stwierdziæ, ¿e warta jest przynajmniej 1,000 sztuk z³ota. Je¿eli œciœnie siê j¹ mocno w rêku (lub przyciœnie do piersi), a w³aœciciel podejmie jedn¹ z tych czynnoœci i powi¹¿e j¹ z obszarowym dzia³aniem per³y, wtedy bêdzie w stanie pos³u¿yæ siê tym przedmiotem. Per³a umo¿liwia w³aœcicielowi rzucaæ czar Zauroczenie w wybrany cel. Per³ê musi trzymaæ w³aœciciel, aby uwolniæ z niej energiê. Jednak¿e takie per³y posiadaj¹ ograniczon¹ iloœæ ³adunków. 
+
+PARAMETRY:
+
+W³aœciwoœci ³adunków: 
+- Rzuca czar Zauroczenie
+Zasiêg: 20 metrów
+Czas dzia³ania: 4 rundy
+Obszar dzia³ania: 1 istota
+Rzut obronny: neguje
+
+Waga: 1
+
+~
+ 
+
+
+@52 = ~Halabarda to jeden z najczêœciej u¿ywanych rodzajów broni drzewcowej, zakoñczony zakrzywionym ostrzem w kszta³cie topora na koñcu 1,5 do 2,5 metrowego drzewca. Na przed³u¿eniu drzewca znajduje siê d³ugi szpic przypominaj¹cy w³óczniê lub pikê. Po drugiej stronie ostrza znajduje siê hak do przebijania zbroi i œci¹gania konnych z siod³a. Mo¿na powiedzieæ, ¿e halabarda to skrzy¿owanie w³óczni z toporem.
+
+PARAMETRY:
+
+Obra¿enia: 1K10
+Typ obra¿eñ: sieczne lub k³ute, wybiera siê lepsz¹ opcjê
+OpóŸnienie: 9
+Rodzaj bieg³oœci: halabarda
+Typ broni: 2-rêczna
+
+Wymagania:
+- Si³a: 13
+
+Waga: 15
+
+~
+
+@53 = ~Tak jak inne halabardy broñ ta ma toporowaty trzonek, zatkniêty na drzewcu o d³ugoœci oko³o 2 metrów. W przeciwieñstwie do nich zosta³a obdarzona kilkoma magicznymi w³aœciwoœciami, które czyni¹ j¹ bardziej efektywn¹ w walce. Jej ostrze tnie cia³o jak brzytwa, a zakoñczony kolcem trzonek przechodzi przez pancerze jak przez mas³o.
+
+PARAMETRY:
+
+Obra¿enia: 1K10 +2
+TraK0: +1
+Typ obra¿eñ: sieczne lub k³ute, wybiera siê lepsz¹ opcjê
+OpóŸnienie: 8
+Rodzaj bieg³oœci: halabarda
+Typ broni: 2-rêczna
+
+Wymagania:
+- Si³a: 13
+
+Waga: 14
+
+~
+ 
+
+
+@56 = ~Konni rycerze nie mog¹ efektywnie u¿ywaæ d³ugich broni drzewcowych, co sprawi³o, ¿e wiele rodzajów broni zosta³o zaopatrzonych w krótsze drzewce, aby mog³y byæ u¿ywane jednorêcznie. Wekiery i cepy bojowe s¹ dwoma tego typu rodzajami broni drzewcowych - m³ot bojowy kolejnym. Ca³y jest wykonany ze stali, z dyskami, chroni¹cymi i wzmacniaj¹cymi uchwyt. Dyski te s¹ ma³e i metalowe, czêsto uk³adane w dekoracyjne kszta³ty. Drzewce ma oko³o 60 cm d³ugoœci.
+
+PARAMETRY:
+
+Obra¿enia: 1K4 +1
+Typ obra¿eñ: obuchowe
+OpóŸnienie: 4
+Rodzaj bieg³oœci: m³ot bojowy
+Typ broni: 1-rêczna
+
+Wymagania:
+- Si³a: 9
+
+Waga: 6
+
+~
+
+@57 = ~Lodowy m³ot +2: „Mróz Mydana”
+Kilka z tych¿e m³otów wykona³y lodowe olbrzymy, aby siaæ pop³och poœród pobliskich wiosek. Zaniepokojona wtargniêciem ludzi na ich terytorium, lodowa bogini Auril zachêci³a olbrzymy, aby ci stworzyli broñ zdoln¹ do zadawania wielkich obra¿eñ. Mydan, przywódca wœród swej rasy, aby oddaæ ho³d swojemu bóstwu, wyku³ ten¿e m³ot. Zadowolona z daru, bogini umagiczni³a broñ moc¹ lodu.
+
+PARAMETRY:
+
+Specjalne:
+-  Odpornoœæ na zimno: +30%
+
+Obra¿enia: 1K4 +2, +1K3 obra¿eñ od zimna
+TraK0: +2
+Typ obra¿eñ: obuchowe
+OpóŸnienie: 4
+Rodzaj bieg³oœci: m³ot bojowy
+Typ: 1-rêczna
+
+Wymagania:
+- Si³a: 9
+
+Waga: 6
+
+~
+ 
+
+
+@60  = ~Ozdobny typ he³mu, wykonany z utwardzanej skóry lub ¿elaza, zakrywaj¹cy twarz i g³owê.
+
+PARAMETRY: 
+
+Specjalne: 
+- Chroni przed trafieniami krytycznymi
+
+Waga: 2
+
+~
+
+@61  = ~Ten he³m przekazywany by³ z pokolenia na pokolenie Rycerzom Purpurowego Smoka. Nasycony zosta³ magicznymi w³aœciwoœciami, które chroni¹ przed okreœlonymi czarami.
+
+PARAMETRY:
+
+Specjalne: 
+- Chroni przed trafieniami krytycznymi
+- Chroni przed Zamêtem, Og³upieniem i wszelkimi formami Strachu
+
+Waga: 2
+
+~
+ 
+
+@63  = ~Ten he³m lœni, gdy siê go trzyma, a metal, z którego go wykonano, jest niezwyk³y w dotyku. Jedynym dowodem jego pochodzenia jest wyryte wewn¹trz imiê Kalindry.
+
+PARAMETRY:
+
+Specjalne: 
+- Chroni przed trafieniami krytycznymi
+- Nosz¹cy he³m otrzymuje +5 do rzutów obronnych przeciwko petryfikacji i polimorfii
+ 
+Waga: 2
+
+~
+
+
+
+
+@67  = ~Gdy zadmie siê w róg, g³êboki ryk przyzywa z czeluœci Dziewiêciu Piekie³ pomniejszego demona, który wspiera swego pana i s³u¿y magowi przy wykonywaniu wszelakich prac. Istota mo¿e pozostaæ w tej sferze tylko przez dwie rundy, ale mo¿na j¹ przywo³aæ ponownie, gdy skorzysta siê z rogu. Obecnoœæ demona uniemo¿liwia rzucanie zaklêæ. Róg mo¿e przywo³aæ demona tylko niewielk¹ iloœæ razy, dlatego nale¿y go u¿ywaæ rozwa¿nie.
+
+PARAMETRY:
+
+Specjalne: 
+- Róg przyzywa pomniejszego demona, który wesprze wzywaj¹cego
+Czas dzia³ania: 2 rundy
+
+Waga: 3
+
+~
+ 
+
+
+
+@71  = ~Lutnia Cassandry: „Lwia Odwaga”
+Cassandra, kiedy mia³a 5 lat, rozpoczê³a grê na lutni, a w wieku 14 w mistrzowski sposób opanowa³a tê sztukê. Jej ojciec Tarun Coriades utalentowany elfi lutniarz stworzy³ na jej 16 urodziny wyj¹tkow¹ lutniê. Wykonana zosta³a z tajemniczego drzewa, rosn¹cego blisko Jeziora Snów. Lutniê stworzono, aby dodaæ wykonawcy pewnoœci siebie i odwagi. Cassandra przemierzy³a mnóstwo krain, graj¹c w wielu miejscach. P³yn¹c z wizyt¹ do swego ojczystego kraju Evermeet, statek natkn¹³ siê na wzburzone morze i lutnia wypad³a za burtê, przepadaj¹c w jego odmêtach. Statek roztrzaska³ siê o ska³y Araski, ale Cassandra prze¿y³a i poszukuje swej lutni po dziœ dzieñ.
+
+PARAMETRY:
+
+Specjalne: 
+- Po zagraniu wykonawca otrzymuje pewnoœæ siebie i odwagê
+- TraK0: +1
+- Si³a zwiêkszona o 1
+- Odpornoœæ na Strach
+- 5 tymczasowych punktów ¿ycia
+Czas dzia³ania: 5 rund
+
+Waga: 7
+
+~
+ 
+
+
+@74  = ~Harmonijka: „Ciep³o Tarmaniela”
+Te organki ustne stworzone zosta³y przez Tarmaniela, barda znanego w ca³ej Sembii. Tarmaniel by³ mi³oœnikiem podró¿y i lubi³ dzieliæ siê informacjami poœród znajomych bardów. Gdy gra³ na swej harmonijce, wydobywa³ z niej dŸwiêki rozgrzewaj¹ce serca s³uchaczy tak, jak gra ¿adnego innego barda. Niestety mia³ równie¿ zami³owanie do hazardu, a dok³adniej kart, które doprowadzi³y do tego, ¿e gdzieœ we Wrotach Baldura straci³ harmonijkê.
+
+PARAMETRY:
+
+Specjalne: 
+- Charyzma +1
+- Dru¿yna zdobywa +1 do KP
+Zasiêg: 20 metrów
+Czas dzia³ania: 3 rundy
+
+Waga: 1
+
+~
+ 
+
+
+
+
+
+
+
+
+@82  = ~W tej kryszta³owej kuli œwieci siê b³êkitny p³omieñ. Gdy tylko ruszasz kul¹, wewn¹trz niej zaczynaj¹ tworzyæ siê chmury i gromadziæ ³adunki elektryczne. Magiczne s³owo wyzwala z kuli energiê, w wyniku czego z góry uderza b³yskawica. Ka¿dy, kto zostanie trafiony przez b³yskawicê, musi wykonaæ rzut obronny z modyfikatorem -3 lub otrzyma 2K6 obra¿eñ. 
+
+PARAMETRY:
+
+Specjalne: 
+- Wezwanie b³yskawic
+Obra¿enia: 2K6
+Zasiêg: 30 metrów
+Rzut obronny: neguje
+
+Waga: 3
+
+~
+
+
+
+@85  = ~Pierœcienie noszone s¹ na palcach i bardzo czêsto maj¹ w³asnoœci magiczne. Na ka¿dej d³oni mo¿na nosiæ jeden pierœcieñ.
+
+PARAMETRY:
+
+Waga: 0
+
+~
+
+@86  = ~Pierœcieñ niewidzialnoœci: „Ucieczka z³odzieja”
+Pierœcieñ ten niegdyœ nale¿a³ do calimshañskiego Kapitana ¯eglugi, niejakiego Josana Parisa. Josan by³ utalentowanym ¿eglarzem, wyp³yn¹³ statkiem wojennym z Memnon w celu oczyszczenia z piratów Lœni¹cego Morza. Pierœcieñ wydoby³ z pirackiego statku i zatrzyma³ go jako pami¹tkê. Kiedy odkry³ jego w³aœciwoœæ niewidzialnoœci, zmieni³ sw¹ profesjê w bardziej do tego stosown¹, staj¹c siê ostatecznie swego rodzaju piratem, których kiedyœ œciga³.
+
+PARAMETRY:
+
+Specjalne: 
+- Nosz¹cy pierœcieñ staje siê niewidzialny na 2 rundy~
+
+
+
+@89 = ~Tarczy œredniej u¿ywa siê podobnie jak ma³ej. Jednak w przeciwieñstwie do niej, tarcza œrednia wa¿y na tyle du¿o, ¿e wojownik nie mo¿e wykorzystywaæ do innych celów podtrzymuj¹cej j¹ rêki. Tarcze tego typu wykonuje siê zazwyczaj z metalu, maj¹ od 90 do 120 cm œrednicy i dowolny kszta³t, od okr¹g³ych do prostok¹tnych. Typowa tarcza œredniowieczna przypomina³a trójk¹t z jednym z ramion skierowanym w dó³.
+
+PARAMETRY:
+
+Specjalne:
+- Klasa Pancerza: +1
+
+Wymagania:
+- Si³a: 12
+
+Waga: 7
+
+~
+
+@90 = ~Pochodzenie tej niezwyk³ej tarczy jest nieznane, ale zanikaj¹cy ju¿ kszta³t b³êkitnego ¿mija ozdabiaj¹cy czêœæ zewnêtrzn¹ mo¿e œwiadczyæ, ¿e pochodzi ona z dawnego imperium Mulhorand, po³o¿onego w pobli¿u Gór Smoczego Miecza. Na tarczy brak jest jakichkolwiek znaków p³atnerskich, nie ma te¿ zadrapañ czy zarysowañ wskazuj¹cych na przebyte walki. Mo¿liwe, ¿e wykonano j¹ za pomoc¹ magii. Bez wzglêdu na jej w³aœciwoœci, b³êkitny po³ysk czyni z niej cenny ³up.
+
+PARAMETRY:
+
+Specjalne:
+- Klasa Pancerza: +2
+- odpornoœæ na ogieñ: +30%
+
+Wymagania:
+- Si³a: 12
+
+Waga: 7
+
+~
+
+
+
+@93 = ~Ma³e tarcze s¹ zazwyczaj okr¹g³e. Mocuje siê je na przedramieniu i dodatkowo przytrzymuje d³oni¹. W odró¿nieniu od tarczy œredniej, ich lekka waga pozwala wojownikowi nosiæ inne przedmioty w zajêtej rêce, chocia¿ nie mo¿e to byæ broñ.
+
+PARAMETRY:
+
+Specjalne:
+- Klasa Pancerza: +1
+- Nie chroni przed broni¹ strzeleck¹
+
+Wymagania:
+- Si³a: 4
+
+Waga: 3
+
+~
+
+@94 = ~Loran Emarin elfi bard nale¿¹cy do Harfiarzy s³ysza³ opowieœæ o z³otej tarczy, która chroni³a przed ¿ywio³ami. Zaintrygowany opowieœci¹, bard wyruszy³ na wyprawê, aby odnaleŸæ ów przedmiot. Po wieloletnich, bezowocnych poszukiwaniach bard niemal siê podda³. Pewnej mroŸnej nocy w tawernie w Nevewrinter pods³ucha³ rozmowê dwóch kap³anów Oghmy. Wynika³o z niej, ¿e opisana tarcza nale¿a³a do elitarnej grupy wojowników/kap³anów, ¿arliwych wyznawców Talosa w³adcy burz. Ostatecznie tarczê odzyska³ i sprzeda³ kap³anom Talosa. Od tego czasu jej los pozostaje nieznany.
+
+PARAMETRY:
+
+Specjalne:
+- Klasa Pancerza: +2
+- Nie chroni przed broni¹ strzeleck¹
+- Ochrona przed b³yskawicami 30%
+- Ochrona przed zimnem 30%
+- Ochrona przed ogniem 30%
+- Tarcza posiada niewielki ³adunek elektryczny, który mo¿e poraziæ ofiarê, ale istnieje 10% szansa, ¿e ³adunek bêdzie równie¿ oddzia³ywa³ na rzucaj¹cego czar
+
+Wymagania:
+- Si³a: 4
+
+Waga: 5
+
+~
+ 
+
+
+
+
+
+
+@100 = ~Miecz oburêczny pochodzi od miecza d³ugiego. P³atnerze zawsze próbowali ulepszaæ istniej¹ce odmiany orê¿a, dlatego w czasie prób nad udoskonaleniem miecza d³ugiego wyd³u¿ono jego ostrze. To samo zrobiono z rêkojeœci¹, gdy¿ do w³aœciwego u¿ycia tej broni by³y niezbêdne obie rêce. Miecze oburêczne s³u¿y³y zazwyczaj do atakowania rycerzy na koniach i do prze³amywania formacji z pik.
+
+PARAMETRY:
+
+Obra¿enia: 1K10
+Typ obra¿eñ: sieczne
+OpóŸnienie: 10
+Rodzaj bieg³oœci: miecz oburêczny
+Typ broni: 2-rêczna
+
+Wymagania:
+- Si³a: 14
+
+Waga: 15
+
+~
+
+@101 = ~Wielki Miecz +1: „Szafir”
+Tu¿ na pó³noc od Waterdeep le¿y wioska Amphail, a w niej zamieszkuje krasnoludzki mistrz kowalstwa niejaki Kathian Hammer Hands. Szafir wraz z siostrzanym mieczem - Szmaragdowym okiem stworzone zosta³y przez owego kowala, by pomóc Harfiarzom w walce przeciw zhentarimskim szpiegom.
+
+PARAMETRY:
+
+Specjalne:
+- TraK0: +1
+- Wykrycie z³a
+
+Obra¿enia: 1K10 +1, +1K3 obra¿eñ od zimna
+Typ obra¿eñ: sieczne
+OpóŸnienie: 8
+Rodzaj bieg³oœci: miecz oburêczny
+Typ broni: 2-rêczna
+
+Wymagania:
+- Si³a: 14
+
+Waga: 10
+
+~
+
+
+
+@104 = ~Zwany jest równie¿ "bêkartem" - zawdziêcza tê nazwê faktowi, ¿e jest skrzy¿owaniem miecza d³ugiego i oburêcznego. Ma obusieczne ostrze i d³ug¹ rêkojeœæ, dziêki czemu mo¿na go u¿ywaæ jedn¹ rêk¹ lub obur¹cz. Jego d³ugoœæ waha siê od 120 do 145 centymetrów.
+
+PARAMETRY:
+
+Obra¿enia: 2K4
+Typ obra¿eñ: sieczne
+OpóŸnienie: 8
+Rodzaj bieg³oœci: miecz pó³torarêczny
+Typ broni: 1-rêczna
+
+Wymagania:
+- Si³a: 11
+
+Waga: 10
+
+~
+
+@105 = ~Wykuty na pó³nocnych pustkowiach Tundry, barbarzyñski szeroki miecz zahartowano tak, aby wytrzyma³ najciê¿sze mrozy. Ciep³o metalu zapewnia odpornoœæ przeciw najsro¿szym warunkom klimatycznym.
+
+PARAMETRY:
+
+Specjalne:
+- TraK0: +1
+- Odpornoœæ na zimno: +30%
+
+Obra¿enia: 2K4 +1, 1K3 obra¿eñ od ognia
+Typ obra¿eñ: sieczne
+OpóŸnienie: 6
+Typ bieg³oœci: miecz pó³torarêczny
+Typ broni: 1-rêczna
+Wymagania:
+- Si³a: 11
+
+Waga: 8
+
+~
+ 
+
+
+@108 = ~Szabla jest d³ugim, ciê¿kim mieczem idealnym do zadawania ciêæ z konia, przeznaczonym g³ównie dla jeŸdŸców. Broni¹ t¹ pos³uguj¹ siê Tujgañczycy i Narsowie.
+
+PARAMETRY:
+
+Obra¿enia: 1K8
+Typ obra¿eñ: sieczne
+OpóŸnienie: 5
+Rodzaj bieg³oœci: d³ugi miecz
+Typ broni: 1-rêczna
+
+Wymagania:
+- Si³a: 6
+
+Waga: 6
+
+~
+
+@109 = ~Ta szabla niegdyœ nale¿a³a do kapitana Ergerna Conwella, oficera P³omiennej Piêœci. Zosta³ ni¹ uhonorowany za mêstwo, jakim wykazywa³ siê w walkach. Umiejêtnoœci kapitana we w³adaniu t¹ kling¹ niemal dorównywa³y jego fascynacji do p³ci piêknej. Niemniej jednak sztuka fechtunku nie zdo³a³a go ocaliæ przed zatrutym ostrzem bardzo zazdrosnej kochanki.
+
+PARAMETRY:
+
+Specjalne:
+- TraK0: +1 
+- 30% szans na og³uszenie ofiary przez jedn¹ rundê
+
+Obra¿enia: 1K8 +1
+Typ obra¿eñ: sieczne
+OpóŸnienie: 4
+Typ bieg³oœci: sejmitar/wakizashi/ninja-to
+Typ broni: 1-rêczna
+
+Wymagania:
+- Si³a: 6
+
+Waga: 6
+
+~
+
+@110 = ~Ciê¿ki miecz +1: „Szmaragdowe oko”
+Tu¿ na pó³noc od Waterdeep le¿y wioska Amfail, a w niej zamieszkuje krasnoludzki mistrz kowalstwa, niejaki Kathian M³otorêki. Szmaragdowe oko wraz z siostrzanym mieczem - Szafirem stworzone zosta³y przez owego kowala, by pomóc Harfiarzom w walce przeciw zhentarimskim szpiegom.
+
+PARAMETRY:
+
+Specjalne:
+- TraK0: +1
+- Wykrycie z³a
+
+Obra¿enia: 1K10 +1, +1K3 obra¿eñ od ognia
+Typ obra¿eñ: sieczne
+OpóŸnienie: 8
+Rodzaj bieg³oœci: miecz oburêczny
+Typ broni: 2-rêczna
+
+Wymagania:
+- Si³a: 14
+
+Waga: 10
+
+~
+ 
+
+
+
+@114 = ~Amulet swobody ruchów: „Gwiazda Eloeny”
+Historia tych amuletów jest nieznana, tylko kilka z nich odnaleziono. Ka¿dy amulet mia³ wygrawerowane imiê elfki. Na tym wyryto imiê Eloen. Najprawdopodobniej by³ on podarunkiem od elfiej córki.
+
+PARAMETRY:
+
+Specjalne: 
+- Nosz¹cy amulet jest odporny na ka¿de magiczne i naturalne dzia³anie, które w jakikolwiek sposób wp³ywa na swobodê ruchów, mo¿e jednak zostaæ przyspieszony. Oznacza to tak¿e, ¿e nosz¹cy nie bêdzie móg³ skorzystaæ z pozytywnych efektów takich, jak na przyk³ad te z Butów przyspieszenia
+
+~
+ 
+@116 = ~Amulet ochrony przed trucizn¹: „Gwiazda Merris”
+Historia tych amuletów jest nieznana, tylko kilka z nich odnaleziono. Ka¿dy amulet mia³ wygrawerowane imiê elfki. Na tym wyryto imiê Merris. Najprawdopodobniej by³ on podarunkiem od elfiej córki.
+
+PARAMETRY:
+
+Specjalne: 
+- Zapewnia nosz¹cemu odpornoœæ na trucizny i choroby
+
+~
+ 
+
+@118 = ~Amulet ochrony +1: „Gwiazda Riony”
+Historia tych amuletów jest nieznana, tylko kilka z nich odnaleziono. Ka¿dy amulet mia³ wygrawerowane imiê elfki. Na tym wyryto imiê Riona. Najprawdopodobniej by³ on podarunkiem od elfiej córki.
+
+PARAMETRY:
+
+Specjalne:
+- Klasa Pancerza: +1
+- Rzuty obronne: +1
+
+~
+
+@120 = ~Amulet odpornoœci na ogieñ: „Gwiazda Ishary”
+Historia tych amuletów jest nieznana, tylko kilka z nich odnaleziono. Ka¿dy amulet mia³ wygrawerowane imiê elfki. Na tym wyryto imiê Ishara. Najprawdopodobniej by³ on podarunkiem od elfiej córki.
+
+PARAMETRY:
+
+Specjalne:
+- Odpornoœæ na ogieñ: +30%
+
+~
+
+@122 = ~Amulet odpornoœci na zimno: „Gwiazda Ilithyi”
+Historia tych amuletów jest nieznana, tylko kilka z nich odnaleziono. Ka¿dy amulet mia³ wygrawerowane imiê elfki. Na tym wyryto imiê Ilithyia. Najprawdopodobniej by³ on podarunkiem od elfiej córki.
+
+PARAMETRY:
+
+Specjalne:
+- Odpornoœæ na zimno: +30%
+
+~

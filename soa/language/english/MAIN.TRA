@@ -1,0 +1,1070 @@
+//------------------------------------------------------------------------------------
+//  Creatures, characters, items, miscellaneous:
+//------------------------------------------------------------------------------------
+
+@0 = ~Chain Mail Armor~
+@1 = ~Mecorima's Chain Mail~
+// Formely @201
+@2 = ~Chain mail is made of interlocking metal rings.  It is always worn over a layer of padded fabric or soft leather to prevent chafing and lessen the impact of blows.
+
+STATISTICS:
+
+Armor Class: 5
+Weight: 40
+Requires: 8 Strength
+Not Usable By:
+ Druid 
+ Mage
+ Thief~
+// Formely @202, note strength requirement differs between @3 (BGEE, requires 5) and @202 (others, requires 8)
+@3 = ~This Chain Mail was made for the Sun elve Mecorima Sylerim. Mecorima was a Sun elve whose ambitions stretched far within elven society. A gifted diplomat Mecorima needed something extra to ward off rival factions. To achieve this she had a chain mail armor made that would save her life from assassination attempts and bend the will of noble lords.
+
+STATISTICS:
+
+Armor Class: 3
+Weight: 20
+Requires: 8 Strength
+Special: The wearer receives a +5 bonus to Save vs. death
+Charisma increased by 2
+Not Usable By:
+ Druid
+ Mage
+ Thief~
+
+@4 = ~Plate Mail Armor~
+@5 = ~Kalindra's Armor~
+// Formely @203
+@6 = ~Plate mail is a combination of chain armor with metal plates covering the vital areas such as the chest, abdomen and groin.  Similar in construction to bronze plate mail, true plate mail comprises of chain and leather.
+
+STATISTICS:
+
+Armor Class: 3
+Weight: 50
+Requires: 12 Strength
+Not Usable By:
+ Bard
+ Druid
+ Mage
+ Thief~
+// Formely @204, note strength requirement differs between @7 (BGEE, requires 10) and @204 (others, requires 12)
+@7 = ~This armor almost feels alive as you hold it. The material it is made from is light and wraps around your body like supple leather. The only evidence of its origin is the name Kalindra etched inside.
+
+STATISTICS:
+
+Armor Class: 2
+Weight: 30
+Special: Increases saving throws by 1
+Requires: 12 Strength
+Not Usable By:
+ Bard 
+ Druid
+ Mage
+ Thief~
+
+@8 = ~Mace~
+@9 = ~Mace +1~
+// Formely @205, note weight differs between @10 (BGEE, 10) and @205 (others, 8)
+@10 = ~The mace is a direct descendant of the basic club, being nothing more than a wooden shaft with a stone or iron head mounted on the end.  The head design varies; some being spiked, others flanged, and still others have pyramidal knobs.
+
+STATISTICS:
+
+Damage:  1D6 + 1
+Damage type:  crushing
+Weight: 8
+Speed Factor: 7
+Proficiency Type: Mace
+Type: 1-handed
+Requires: 10 Strength
+Not Usable By:
+ Druid
+ Mage
+ Thief~
+// Formely @206, note strength requirement differs between @11 (BGEE, requires 9) and @206 (others, requires 10) and weight is present twice in @11
+@11 = ~Mace +1 :
+ 'Mace of the fearless'
+Many followers of Chauntea carry a Mace like this one. Most are given to new clerics but some are magically enhanced and given to the more gifted students. This is such a weapon.
+
+STATISTICS:
+
+Damage: 1D6 + 3
+THACO: +1 bonus
+Special: Resist fear 30%
+Damage type: crushing
+Weight: 7
+Speed Factor: 5
+Proficiency Type: Mace
+Type: 1-handed
+Requires: 9 Strength
+Not Usable By:
+ Druid
+ Mage
+ Thief~
+
+@12 = ~Maul~
+@13 = ~Maul +2~
+// Formely @207, note weight differs between @14 (BGEE, 10) and @207 (others, 6)
+@14 = ~The maul is a heavy hammer used extensively in the construction of ships and buildings. A domestic tool the maul is popular throughout the whole of Faerun especially with the shipbuilders of Waterdeep. Its heavy weight and excellent swing make it a deadly weapon in combat.
+
+STATISTICS:
+
+Damage: 1D4 +1
+Damage type: Crushing
+Weight: 6
+Speed Factor: 4
+Proficiency Type: War Hammer
+Type: 1-handed
+Requires: 9 Strength
+Not Usable By:
+ Druid
+ Mage 
+ Thief~
+// Formely @208, note damage bonus against giants is not indicated in @15 (BGEE)
+@15 = ~Maul +2:
+ 'Tholin's Ogre Smasher'
+This heavy Maul also known as 'The Maul of the Mighty' has weathered the storm of countless wars and battles. Originally the property of an Elk Tribe Chieftain the maul was forged to slay the increasing number of ogres and orcs along the Dessarin river.
+
+STATISTICS:
+
+Damage: 1D4 +3, +3 Giants  
+THACO: +2
+Damage type: crushing
+Weight: 7
+Speed Factor: 5
+Proficiency Type: War Hammer
+Type: 1-handed
+Requires: 10 Strength
+Not Usable By:
+ Druid
+ Mage
+ Thief~
+
+@16 = ~Morning Star~
+@17 = ~Morning Star +2~
+// Formely @209, note text description differs a bit between @18 (BGEE) and @209 (others)
+@18 = ~The morning star is a wooden shaft topped with a metal head made up of a spiked iron sheath. Morning stars have an overall length of about four feet. Some such weapons have a round, oval, or cylindrical shaped head studded with spikes.  Extending from most morning star heads, regardless of design, is a long point for thrusting.
+
+STATISTICS:
+
+Damage: 2D4
+Damage type: crushing
+Weight: 12
+Speed Factor: 7
+Proficiency Type: Flail/Morningstar
+Type: 1-handed
+Requires: 11 Strength
+Not Usable By:
+ Druid
+ Mage 
+ Thief~
+// Formely @210, note strength requirement differs between @19 (BGEE, requires 10) and @210 (others, requires 11)
+// note @19 (BGEE) still uses profeciency "Spiked Weapons" from BG1
+@19 = ~Morning Star +2:
+ 'Gift of Ishandar'
+Golain spent most of his youth with his father exploring the Stronghorns around Cormyr. His father taught him to fight and appreciate the land around him. Having a love of adventure and Geography he became a Royal Explorer for the Obarskyr family. On a long expedition with a team of explorers surveying land in the Thunder peak mountains he noticed a small cave worthy of attention. Following a small fight with a number of orcs he discovered a small chest full of gold and a Morning Star shining in the darkness. The Morning Star remained with Golain for some time until losing his life fighting Ogres in the Stronghorns.  
+
+STATISTICS:
+
+Damage: 2D4 +2
+THAC0: +2
+Damage type: crushing
+Weight: 10
+Speed Factor: 6
+Proficiency Type: Flail/Morningstar
+Type: 1-handed
+Requires: 10 Strength
+Not Usable By:
+ Druid
+ Mage
+ Thief~
+
+@20 = ~Book~
+@21 = ~Red Wizard Spell Book~
+// Formely @304 (though identical to @22)
+@22 = ~A wizards spell book. Most books of this type are used for storing spells or some kind of magical enchantment.~
+// Formely @305
+@23 = ~Book of Flames
+Once in the hands of a Red Wizard archmage this book was stolen by a run away slave and smuggled out of Thay into the safety of the Dalelands. The book is bound in human skin the result of countless slave experiments. As a result it has an aura only evil characters can use. 
+
+STATISTICS:
+
+Special:  When opened an arc of flame reaches out for the target
+Damage: 2D3
+Range: 0 
+Duration: Instantaneous
+Casting Time: 1
+Area of Effect: The Caster
+Saving Throw: None
+
+Only Usable By:
+ Mage~
+
+@24 = ~Composite Long Bow~
+@25 = ~Composite Long Bow +2~
+// Formely @211, note text description differs a bit between @26 (BGEE) and @211 (others)
+@26 = ~Composite bows are long bows or short bows whose staves are made from more than one type of material.  This gives greater flexibility, and thus better range.  These were developed after the normal long bow.
+
+STATISTICS:
+
+Damage: +2
+To Hit Bonus: +1
+Weight: 10
+Speed Factor: 7
+Proficiency Type: Long Bow
+Type: 2-handed
+Requires: 18 Strength
+Not Usable By:
+ Druid
+ Cleric
+ Mage 
+ Thief
+ Bard~
+// Formely @212
+@27 = ~Composite Long Bow +2:
+'The Medussa's curse'
+During the year of the Broken Blade Laeroth was born. In his younger years he became a master of the bow and had the best eye for accuracy in his elven village. Stories told of a Medussa hiding out in a cave in the nearby mountains. As a test of courage it fell upon Laeroth to deliver the head of such a beast. After talking to the elders of his village a bow was crafted to tackle such an enemy. Built from weirwood the bow was made to be true to its user and resist the gaze of certain creatures. A long journey ensued before reaching the Medussa's lair. Inside the cave Laeroth used a glowstone to find his way deep within. Passing stone forms the result of countless failed attempts to capture the beast Laeroth finally fell upon his prey. Face to face with the Medussa the gaze fell upon him. At first he was paralysed to do anything but with the bow in his hand the effects of the gaze were neutralized and the fight for dominance began. One bow against another both adversaries trained on each other. The Medussa fired first and a poison arrow lodged into his shoulder just as the weirwood bow fired its own arrow into the Medussa's head. The monster writhed in pain but Laeroth drank an antidote to the poison in time to see the Medussa's last dying throws. With a steady hand he approached the creature and severed its head. After returning to his village the head was placed in a safe place to be used against orcs in times of need. Laeroth travelled in his later years and eventually sold the bow for a large sum of gold.        
+
+STATISTICS:
+
+THACO: +2
+Damage: +3
+Special: Protection from Petrification 
+Weight: 9
+Speed Factor: 6
+Proficiency Type: Long Bow
+Type: 2-handed
+Requires: 18 Strength
+Not Usable By:
+ Druid
+ Cleric
+ Mage 
+ Thief
+ Bard~
+
+@28 = ~Cloak~
+@29 = ~Travel Cloak~
+// Formely @300 (though identical to @30)
+@30 = ~The cloak can be made in every possible shape with just about every type of fabric.  The most common forms are a circular piece of fabric with a hole in the centre for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.~
+// Formely @301
+@31 = ~The Travel Cloak is a lightweight garment that gives added protection against the elements. Furthermore the cloak gives a bonus to AC.
+ 
+STATISTICS:
+
+Armor Class: +1 bonus
+Special: 20% resistance to cold and fire
+Weight:  3
+Not usable by:~
+
+@32 = ~Mage Robe~
+@33 = ~White Robe of the Spider~
+// Formely @302 (though identical to @34)
+@34 = ~Since the age of Netheril, mages have learned to bestow a wide variety of magical properties upon the everyday objects that surround them. A favorite item of such enchantment is the common robe. It is lightweight, affordable, and holds its enchantment well, thereby making it ideal equipment for a mage. Due to their magical heritage, however, only single-, dual-, and multi-class mages may wear these enchanted robes.~
+// Formely @303
+@35 = ~This white robe is embroidered with the shapes of numerous spiders across its surface. The wearer is immune to any effects that cause encumbrance such as web and slow. It negates the effects of paralysis and hold spells. The robe also allows the Mage to cast a hold spell on a target but its duration is limited to one round only.
+
+STATISTICS:
+
+Armor Class:  6
+Weight:  6
+Special:  Free Action (while equipped) -  protects the Mage from any magics that effect movement such as hold and web.
+Allows the Mage to cast a hold spell
+Only usable by:
+ Mage (single, dual, & multi-class)~
+
+@36 = ~Dagger~
+@37 = ~Dagger +1~
+// Formely @213, note text description differs a bit between @38 (BGEE) and @213 (others)
+@38 = ~The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter than the dagger.
+
+STATISTICS:
+
+Damage: 1D4
+Damage type: piercing
+Weight: 1
+Speed Factor: 2
+Proficiency Type: Dagger
+Type: 1-handed
+Requires: 3 Strength
+Not Usable By:
+ Cleric~
+// Formely @214, note text description differs a bit between @39 (BGEE) and @214 (others)
+@39 = ~Dagger +1:
+ 'Dagger of Defiance'
+These Daggers were created in Myth Drannor. This dagger in particular has graced the hands of rogues, thieves and bandits alike.
+
+STATISTICS:
+
+Damage: 1D4 +2
+THACO: +1 bonus
+Special: Immunity to fear and charm
++ 2 bonus to Save vs. spell
+Weight: 1
+Speed Factor: 2
+Proficiency Type: Dagger
+Type: 1-handed
+Requires: 3 Strength
+Usable By:
+ Thief
+ Bard~
+
+@40 = ~Drum~
+@41 = ~Kobold Drum~
+@42 = ~Possibly the oldest of instruments, there are many types and are popular amongst many races for their ability to stir the emotions and establish a beat for dancing.  As well as Humans and Dwarfs, Halforcs, Lizardfolk, Kobolds, trolls, ogres and the more dim-witted giants enjoy simple drum music.~
+// Formely @306
+@43 = ~The Tabor Drum or Snare Drum is a favorite of Kobolds and Dwarfs. Held under the arm or in front of the body the drum can give a steady rythmic beat. Played together its sound can be mistaken for the advance of a small army and can scare most creatures within earshot.
+
+STATISTICS:
+
+Special: When played the target must make a saving throw at -2 or the sound of the drum causes panic
+Range: 40
+Duration: 2 rounds
+Weight: 5
+Not Usable By:~
+ 
+@44 = ~Ogre Drum~
+// Formely @307
+@45 = ~Drums of this kind are known as Congos and are a favorite instrument for the larger creatures of the realm like Ogres and Giants for its deep sound. When played together the drum gives the impression of an army marching into battle that can scare most creatures within earshot.
+
+STATISTICS:
+
+Special: When played the target must make a saving throw at -2 or the sound of the drum causes panic
+Range: 60
+Duration: 2 rounds
+Weight: 8
+Not Usable By:~
+
+@46 = ~Pearl~
+@47 = ~Sirines Pearl~
+@48 = ~Pearl's consist of layer's of aragonite agonizingly formed around a bit of grit or other irritant inside oysters and other molluscs.  The resulting pearl has a rich, deep lustre.  Most of the pearls in the realms are white, however there are varieties that are much more rare such as rainbow and black.~
+// Formely @308
+@49 = ~This normal - seeming pearl radiates faintly of enchantment if magic is detected for. In any event, the stone will be very beautiful and worth at least 1,000 gp on this basis alone. If it is clasped firmly in hand (or to the breast) and the possessor attempts actions related to the pearl's power areas, they will understand and be able to employ the item.
+    The pearl enables its possessor to cast Dire Charm onto a target. The pearl must be held by the possessor to convey its powers. Such pearls only have a limited number of charges however.
+
+STATISTICS:
+
+Special: Cast Dire Charm
+Range: 20
+Duration: 4 rounds
+Area of Effect: 1 creature
+Weight: 1
+Saving Throw:  Neg
+Usable by:
+ Druid~
+
+@50 = ~Halberd~
+@51 = ~Halberd +1~
+// Formely @215
+@52 = ~By far the oldest and most often used pole-arm, the halberd consists of a cleaver-like axe blade mounted on a staff averaging six feet in length.  The axe blade is balanced at the rear with a fluke, and surmounted by a sharp spike, usually of quadrangular design.  The fluke is sometimes replaced by a hook used to dismount cavalry.  A halberd can be best described as a cross between a spear and an axe.
+
+STATISTICS:
+
+Damage: 1D10
+Damage type: piercing
+Weight: 15
+Speed Factor: 9
+Proficiency Type: Halberd
+Type: 2-handed
+Requires: 13 Strength
+Not Usable By:
+ Druid
+ Cleric
+ Mage
+ Thief~
+// Formely @216
+@53 = ~Like others of its type, this halberd consists of a cleaver-like axe blade mounted on a staff approximately six feet in length. It has also been bestowed with a small number of magical properties, however, thus making it more effective in combat. Its keen blade, for instance, will shear through your opponent's flesh to find the bone while its barbed tip will seek out gaps in their armor.
+
+STATISTICS:
+
+Damage: 1D10 +2
+THACO: +1 bonus
+Damage type: piercing
+Weight: 14
+Speed Factor: 8
+Proficiency Type: Halberd
+Type: 2-handed
+Requires: 13 Strength
+Not Usable By:
+ Druid
+ Cleric
+ Mage
+ Thief~
+
+@54 = ~War Hammer~
+@55 = ~Ice Hammer +2~
+// Formely @217, note text description differs a bit between @56 (BGEE) and @217 (others)
+@56 = ~Mounted knights cannot effectively use long pole weapons while on horseback, and as a result, many weapons have been fitted with shorter shafts so they may be wielded with just one hand.  Maces and flails are two previous examples of this - the war hammer is another.  The horseman's war hammer is the descendent of the Lucerne hammer.  It is made entirely of steel, with rondels protecting and strengthening the grip.  Rondels are small disks of metal, often shaped into decorative designs.  The shaft is about 18 inches long.
+
+STATISTICS:
+
+Damage: 1D4 + 1
+Damage type: crushing
+Weight: 6
+Speed Factor: 4
+Proficiency Type: War Hammer
+Type: 1-handed
+Requires: 9 Strength
+Not Usable By:
+ Druid
+ Mage 
+ Thief~
+// Formely @218, note strength requirement differs between @57 (BGEE, requires 8) and @218 (others, requires 9)
+@57 = ~Ice Hammer +2:
+'Mydans Frost'
+Several of these hammers were made by Frost Giants to wreck havoc amongst local villages. Annoyed by  humans invading their territory the ice goddess Auril encouraged the giants to create weapons capable of great damage. Mydan a leader amongst his kind created this hammer to pay homage to his deity. Pleased by the gift the goddess enchanted the weapon with the power of ice.
+
+STATISTICS:
+
+THACO: +2 bonus
+Damage: 1D4 +2 (+1D3 Cold Damage)
+Cold Resistance: +30%
+Damage type: crushing
+Weight: 6
+Speed Factor: 4
+Proficiency Type: War Hammer
+Type: 1-handed
+Requires: 9 Strength
+Not Usable By:
+ Druid
+ Mage 
+ Thief~
+
+@58 = ~Helmet~
+@59 = ~Cormyrian Helm~
+// Formely @309, note text description differs between @60 (BGEE, "open face") and @309 (others, "decorative", identical to BG1 @19724)
+@60 = ~This class of decorative helmet, made of reinforced leather or metal, covers the face and head. Eye slits and breathing holes come highly recommended.
+
+STATISTICS:
+
+Armor Class Bonus:  None
+Special:  Protects Against Critical Hits
+Weight: 2
+Not Usable By:
+Mage
+Bard
+Thief~
+// Formely @321
+@61 = ~This helmet has been passed down through generations of Purple Dragon Knights. The helmet has been imbued with magical properties to defend against certain enchantments
+
+STATISTICS:
+
+Armor Class Bonus:  None
+Special:  Protects against critical hits
+Protects against Confusion, Rigid Thinking and Fear attacks
+Weight: 2
+Not Usable By:
+ Mage
+ Bard
+ Thief~
+
+@62 = ~Kalindra's Helm~
+// Formely @310
+@63 = ~This helmet shimmers when held and the metal feels strange to the touch. The only evidence of its origin is the name Kalindra etched inside.
+
+STATISTICS:
+
+Armor Class Bonus: None
+Special: Protects Against Critical Hits
+Wearer gains a +5 bonus to Saves vs. petrification and polymorth
+Weight: 2
+Not Usable By:
+ Mage
+ Bard
+ Thief~
+
+@64 = ~Natural Horn~
+@65 = ~Horn of Summoning~
+@66 = ~Natural horns are taken from bulls or more exotic beasts. Natural horns come in all shapes and sizes and most consist of a narrow tip connected to a wider, circular oriface by a hollow, often curved shaft.
+ The horn is played by blowing into the small end to produce a note.
+ Horns of this type are popular amongst all the races of Faerun.~
+// Formely @311
+@67 = ~When this horn is played a deep bellowing sound calls out to the Fiendish plane and from the abyss a lesser demon is summoned to aid its master in any way they choose. The creature can only stay in the realm for two rounds but can be summoned again when the horn is blown. When the demon is present all spell casting abilities are disabled. The horn can only summon a demon a small number of times so it is best to use it wisely.
+
+STATISTICS:
+
+Special: When played a lesser demon is summoned to aid its caller.
+Duration: 2 rounds
+Weight: 3
+Only Usable By:
+ Bard~
+
+@68 = ~Lute~
+@69 = ~Elven Lute~
+@70 = ~The Lute has a pear-shaped bowl and a distinctive bent neck with frets for fingering. Between four and eight strings stretch between the base of the bowl and the top of the neck. Lutes vary between 30 and 36 inches in length, with the bowl taking up some two thirds of that total. The musician either strums or plucks the strings to produce music.~
+// Formely @312, note effect strength +1 missing in @71 (BGEE) compared to @312 (others)
+@71 = ~Cassandra's Lute
+ 'The Lions Courage'
+Cassandra started playing the lute when she was 5 years old, by the age of 14 she was a master performer. Her father Tarun Coriades a gifted elven luthier created a special lute for her 16th birthday. Made from mystical woods close to the Lake of Dreams the lute was created to give confidence and courage when played. Cassandra travelled many lands and played in many places with the instrument. Then during a visit to her homeland Evermeet the ship that bore her encountered high seas and the lute was lost overboard. The ship was wrecked on Araska but Cassandra survived only to search for her lute to this day.
+   
+STATISTICS:
+
+Special: When played the performer gains a sense of confidence and courage. 
+THACO: +1 bonus 
+Strength increased by 1 
+Immunity to fear
+5 temporary hit points
+Duration: 5 Rounds
+Weight: 7
+Only Usable by:
+  Bard~
+
+@72 = ~Harmonica~
+@73 = ~The Harmonica or Mouth Organ as it is commonly known consists of a number of small metal reeds of graduated size enclosed in slots in a short narrow box, which is held against the lips and moved from side to side according to the note desired. The instrument is popular amongst halflings and gnomes.~
+// Formely @313
+@74 = ~Harmonica
+ 'Tarmaniels Warmth'
+This Mouth Organ was created by Tarmaniel a human bard well known throughout the land of Sembia. Tarmaniel was keen to travel and liked to share information amongst fellow bards. When played the Harmonica gives off a sound like no other which warms the hearts of its listeners.  Unfortunately he also had a love for gambling and lost the Harmonica in a card game somewhere in Baldurs Gate.  
+
+STATISTICS:
+
+Special: Charisma +1 bonus
+Party gains a +1 bonus to AC
+Duration: 3 rounds. 
+Range: 20
+Weight: 1
+Only Usable by:
+  Bard~
+
+@75 = ~Mirror~
+@76 = ~Mirror of Illusion~
+@77 = ~A plain looking mirror.~
+@78 = ~A favourite tool amongst Thieves and Spy Masters the mirror has long been in the Rogues arsenal of thieving gear. This mirror has been enchanted with the ability to blur its owner for 4 rounds. Like a lot magical items the Mirror can only be used for a limited number of times.~
+
+@79 = ~Orb~
+@80 = ~Orb of Storms~
+@81 = ~Many Orbs are used by Wizards and Druids to see into other parts of the realm and some are said to show possible futures. Some orbs are said to contain powers that can harness the elements though these are rare.~
+// Formely @314
+@82 = ~This orb glows with a blue flame and clouds begin to form as you move the orb about and electric charges rake the inside. A command word frees the orb of its energy and as a result lighting tears down from the sky. Anyone hit by lighting must make a saving throw at -3 or take 2D6 damage
+
+STATISTICS:
+
+Special: Cast lighting
+Damage: 2D6
+Range: 30
+Weight: 3
+Saving Throw: Neg
+Only Usable by:
+ Driud
+ Mage
+ Bard~
+
+@83 = ~Ring~
+@84 = ~Ring of Invisibility~
+@85 = ~A ring is a small band of precious metal that is used as jewellery. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
+
+STATISTICS:
+
+Weight: 0
+
+~
+// Formely @315
+@86 = ~Ring of Invisibility
+ 'The Thieves Escape'
+This ring once belonged to a Calimshan Sea Captain called Josan Paris. A talented Seaman Josan captained a large warship out of Memnon whose purpose was to free the Shining Sea of pirates. The ring was retrieved from a pirate ship and Josan kept it as a token. When he discovered its ability for invisibility he turned his profession into a more opportunistic one eventually becoming the kind of pirate he once pursued.  
+
+STATISTICS:
+
+Special: When the ring is activated its wearer becomes invisible for 2 rounds
+
+Not usable by:~
+
+@87 = ~Medium Shield~
+@88 = ~Blue Kite Shield~
+// Formely @219, note weight differs between @89 (BGEE, 8) and @219 (others, 7)
+@89 = ~A medium shield is carried in the same manner as a small shield.  Unlike the small shield, however, its weight prevents the character from using his shield hand for anything other than carrying the medium shield.  Medium shields are usually made of metal, range from 3'-4' in diameter, and can be of any shape, from round to square to a spread dragon's wings.  A typical medieval shield resembles a triangle with one point facing downward.
+
+STATISTICS:
+
+Armor Class Bonus: 1
+Weight: 7
+Requires: 12 Strength
+Not Usable By:
+ Bard
+ Druid
+ Mage
+ Thief~
+// Formely @220
+@90 = ~The origins of this strange shield are unknown but the faded shape of a blue wyrm decorating the outside may indicate that it came from the ancient empire of Mulhorand close to the Dragonsword mountains. There isn't an armourers mark anywhere on the shield and it bears no battle scars perhaps the shield was made by magical means. Regardless of its nature its blue sheen makes it a prize possession.
+  
+STATISTICS:
+
+Armor Class Bonus: 2
+Weight: 7
+Special: Protection from fire 30%
+Requires: 12 Strength
+Not Usable By:
+ Bard
+ Druid
+ Mage
+ Thief~
+
+@91 = ~Small Shield~
+@92 = ~Talos Storm Shield~
+// Formely @221, note weight differs between @93 (BGEE, 3) and @219 (others, 5)
+@93 = ~A small shield is usually round and is carried on the forearm, gripped with the shield hand.  Its light weight as compared to a medium shield permits the user to carry other items in that hand, although he cannot wield or carry another weapon.
+
+STATISTICS:
+
+Armor Class Bonus: 1
+Special:  No Missile Weapon Protection
+Weight: 3
+Requires: 4 Strength
+Not Usable By:
+ Bard
+ Druid
+ Mage
+ Thief~
+// Formely @222
+@94 = ~Loran Emarin an elven bard belonging to the Harper organisation heard a story of a golden coloured shield with the ability to protect against the elements. Intrigued by the story the bard set out on a quest to find the item. After searching for several years with no lead the bard almost gave up. Then on a cold night in a Neverwinter tavern the elve overheard a conversation between a pair of Ohgma priests. The shield was described as belonging to a group of elite fighter/clerics, devout followers of the storm lord Talos. Eventually the shield was recovered and sold on to the Talos priesthood. Its destiny from there is unknown.
+
+STATISTICS:
+
+Armor Class Bonus: 2
+Weight: 5
+Special: Lighting resistance bonus 30%
+Protection from cold 30%
+Protection from fire 30%
+Shield holds a small Electrical Charge that can be discharged on the target but there is a 10% chance the charge will also effect you.
+Requires: 4 Strength
+Not Usable By:
+ Bard
+ Druid
+ Mage
+ Thief~
+
+@95 = ~Gem~
+@96 = ~Stone of Askavar~
+@97 = ~A small, blue coloured stone the size of a small fist. The Stone of Askavar is allegedly an elven artefact that was lost when the ancient elven community of Askavar fell into ruin. It reputedly has great powers of influence, but you have no idea how to use it.~
+
+@98 = ~Two Handed Sword~
+@99 = ~Large Sword +1~
+// Formely @223
+@100 = ~The two-handed sword is a derivative of the long sword.  Weaponsmiths have always looked for ways to improve existing weapons.  In an effort to improve the long sword, the blade was lengthened.  Eventually, the handle had to be extended and two hands became necessary to properly swing the sword.  The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
+
+STATISTICS:
+
+Damage:  1D10
+Damage type:  slashing
+Weight: 15
+Speed Factor: 10
+Proficiency Type: Two handed sword
+Type:  2-handed
+Requires: 14 Strength
+Not Usable By:
+ Druid
+ Cleric
+ Mage 
+ Thief~
+// Formely @224, @101 (BGEE) still uses profeciency "Large Sword" from BG1
+@101 = ~Large Sword +1 :
+ 'The Shining Sapphire'
+Just to the North of Waterdeep is the village of Amphail and the home of a Dwarfen Master Blacksmith called Kathian Hammer Hands. This sword along with its sister sword the Emerald Eye was created by the blacksmith to help the Harpers in their fight against Zhentarim spys.
+
+STATISTICS:
+
+THACO: +1
+Special Abilities: 
+Detect Evil
+Damage: 1D10 + 1, +1D3 Cold Damage 
+Damage type: slashing
+Weight: 10
+Speed Factor: 8
+Proficiency Type: Two handed sword
+Type: 2-handed
+Requires: 14 Strength
+Not Usable By:
+ Druid
+ Cleric
+ Mage 
+ Thief~
+
+@102 = ~Bastard Sword~
+@103 = ~Barbarian Broad Sword~
+// Formely @225
+@104 = ~Also known as the hand-and-a-half sword, the bastard sword derives its name from the fact that it is halfway between the two-handed sword and the long sword. The bastard sword has a double-edged blade and a long grip, which can accommodate both hands if preferred.  The overall length of the bastard sword ranges between four feet and four feet ten inches.
+
+STATISTICS:
+
+Damage: 2D4
+Damage type: slashing
+Weight: 10
+Speed Factor: 8
+Proficiency Type: Bastard Sword
+Type: 1-handed
+Requires: 11 Strength
+Not Usable By:
+ Druid
+ Cleric
+ Mage
+ Thief~
+// Formely @226
+@105 = ~Built for the tundra wastes of the north the Barbarian Broad Sword has been tempered for freezing conditions. The warmth of the metal provides a resistance against the harsh cold climate.
+
+STATISTICS:
+
+THACO: +1 bonus
+Damage: 2D4 + 1, 1D3 Fire damage
+Special: 30% Protection from cold 
+Damage type: slashing
+Weight: 8
+Speed Factor: 6
+Proficiency Type: Bastard Sword
+Type: 1-handed
+Requires: 11 Strength
+Not Usable By:
+ Druid
+ Cleric
+ Mage
+ Thief~
+
+@106 = ~Sabre~
+@107 = ~Red Fist Sabre~
+// Formely @227, note weight differs between @108 (BGEE, 4) and @227 (others, 6)
+@108 = ~A weapon of the Tuigan and Nars, the sabre is a long, heavy sword specialized for the long cuts used in mounted combat.
+
+STATISTICS:
+
+Damage: 1D8
+Damage type: slashing
+Weight: 6
+Speed Factor: 5
+Proficiency Type: Long Sword
+Type: 1-handed
+Requires: 6 Strength
+Not Usable By:
+ Druid
+ Cleric
+ Mage
+ Thief~
+// Formely @228
+@109 = ~This sabre once belonged to Captain Ergern Conwell, a cavalry officer of the Flaming Fist. He was awarded the sabre for bravery in the face of battle. The Captain's ability with the blade almost matched his affinity for the local female inhabitants. No skilled swordsmanship however could save him from the poisonous blade of an over jealous lover.
+
+STATISTICS:
+
+THACO: +1 bonus
+Damage: 1d8 +1
+Special: 30% chance target will be stunned for 1 round.
+Damage type: slashing
+Weight: 6
+Speed Factor: 4
+Proficiency Type: Long Sword
+Type: 1-handed
+Requires: 6 Strength
+Not Usable By:
+ Druid
+ Cleric
+ Mage
+ Thief~
+// Formely @229, note @110 (BGEE) still uses profeciency "Large Sword" from BG1
+@110 = ~Large Sword +1 :
+ 'The Emerald Eye'
+Just to the North of Waterdeep is the village of Amphail and the home of a Dwarfen Master Blacksmith called Kathian Hammer Hands. This sword along with its sister sword the Shinning Sapphire was created by the blacksmith to help the Harpers in their fight against Zhentarim spys.
+
+STATISTICS:
+
+THACO: +1
+Special Abilities: 
+Detect Evil
+Damage: 1d10 + 1, +1d3 Fire Damage 
+Damage type: slashing
+Weight: 10
+Speed Factor: 8
+Proficiency Type: Two handed sword
+Type: 2-handed
+Requires: 14 Strength
+Not Usable By:
+ Druid
+ Cleric
+ Mage 
+ Thief~
+
+@111 = ~Talisman~
+@112 = ~Talisman of Free Action~
+@113 = ~Talismans of this type are said to bring protection or good luck to its keeper.~
+// Formely @316
+@114 = ~Talisman of Free Action:
+ 'The Star of Eloen'
+The history of this Talisman is unknown but several have been found engraved with the name of an elven female. This talisman has been engraved with the name Eloen. Most likely the gift of an elven daughter. 
+
+STATISTICS:
+
+Special:  The wearer is immune to everything,  magical and otherwise,  that effects mobility in any way, although can still be hasted.   Be aware, however, this will also protect the wearer from beneficial effects such as those received from the boots of speed.
+
+Not usable by:~
+
+@115 = ~Talisman of Protection from Poison ~
+// Formely @317
+@116 = ~Talisman of Protection from Poison:
+ 'The Star of Merris'
+The history of this Talisman is unknown but several have been found engraved with the name of an elven female. This talisman has been engraved with the name Merris. Most likely the gift of an elven daughter. 
+
+STATISTICS:
+
+Special:  The wearer is immune to all forms of poison and disease.
+
+Not usable by:~
+
+@117 = ~Talisman of Protection +1~
+// Formely @318
+@118 = ~Talisman of Protection +1
+ 'The Star of Riona'
+The history of this Talisman is unknown but several have been found engraved with the name of an elven female. This talisman has been engraved with the name Riona. Most likely the gift of an elven daughter. 
+
+
+STATISTICS:
+
+Armor Class Bonus:  1
+Saving Throw Bonus:  1
+
+Not usable by:~
+
+@119 = ~Talisman of Fire Resistance~
+// Formely @319
+@120 = ~Talisman of Fire Resistance:
+'The Star of Ishara'
+The history of this Talisman is unknown but several have been found engraved with the name of an elven female. This talisman has been engraved with the name Ishara. Most likely the gift of an elven daughter. 
+
+
+STATISTICS:
+
+Fire Resistance:  +30%
+
+Not usable by:~
+
+@121 = ~Talisman of Cold Resistance~
+// Formely @320
+@122 = ~Talisman of Cold Resistance:
+'The Star of Ilithyia'
+The history of this Talisman is unknown but several have been found engraved with the name of an elven female. This talisman has been engraved with the name Ilithyia. Most likely the gift of an elven daughter. 
+
+
+STATISTICS:
+
+Cold Resistance:  +30%
+
+Not usable by:~
+
+@123 = ~Letter~
+@124 = ~Aranor
+
+We have finally discovered the location of the lost elven stone. We managed to dig through to an old entrance leading to a underground chamber. Unfortunately my scouts reported hobgoblins in the area so I had to seal the entrance and ward it against intrusion. The stone is definitely in the chamber. Its eerie blue glow was unmistakable. For now the entrance remains undetectable but I am uncertain how long the wards will last. With this letter I have sent you the five talismans that Khelben gave to us. 
+
+I would advise not to travel to the Wood of Sharp Teeth at the moment, for some reason the place is crawling with bandits and hobgoblins. 
+
+Over the next week I shall be travelling to Nashkel. A fair is taking place so if you need me you can find me there.
+
+Your friend....
+
+Cearwin~
+
+@125 = ~Note~
+@126 = ~Young Girl - Town house in Beregost near Feldepost's Inn.
+
+Beggar - Streets of Beregost
+
+Old Wizard - Bluebell Wood
+
+Necromancer - Cave on an island north of Nashkel~
+
+@127 = ~Protection Scroll~
+@128 = ~Lizzy's Cursed Scroll~
+@129 = ~A protection scroll is a set of magical runes imprinted on enchanted parchment. These scrolls are unique in that any class of character can read them, whether adept in magic or not. When the runes are read aloud the protective magic is released upon the target of the reader's choice. These scrolls can have a wide variety of beneficial effects, though care should be taken with scrolls gained from suspicious sources.~
+@130 = ~This scroll is cursed. Attempts to divine its nature reveaI nothing. It would be unwise to read it, as the effects could prove fatal.~
+
+@131 = ~Ruby~
+@132 = ~Dragons Heart ruby~
+@133 = ~A ruby is a crimson or rose-colored precious stone; deep red in color.~
+@134 = ~This ruby looks like any other ruby but as you look into its depths the face of a dragon can clearly be seen peering back at you.~
+
+@135 = ~Aranor
+
+I have good news and bad. We have finally discovered the location of the lost elven stone. We managed to dig through to an old entrance leading to a underground chamber. Unfortunately my scouts reported hobgoblins in the area so I had to seal the entrance and ward it against intrusion. The stone is definitely in the chamber. Its eerie blue glow was unmistakable. For now the entrance remains undetectable but I am uncertain how long the wards will last. Originally I sent you the five talismans that Khelben gave to us but my messenger was killed on-route to Beregost by followers of Bane and the talismans were lost. Hopefully this messenger will get to you. In the mean time I will try to trace the talismans.
+
+I would advise not to travel to the Wood of Sharp Teeth at the moment, for some reason the place is crawling with bandits and hobgoblins. 
+
+Over the next week I shall be travelling to Nashkel. A fair is taking place so if you need me you can find me there.
+
+Your friend....
+
+Cearwin~
+
+@136 = ~Scroll~
+@137 = ~Heralds Call~
+@138 = ~Heralds Call (Enchantment/Charm)
+Level: 1
+Range: 40
+Duration: 1 rounds
+Casting Time: 0
+Area of Effect: 25
+Saving Throw: Neg
+This spell enables you to produce a crowd-stopping shout that holds an air of authority others find difficult to ignore. Anyone affected must make a Save vs. Spells at -2 or be stunned for 1 round. This spell can only be used by Bards.~
+
+@139 = ~Ice Dagger~
+@140 = ~Ice Dagger (Enchantment) 
+Level: 1
+Range: 20 +5 per caster level 
+Duration: Special 
+Casting Time: 2
+Area of Effect: Special 
+Saving Throw: None 
+By using this spell, the mage can create a magical dagger, which then flies out and hits a target opponent.  The dagger deals 1D4 of cold damage to the target per caster level (maximum 5D4).~
+
+@141 = ~Magic Shield~
+@142 = ~Magic Shield (Abjuration)
+Level: 3
+Range: 1
+Duration: 1 turn 
+Casting time: 3
+Area of Effect: Target 
+Saving Throw: None
+This spell provides 30% resistance to all forms of magical damage.  The effect lasts for 1 turn only. All saving throws are made automatically.~
+
+@143 = ~Mass Teleport~
+@144 = ~Mass Teleport (Alteration) 
+Level: 7
+Range: Sight of caster
+Duration: Instant 
+Casting Time: 1
+Area of Effect: Special
+Saving Throw: None 
+This spell transports the party to any place within the visual range of the caster. The spell can be cast far away from the party and still be effective. When the spell is cast a dimensional portal opens up in front of each member, which they immediately step through.~
+
+
+@145 = ~Nybor's Mild Admonishment~
+@146 = ~Nybor's Mild Admonishment (Enchantment/Charm)
+Level: 3
+Range: 25ft. +5ft./2 levels
+Duration: 1 round/level
+Casting Time: 8
+Area of Effect: Target
+Saving Throw: Special 
+This improvement on Nybor's gentle reminder causes intense pain in the subject. The subject must make a Save vs. Spells or be dazed for 2 rounds and suffer a -2 penalty on attacks, saving throws and AC while the spell lasts; however, the subject also receives a +2 bonus to strength.~
+
+@147 = ~Nybor's Wrathful Castigation~
+@148 = ~Nybor's Wrathful Castigation (Enchantment/Charm)
+Level: 8
+Range: 25 ft. + 5ft./2 levels
+Duration: 1 round/level
+Casting Time: 8
+Area of Effect: Target
+Saving Throw: Special 
+Nybor's wrathful castigation is an even more potent version of Nybor's stern reproof. It causes wracking pain and violent convulsions. The target creature must make a Save vs. Death or die instantly. A surviving creature must make a Save vs. Spells to avoid further effects. Subjects failing the save are dazed for 4 rounds and suffer a -4 penalty on attacks, saving throws and AC for the duration of the spell. A drawback is that the subject also receives a +2 bonus to Strength.~
+
+@149 = ~Nybor's Gentle Reminder~
+@150 = ~Nybor's Gentle Reminder (Enchantment/Charm)
+Level: 1
+Range: 25
+Duration: 2 rounds
+Casting Time: 8
+Area of Effect: Target
+Saving Throw: Special 
+The subject receives a sharp, agonizing pain, which dazes the subject for 1 round. The target suffers a -1 penalty on attacks, saving throws and AC while the spell lasts; however the subject also receives a +2 bonus to strength.~
+
+@151 = ~Nybor's Stern Reproof~
+@152 = ~Nybor's Stern Reproof (Enchantment/Charm)
+Level: 7
+Range: 25 ft. + 5ft./2 levels
+Duration: 1 round/level
+Casting Time: 8
+Area of Effect: Target
+Saving Throw: Special 
+This spell causes stabbing pains even greater than Nybor's gentle reminder and Nybor's mild admonishment. The target creature must make a Save vs. Death or die instantly. A surviving creature receives a Save vs. Spells to avoid further effects. Subjects failing the save are dazed for 2 rounds and suffer a -2 penalty on attacks, saving throws and AC while the spell lasts; however the subject also receives a +2 bonus to strength.~
+
+@153 = ~Skeleton Armor~
+@154 = ~Skeleton Armor (Necromancy) 
+Level: 2
+Range: 0
+Duration: 20 turns 
+Area of Effect: caster 
+Saving Throw: None 
+The wizard uses the power of the undead to create a magical field of force that provides an Armor Class Bonus of  4. It is cumulative with Dexterity and, in the case of fighter/mages, with the shield bonus. The armor spell does not hinder movement, adds no weight or encumbrance, nor does it prevent spellcasting. It lasts until successfully dispelled or until the duration runs out.~
+
+@155 = ~Terror~
+@156 = ~Terror 
+(Necromancy) 
+Level: 6
+Range: 30 
+Duration: 3 rounds + 1/level 
+Casting Time: 4 
+Area of Effect: 30 foot cube
+Saving Throw: Neg. 
+This spell creates terror in your enemies. All enemies within the area of effect below 4th level have no saving throw and must flee in terror. Enemies above 5th level receive a saving throw at -4 against the effect.~
+
+@157 = ~Improved Sanctuary~
+@158 = ~Improved Sanctuary (Abjuration) 
+Level: 2
+Sphere: Protection 
+Range: Touch 
+Duration: 10 rounds
+Casting Time: 4 
+Area of Effect: Creature touched 
+Saving Throw: None 
+This spell behaves exactly like the Level 1 Sanctuary spell but is not restricted to the caster. The spell also regenerates 8 hit points for the duration.~
+
+@159 = ~Ingenuity~
+@160 = ~Ingenuity (Invocation)
+Level: 3
+Sphere: Combat 
+Range: 0 
+Duration: 3 turns 
+Casting Time: 5
+Area of Effect: Touch
+Saving Throw: None 
+This spell increases the ingenuity of the character. As a result the character becomes cleverer and more inventive. When this happens the Intelligence, Wisdom and Dexterity are raised by 1 point for every 3 levels of the caster. A 3rd level caster would raise the abilities by 1, while a 12th level caster  would raise the abilities by 4.~
+
+@161 = ~Khelben's Defensive Link~
+@162 = ~Khelben's Defensive Link
+(Abjuration) 
+Level: 5
+Sphere: Law
+Range: Caster
+Duration: 10 rounds
+Casting Time: 2
+Area of Effect: 15' radius
+Saving Throw: None
+Khelben's Defensive Link behaves like the Level 4 spell Defensive Harmony but each affected creature gains a +4 bonus to his armor class.  This lasts for 10 rounds or until successfully dispelled.~
+
+@163 = ~Andrath~
+@164 = ~Aranor~
+@165 = ~Carneth~  
+@166 = ~Cearwin~
+@167 = ~Cileen~     
+@168 = ~Hanwen~
+@169 = ~Harper Scout~
+@170 = ~Ithkim~
+@171 = ~Jonell~
+@172 = ~Lelthorn~
+@173 = ~Lizzy~
+@174 = ~Peleria~
+@175 = ~Pirn~
+@176 = ~Rebecca~
+@177 = ~Rondan~
+@178 = ~Sally~
+@179 = ~Shaerlee~
+@180 = ~Stone golem~
+@181 = ~Talmur~
+@182 = ~Teldorn Agent~
+@183 = ~Teldorn Archer~
+@184 = ~Banite Priest~
+@185 = ~Teldorn Fighter~
+@186 = ~Teldorn Messenger~
+@187 = ~Kalindra~
+
+@188 = ~Kalindra
+
+It is as we have feared. Teldorn has sent forth his group of mercenaries and is heading south towards the Sword Coast. They left Voonlar only five days ago and by the time you read this message they will be holed up in Dystra's old watch tower. No doubt others will meet them there until further orders are given. The finding of the Elven stone and the movement of these mercenaries is no coincidence. Teldorn seeks the stone himself, with it he could change the most good natured of people into evil minded murderers. We cannot allow this to happen. This small army must be stopped before they reach the Wood of Sharp Teeth. I leave this task to you my friend, gather whatever forces you can muster but hurry there is no time to lose.
+
+Kathian~ 
+
+@193 = ~Mass Cure~
+@194 = ~Mass Cure (Necromancy) 
+Level: 5 
+Sphere: Healing 
+Range: Sight of caster 
+Duration: Permanent 
+Casting Time: 5 
+Area of Effect: 20 foot radius 
+Saving Throw: None 
+When casting this spell the priest must picture the faces of his fellow party members clearly and focus on the unity of the group. Upon completion all members in the party are healed 1D8 + 1/level hit points. This works regardless of where the party is in relation to one another. 
+Curing is permanent only insofar as the creature does not sustain further damage; caused wounds will heal - or can be cured - just as any normal injury.~
+@195 = ~Mordenkainen's Sword~
+
+@230 = ~Bluebell Wood~

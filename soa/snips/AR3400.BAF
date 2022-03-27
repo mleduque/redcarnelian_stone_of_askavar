@@ -1,0 +1,15 @@
+IF
+	Global("CearwinQuest","GLOBAL",2)
+	Global("RebeccaSpawn","GLOBAL",0)
+	Global("SpokeToLizzy","GLOBAL",1)
+THEN
+	RESPONSE #100
+		CreateCreature("REBECCA",[4582.3466]%FACE_12%) // Girl
+		CreateCreature("TELFGHT1",[4395.3534]%FACE_10%) // Teldorn Fighter
+		CreateCreature("TELFGHT1",[4420.3579]%FACE_10%) // Teldorn Fighter
+		CreateCreature("STONEGOL",[4412.3500]%FACE_10%) // Stone Golem
+		CreateCreature("STONEGOL",[4478.3576]%FACE_10%) // Stone Golem
+		SetGlobal("RebeccaSpawn","GLOBAL",1)
+END
+
+

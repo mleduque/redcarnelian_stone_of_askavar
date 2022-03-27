@@ -1,0 +1,9 @@
+﻿
+SRC_AREA  SRC_NWSE  TARGET_ARE  ENTRY_NAME  TRV_TIME  DEF_ENTRY  ENC1     ENC2     ENC3     ENC4     ENC5     ENC_PROB
+
+ARS002    N         AR5200      N	      5         4          N       N        N        N        N         0
+AR5300    W         ARS002      N             4         1          N       N        N        N        N         0
+AR5200    S         ARS002      N             5         1          N       N        N        N        N         0
+AR3500    S         ARS005      N             2         8          N       N        N        N        N         0
+ARS005    W         AR3500      N             2         4          N       N        N        N        N         0
+

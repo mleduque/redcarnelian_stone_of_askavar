@@ -1,0 +1,10 @@
+IF
+	Global("CearwinQuest","GLOBAL",1)
+	Global("AranorSpawn","GLOBAL",0)
+THEN
+	RESPONSE #100
+
+	CreateCreature("ARANOR",[267.189]%FACE_0%) // Aranor
+	SetGlobal("AranorSpawn","GLOBAL",1)
+END
+

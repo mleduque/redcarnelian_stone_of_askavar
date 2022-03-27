@@ -1,0 +1,21 @@
+IF
+	Global("DoorActivated","GLOBAL",0)
+THEN
+	RESPONSE #100
+		TriggerActivation("DoorAR1900",FALSE)
+		Continue()
+END
+
+IF
+	Global("CearwinQuest","GLOBAL",4)
+	Global("DoorActivated","GLOBAL",0)
+	PartyHasItem("SOAITM31") // Talisman of Free Action
+	PartyHasItem("SOAITM32") // Talisman of Protection from Poison
+	PartyHasItem("SOAITM33") // Talisman of Protection +1
+	PartyHasItem("SOAITM34") // Talisman of Fire Resistance
+	PartyHasItem("SOAITM35") // Talisman of Cold Resistance
+THEN
+	RESPONSE #100
+		TriggerActivation("DoorAR1900",TRUE)
+		SetGlobal("DoorActivated","GLOBAL",1)
+END

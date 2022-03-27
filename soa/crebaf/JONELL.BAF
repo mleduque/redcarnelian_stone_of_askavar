@@ -1,0 +1,99 @@
+IF
+	Global("Jonell","GLOBAL",0)
+	See(NearestEnemyOf(Myself(Myself)))
+THEN
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(Myself(Myself)),WIZARD_DISPEL_MAGIC)
+		ForceSpell(Myself(Myself),WIZARD_SHIELD)
+		SmallWait(5)
+		ForceSpell(Myself(Myself),WIZARD_MINOR_GLOBE_OF_INVULNERABILITY)
+		SmallWait(5)
+		ForceSpell(Myself(Myself),WIZARD_RESIST_FEAR)
+		SetGlobal("Jonell","GLOBAL",1)
+END
+
+IF
+	Global("Jonell","GLOBAL",1)
+	See(NearestEnemyOf(Myself(Myself)))
+THEN
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(Myself(Myself)),WIZARD_OTILUKES_RESILIENT_SPHERE)
+		SetGlobal("Jonell","GLOBAL",2)
+END
+
+IF
+	See(NearestEnemyOf(Myself(Myself)))
+	Global("Jonell","GLOBAL",2)
+THEN
+	RESPONSE #100
+		Wait(2)
+		ForceSpell(SecondNearestEnemyOf(Myself(Myself)),WIZARD_CHAOS)
+		SetGlobal("Jonell","GLOBAL",3)
+END
+
+IF
+	See(NearestEnemyOf(Myself(Myself)))
+	Global("Jonell","GLOBAL",3)
+THEN
+	RESPONSE #100
+		ForceSpell(LeaderOf(GroupOf(NearestEnemyOf(Myself))),WIZARD_EMOTION_HOPELESSNESS)
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(Myself(Myself)),WIZARD_POLYMORPH_OTHER)
+		SetGlobal("Jonell","GLOBAL",4)
+END
+
+IF
+	See(NearestEnemyOf(Myself(Myself)))
+	Global("Jonell","GLOBAL",4)
+THEN
+	RESPONSE #100
+		ForceSpell(StrongestOf(GroupOf(NearestEnemyOf(Myself))),WIZARD_CONFUSION)
+		SetGlobal("Jonell","GLOBAL",5)
+END
+
+IF
+	See(NearestEnemyOf(Myself(Myself)))
+	Global("Jonell","GLOBAL",5)
+THEN
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(Myself(Myself)),WIZARD_MAGIC_MISSILE)
+		SetGlobal("Jonell","GLOBAL",6)
+END
+
+IF
+	See(NearestEnemyOf(Myself(Myself)))
+	Global("Jonell","GLOBAL",6)
+THEN
+	RESPONSE #100
+		ForceSpell(MostDamagedOf(GroupOf(NearestEnemyOf(Myself))),WIZARD_MAGIC_MISSILE)
+		SetGlobal("Jonell","GLOBAL",7)
+END
+
+IF
+	HitBy([ANYONE],POISON)
+	HasItem("%tutu_var%POTN20",Myself) // Antidote
+THEN
+	RESPONSE #100
+		UseItem("%tutu_var%POTN20",Myself) // Antidote
+END
+
+IF
+	HPPercentLT(Myself,25)
+	HasItem("%tutu_var%POTN08",Myself) // Greater Potion of Healing
+THEN
+	RESPONSE #100
+		UseItem("%tutu_var%POTN08",Myself) // Greater Potion of Healing
+END
+
+IF
+	See(NearestEnemyOf(Myself(Myself)))
+	Global("Jonell","GLOBAL",7)
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		AttackOneRound(NearestEnemyOf(Myself(Myself)))
+		AttackOneRound(NearestEnemyOf(Myself(Myself)))
+		SetGlobal("Jonell","GLOBAL",8)
+END
+
+

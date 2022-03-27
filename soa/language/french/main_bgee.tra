@@ -1,0 +1,638 @@
+// BGEE specific texts
+
+//------------------------------------------------------------------------------------
+//  Creatures, characters, items, miscellaneous:
+//------------------------------------------------------------------------------------
+
+@2     = ~L'armure en cottes de mailles est constituée d'anneaux métalliques imbriqués les uns dans les autres. Elle est toujours portée par-dessus une couche de tissu matelassé ou de cuir souple pour empêcher le frottement et réduire l'impact des chocs. 
+
+PARAMÈTRES :
+
+Classe d'Armure : 5 (3 vs. tranchant, 7 vs. contondant)
+Nécessite : 8 en Force
+
+Poids : 40~
+@3     = ~Cette cotte de mailles a été fabriquée pour l'elfe du soleil Mecorima Sylerim. Mecorima était une elfe dorée dont les ambitions s'étendaient loin au sein de la société elfique. Diplomate douée, Mecorima avait besoin d'un petit extra pour contrecarrer les factions rivales. Afin d'y parvenir, elle fit forger une cotte de mailles qui préserverait sa vie des tentatives d'assassinat et ferait ployer la volonté des seigneurs nobles.
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+– bonus de +5 aux jets de sauvegarde contre la Mort
+- Charisme augmenté de 2
+
+Classe d'Armure : 3
+Nécessite : 5 en Force
+
+Poids : 20~
+
+
+@6     = ~L'armure de plates est une combinaison de cottes de mailles et de plaques métalliques recouvrant les zones vitales telles que le torse, l'abdomen et l'aine. De fabrication semblable à l'armure de plates en bronze, la véritable armure de plates est constituée de mailles et de cuir. 
+
+PARAMÈTRES :
+
+Classe d'Armure : 3 (0 vs. tranchant)
+Nécessite : 6 en Force
+
+Poids : 50~
+
+@7     = ~Cette armure paraît presque vivante lorsque vous la soulevez. Le matériau dont elle est constituée est léger et enveloppe votre corps comme du cuir souple. Le seul indice de son origine est le nom de Kalindra gravé à l'intérieur.  
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+- jets de sauvegarde : bonus de +1
+
+Classe d'Armure : 2
+Nécessite : 10 en Force
+
+Poids : 30~
+
+
+@10   =  ~La masse descend directement du simple gourdin ; elle n'est rien de plus qu'une hampe de bois avec une tête en pierre ou en fer fixée à l'extrémité. La forme de la tête varie ; certaines sont pointues, d'autres à rebord, et d'autres encore ont un pommeau pyramidal.
+
+PARAMÈTRES :
+
+Dégâts : 1D6 +1 (contondant)
+Facteur de vitesse : 7
+Type de compétence : masse
+Type : arme à une main
+Nécessite : 10 en Force
+
+Poids : 8~
+
+@11    = ~Masse +1 : 'Masse des Impavides'
+De nombreux suivants de Chauntea portent une masse semblable à celle-ci. La plupart d'entre elles sont offertes aux nouveaux clercs mais certaines sont renforcées par magie et offertes aux étudiants les plus doués. Voici l'une de ces armes.
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+- 30% de Résistance à la Peur
+
+TAC0 : +1
+Dégâts : 1D6 +3 (contondant)
+Facteur de vitesse : 5
+Type de compétence : masse
+Type : arme à une main
+Nécessite : 9 en Force
+
+Poids : 7~
+
+
+@14    = ~La mailloche est un lourd marteau largement utilisé dans la construction de navires ou de bâtiments. Instrument domestique, la mailloche est populaire à travers tout Féérune, tout particulièrement auprès des constructeurs de navires d'Eauprofonde. Son poids imposant et son excellente maniabilité en font une arme mortelle au combat.
+
+PARAMÈTRES :
+
+Dégâts : 1D4 +1 (contondant)
+Facteur de vitesse : 4
+Type de compétence : marteau de guerre
+Type : arme à une main
+Nécessite : 9 en Force
+
+Poids : 6~
+@15    = ~Mailloche +2 : 'Défonceur d'Ogre de Tholin'
+Cette lourde mailloche aussi connue sous le nom de 'Mailloche du Puissant' a essuyé les tempêtes d'innombrables guerres et batailles. A l'origine propriété d'un chef de la tribu des Elans, la mailloche fut forgée afin d'anéantir le nombre croissant d'ogres et d'orques le long de la rivière Dessarin. 
+
+PARAMÈTRES :
+
+TAC0 : +2
+Dégâts : 1D4+3 (contondant)
+Facteur de vitesse : 5
+Type de compétence : marteau de guerre
+Type : arme à une main
+Nécessite : 10 en Force
+
+Poids : 7~
+
+
+@18    = ~Le morgenstern est un manche en bois couronné d'une tête en métal recouverte d'une gaine de fer cloutée. Les morgensterns mesurent environ 1,20 m. Certaines possèdent une tête de forme ronde, ovale ou cylindrique garnie de clous. Sur la plupart des têtes de morgenstern, quelle que soit leur forme, se trouve une longue pointe pour porter une attaque perforante. 
+
+PARAMÈTRES :
+
+Dégâts : 2D4 (contondant)
+Facteur de vitesse : 7
+Type de compétence : fléau/étoile du matin
+Type : arme à une main
+Nécessite : 11 en Force
+
+Poids : 12~
+@19    = ~Morgenstern +2 : 'Présent d'Ishandar'
+Golain passa la plus grande partie de sa jeunesse avec son père, à explorer la Corne des Tempêtes dans le Cormyr. Son père lui apprit à se battre et à apprécier le pays qui l'entourait. Passionné d'aventure et de géographie, il devint Explorateur Royal pour le compte de la famille Obarskyr. Durant une longue expédition avec une équipe d'explorateurs chargée d'étudier le territoire des montagnes des Pics du Tonnerre, il remarqua une petite caverne digne de son attention. Après un bref combat contre des orques nombreux, il découvrit un petit coffre rempli d'or et un morgenstern qui brillait dans l'obscurité. Le morgenstern resta avec Golain durant quelques temps, jusqu'à ce qu'il perde la vie en combattant des Ogres dans la Corne des Tempêtes. 
+
+PARAMÈTRES :
+
+TAC0 : +2
+Dégâts : 2D4 +2
+Type de dégâts : contondant
+Facteur de vitesse : 6
+Type de compétence : fléau/étoile du matin
+Type : arme à une main
+Nécessite : 10 en Force
+
+Poids : 10~
+
+
+
+@23    = ~Livre de Flammes
+Autrefois aux mains d'un archimage des Sorciers Rouges, ce livre fut volé par un esclave en fuite et sortit clandestinement de Thay pour rejoindre la sécurité des Vaux. Le livre, relié en chair humaine, est le fruit d'innombrables expérimentations réalisées sur des esclaves. Il en résulte une aura que seuls les personnages maléfiques peuvent manipuler.
+
+PARAMÈTRES :
+
+Spécial : quand il s'ouvre, une flamme décrit un arc de cercle pour venir frapper la cible
+Dégâts : 2D3
+Portée : 0 
+Durée : Instantanée
+Temps d'incantation : 1
+Zone d'effet : le lanceur de sorts
+Jet de sauvegarde : aucun~
+
+
+@26    = ~Les arcs composites sont des arcs longs ou courts dont les branches sont faites de plusieurs matériaux. Cela rend l'arc plus souple, ce qui fait que les flèches tirées par cet arc provoquent davantage de dégâts. Ceux-ci ont été conçus après l'arc long ordinaire.
+
+PARAMÈTRES :
+
+TAC0 : +1
+Dégâts : +2
+Facteur de vitesse : 7
+Type de compétence : arc long
+Type : arme à deux mains
+Nécessite : 18 en Force
+
+Poids : 10~
+@27    = ~Arc long composite +2 : 'La Malédiction de la Méduse'
+Laeroth naquit durant l'année de la Lame Brisée. Dès son plus jeune âge, il acquit la maîtrise de l'arc, et c'était lui qui avait la vue la plus perçante parmi les elfes de son village. Des récits mentionnaient une Méduse cachée dans une grotte des montagnes alentours. En guise de test de courage, il incomba à Laeroth de livrer la tête de ce monstre. Quand il eut parlé aux anciens de son village, un arc fut fabriqué tout spécialement pour attaquer un ennemi de ce genre. Taillé dans un barral, l'arc était fait pour rester fidèle à son utilisateur et résister au regard de certaines créatures. S'ensuivit un long voyage avant que Laeroth ne puisse atteindre l'antre de la Méduse. A l'intérieur de la grotte, il employa une gemme de lumière afin de retrouver son chemin dans les profondeurs. Après avoir dépassé des formes pétrifiées, résultat d'innombrables tentatives avortées de capturer le monstre, Laeroth finit par tomber sur sa proie. Alors qu'il était face à face avec la Méduse, son regard tomba sur lui. Il fut d'abord paralysé, incapable de faire quoi que ce soit, mais grâce à l'arc qu'il tenait à la main, les effets du regard furent neutralisés et le combat pour la prédominance put commencer. Chacun armé d'un arc, les adversaires se préparèrent à l'affrontement. La Méduse tira la première et une flèche empoisonnée se logea dans son épaule juste au moment où l'arc de barral libérait sa propre flèche vers la tête de la Méduse. Le monstre se tordit de douleur tandis que Laeroth buvait un antidote, juste à temps pour assister aux derniers sursauts d'agonie de la Méduse. Il approcha la créature et, d'une main sûre, lui trancha la tête. Après son retour au village, celle-ci fut placée en lieu sûr afin d'être utilisée contre les orques en cas de nécessité. Laeroth voyagea durant les années qui suivirent et finit par vendre l'arc contre une importante somme d'argent.
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+- Protection contre la Pétrification 
+
+TAC0 : +2
+Dégâts : +3
+Facteur de vitesse : 6
+Type de compétence : arc long
+Type : arme à deux mains
+Nécessite : 18 en Force
+
+Poids : 9~
+
+
+
+@31    = ~La cape de voyage est un vêtement léger qui donne une protection supplémentaire contre les éléments. En outre, la cape donne un bonus à la classe d'armure.
+ 
+PARAMÈTRES :
+
+Capacités d'équipement :
+- Classe d'Armure : +1
+- 20 % de résistance au froid et au feu
+
+Poids :  3~
+
+
+
+@35    = ~Cette robe blanche est brodée des formes de nombreuses araignées sur l'ensemble de sa surface. Le porteur est immunisé à tous les effets qui affectent le déplacement, tels que Toile d'Araignée ou Lenteur. Cette robe annule les effets de la paralysie et des sorts d'immobilisation. Elle permet aussi au mage de lancer un sort d'immobilisation sur une cible, mais sa durée est limitée à un seul round.
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+- Action Libre (protège le mage de tous les effets de sorts affectant le mouvement tels qu'Immobilisation ou Toile d'Araignée)
+- Classe d'Armure : 6
+
+Capacités de charge :
+- Immobilisation
+  Portée : champ de vision du jeteur de sorts
+  Durée : 1 tour
+  Zone d'effet : spéciale
+  Jet de sauvegarde : annule
+
+Poids : 6~
+
+
+@38    = ~La dague traditionnelle comporte une lame pointue généralement à double tranchant, contrairement au couteau, un peu plus court, ne possédant qu'un seul tranchant.
+ 
+PARAMÈTRES :
+
+Dégâts : 1D4 (perforant)
+Facteur de vitesse : 2
+Type de compétence : dague
+Type : arme à une main
+Nécessite : 3 en Force
+
+Poids : 1~
+@39    = ~Dague +1 : 'Dague de Défiance'
+Ces dagues furent d'abord créées à Myth Drannor. Cette dague a tout particulièrement orné aussi bien les mains de gredins, de voleurs que de bandits.
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+- Bonus +2 au jet de sauvegarde contre les sorts
+- Immunité à la peur et au charme
+
+TAC0 : +1 
+Dégâts : 1D4 +2 (perforant)
+Facteur de vitesse : 2
+Type de compétence : dague
+Type : arme à une main
+Nécessite : 3 en Force
+
+Poids : 1~
+
+
+
+@43    = ~Le tambourin ou Tambour à Timbre est l'un des préférés des Kobolds et des Nains. Tenu sous le bras ou devant le corps, le tambour peut produire une pulsation rythmique ferme. Joués en groupe, le son de ces tambours peut être confondu avec l'avancée d'une petite armée et peut effrayer la plupart des créatures à portée d'oreille.
+
+PARAMÈTRES :
+
+Spécial : quand on joue de ce tambour, la cible doit effectuer un jet de sauvegarde à -2 ou le son du tambour provoque sa panique
+Portée : 40
+Durée : 2 rounds
+
+Poids : 5~
+
+@45    = ~Les tambours de ce type sont connus sous le nom de Congos et sont l'un des instruments favoris des créatures les plus grandes des Royaumes telles que les Ogres et les Géants, à cause de la profondeur de leur résonance. Quand plusieurs tambours sont utilisés à la fois, ils donnent l'impression d'une armée en marche pour la bataille, ce qui peut effrayer la plupart des créatures à portée d'oreille.
+
+PARAMÈTRES :
+
+Spécial : quand on joue de ce tambour, la cible doit effectuer un jet de sauvegarde à -2 ou le son du tambour provoque sa panique
+Portée : 60
+Durée : 2 rounds
+
+Poids : 8~
+
+
+
+@49    = ~Cette perle apparemment normale irradie d'un faible enchantement si l'on effectue une détection de la magie. De toute manière, la pierre sera très belle et vaudra au moins 1000 pièces d'or sur cette seule base. Si son détenteur la tient fermement en main (ou sur la poitrine), et qu'il tente des actions liées aux sphères de pouvoir de la perle, ces dernières comprendront et il sera capable d'utiliser l'objet.
+La perle permet à son propriétaire de lancer Charme Néfaste sur une cible. La perle doit être tenue en main par son détenteur pour lui transmettre ses pouvoirs. De telles perles ont cependant un nombre de charges limité.
+
+PARAMÈTRES :
+
+Capacités de charge :
+- Charme Néfaste
+  Portée : 20
+  Durée : 4 rounds
+  Zone d'effet : 1 créature
+
+Poids : 1~
+
+
+@52    = ~De loin l'arme d'hast la plus ancienne et la plus répandue, la hallebarde se compose d'une hache en forme de couperet montée sur un bâton mesurant en moyenne 1,80 m de long. La hache est équilibrée à l'arrière par un barbillon et surmontée d'une pointe acérée, généralement de forme quadrangulaire. Le barbillon est parfois remplacé par un crochet utilisé pour faire tomber l'ennemi de cheval. La hallebarde est en réalité un croisement entre la lance et la hache.
+
+PARAMÈTRES :
+
+Dégâts : 1D10 (tranchant ou perforant, le meilleur des deux)
+Facteur de vitesse : 9
+Type de compétence : hallebarde
+Type : arme à deux mains
+Nécessite : 13 en Force
+
+Poids : 15~
+@53    = ~Comme toutes ses pareilles, cette hallebarde se compose d'une hache en forme de couperet montée sur un bâton mesurant approximativement 1,80 m de long. Elle a également été enchantée de façon à être plus efficace au combat. Ainsi, sa hache tranchera facilement dans la chair de l'ennemi pour trouver l'os, tandis que le barbillon cherchera les brèches dans son armure.
+
+PARAMÈTRES :
+
+TAC0 : +1
+Dégâts : 1D10 +2 (tranchant ou perforant, le meilleur des deux)
+Type de dégâts : perforant
+Facteur de vitesse : 8
+Type de compétence : hallebarde
+Type : arme à deux mains
+Nécessite : 13 en Force
+
+Poids : 14~
+
+
+@56    = ~Les cavaliers peuvent difficilement manier les armes longues. C'est pourquoi de nombreuses armes ont été munies de manches plus courts pouvant être saisis d'une seule main. La masse et le fléau sont deux exemples d'armes longues qui ont suivi cette évolution ; le marteau de guerre en est un autre. Le marteau de guerre du cavalier est le descendant du marteau de Lucerne. Il est entièrement fabriqué en acier, avec des rondelles pour protéger et renforcer la prise. Les rondelles sont de petits disques métalliques, souvent en forme de motifs décoratifs. Le manche mesure environ 45 cm de longueur.
+
+PARAMÈTRES :
+
+Dégâts :  1D4 +1 (contondant)
+Facteur de vitesse : 4
+Type de compétence : marteau de guerre
+Type :  arme à une main
+Nécessite : 9 en Force
+
+Poids : 6~
+@57    = ~Marteau de Glace +2 : 'Gel de Mydan'
+Nombre de ces marteaux furent fabriqués par des Géants du Froid pour faire des ravages dans les villages locaux. En colère contre les humains qui envahissaient leur territoire, la Déesse de Glace, Aurile, encouragea les Géants à créer des armes capables d'infliger de grands dommages. Un de leurs chefs, Mydan, créa ce marteau pour rendre hommage à sa Divinité. Satisfaite de l'offrande, la déesse enchanta l'arme en lui conférant le pouvoir de la glace.
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+- Résistance au froid : +30 %
+
+TAC0 : +2
+Dégâts : 1D4 +2 (+1D3 de dégâts de froid)
+Type de dégâts : contondant
+Facteur de vitesse : 4
+Type de compétence : marteau de guerre
+Type : arme à une main
+Nécessite : 9 en Force
+
+Poids : 6~
+
+
+@60    = ~Ce type de casque à face ouverte, fait de cuir ou de métal renforcé, couvre la plupart de la tête à l'exception du visage et du cou. Ces casques offrent généralement une protection pour le nez.
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+- protège des coups critiques
+
+Poids : 2~
+@61    = ~Ce heaume a été transmis de génération en génération parmi les Chevaliers du Dragon Pourpre. Le heaume a été doté de propriétés magiques afin qu'il protège son porteur contre certains enchantements.
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+- protège des coups critiques, contre la Confusion, l'Obstination bornée et la Peur
+
+Poids : 2~
+
+@63    = ~Ce heaume miroite quand on le prend en main et le métal semble étrange au toucher. Le seul indice de son origine est le nom de Kalindra gravé à l'intérieur.  
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+- protège des coups critiques
+
+Spécial : 
+- Le porteur gagne un bonus de +5 aux jets de sauvegarde contre la pétrification et la métamorphose
+
+Poids : 2~
+
+
+
+@67    = ~Lorsqu'on joue de cette corne, un son profond et mugissant fait appel au Plan Démoniaque, et, depuis les Abysses, un démon mineur est invoqué afin d'aider son maître de la manière qu'il lui plaira. La créature ne peut rester dans le royaume que pendant deux rounds mais peut être réinvoquée en soufflant dans la corne. Quand le démon est présent, toute capacité à lancer des sorts est paralysée. La corne ne peut invoquer un démon qu'un nombre limité de fois, aussi est-il préférable de l'utiliser avec sagesse.
+
+PARAMÈTRES :
+
+Spécial : quand on en joue, un démon mineur est invoqué afin d'assister celui qui l'a appelé
+Durée : 2 rounds
+
+Poids : 3~
+
+
+
+@71    = ~Luth de Cassandra 'Le courage du Lion'
+Cassandra commença à jouer du luth alors qu'elle avait cinq ans ; à quatorze ans, elle était maître artiste. Son père, Tarun Coriades, luthier elfe doué, créa un luth spécial pour son seizième anniversaire. Fabriqué à partir de bois mystiques proches du Lac des Rêves, le luth fut créé pour donner confiance et courage à qui en jouait. Cassandra traversa de nombreux pays et joua en de nombreux endroits de cet instrument. Lors d'une visite dans sa patrie, Eternelle-Rencontre, le navire qui la transportait rencontra les hautes mers et le luth fut perdu par-dessus bord. Le navire fit naufrage sur Araska mais Cassandra ne survécut jusqu'à ce jour que pour rechercher son luth.
+   
+PARAMÈTRES :
+
+Spécial : quand il en joue, l'artiste gagne confiance en soi et courage
+TAC0 : +1 
+Force augmentée de 1
+Immunité à la Peur
+5 points de vie temporaires supplémentaires
+Durée : 5 rounds
+
+Poids : 7~
+
+
+
+@74    = ~Harmonica 'Chaleur de Tarmaniel'
+Cet Harmonica fut créé par Tarmaniel, barde humain bien connu à travers la Sembie. Tarmaniel avait la passion du voyage et aimait partager des informations avec ses compagnons bardes. Quand on joue de cet Harmonica, il rend un son inimitable qui réchauffe le coeur de ses auditeurs. Malheureusement, il avait aussi la passion du jeu et perdit l'Harmonica en jouant aux cartes quelque part à la Porte de Baldur.  
+
+PARAMÈTRES :
+
+Spécial : bonus de +1 au Charisme 
+Le groupe gagne un bonus de +1 à la classe d'armure 
+Durée : 3 rounds
+Portée : 20
+
+Poids : 1~
+
+
+
+
+
+
+
+@82    = ~Cet orbe resplendit d'une flamme bleue ; des nuages commencent à se former comme vous le déplacez, et des charges électriques en balaient l'intérieur. Un mot de commande libère l'orbe de son énergie, il en résulte un éclair arraché au ciel. Toute personne frappée par la foudre doit effectuer un jet de sauvegarde à -3 ou encaisser 2D6 points de dégâts.
+
+PARAMÈTRES :
+
+Capacités de charge :
+- Éclair
+  Dégâts : 2D6
+  Portée : 30
+  Jet de sauvegarde : annule
+
+Poids : 3~
+
+
+@85    = ~Un anneau est une fine lanière de métal précieux. Il sert en général d'ornement. Plus rares, certains sont enchantés et permettent à quiconque les porte d'user de la magie qu'ils contiennent. Ils sont de ce fait très recherchés par les aventuriers.
+
+PARAMÈTRES :
+
+Poids : 0~
+@86    = ~Anneau d'invisibilité 'L'évasion des voleurs'
+Cet anneau a appartenu autrefois à un capitaine du Calimshan appelé Josan Paris. Marin talentueux, Josan commandait un gros navire de guerre basé à Memnon dont le but était de délivrer des pirates la Mer Étincelante. L'anneau fut récupéré sur un navire pirate et Josan le garda en souvenir. Quand il découvrit sa capacité à rendre invisible, il changea de profession pour une carrière plus opportuniste et devint pour finir un pirate du même genre que ceux qu'il avait autrefois pourchassés. 
+
+PARAMÈTRES :
+
+Spécial : quand l'anneau est activé, son porteur devient invisible pendant 2 rounds~
+
+
+@89    = ~L'écu se porte comme la rondache. Mais contrairement à la rondache, son poids ne permet pas au combattant de porter autre chose. Les écus sont généralement fabriqués en métal ; ils mesurent entre 90 cm et 1,20 m de diamètre et peuvent avoir n'importe quelle forme (carrée, ronde ou comme les ailes déployées d'un dragon). Un bouclier médiéval typique ressemble à un triangle dont un des angles pointerait vers le bas. 
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+- Bonus à la classe d'armure : 1
+
+Nécessite : 12 en Force
+
+Poids : 7~
+@90    = ~Les origines de cet étrange écu sont inconnues mais la forme décolorée d'une guivre bleue qui en décore l'extérieur pourrait indiquer qu'il provient de l'ancien empire de Mulhorande, proche des montagnes de Lamedragon. Aucune marque de l'armurier ne figure nulle part sur l'écu, et il ne porte pas trace de bataille – peut-être l'écu fut-il fabriqué avec des moyens magiques. Quelle que soit sa nature, sa patine bleue en fait une possession de prix.
+  
+PARAMÈTRES :
+
+Capacités d'équipement :
+- Bonus à la classe d'armure : 2
+- 30 % de Protection contre le feu
+
+Nécessite : 12 en Force
+
+Poids : 7~
+
+
+@93    = ~La rondache est généralement ronde et se tient à bout de bras par la poignée. Comme elle est légère comparée à un écu, le combattant peut porter d'autres objets dans la même main, mais ne peut manier ou porter une autre arme.
+ 
+PARAMÈTRES :
+
+Capacités d'équipement :
+- Bonus à la Classe d'Armure : 1
+- Pas de protection contre les armes à projectiles
+
+Nécessite : 4 en Force
+
+Poids : 3~
+@94    = ~Loran Emarin, barde elfe appartenant à l'organisation des Ménestrels, entendit l'histoire d'un bouclier doré ayant la capacité de protéger contre les éléments. Intrigué par ce récit, le barde se lança dans la quête de cet objet. Après avoir cherché durant plusieurs années sans résultat, le barde avait presque abandonné lorsque par une nuit froide, dans une taverne de Padhiver, l'elfe surprit une conversation entre deux prêtres d'Oghma. Le bouclier était décrit comme la propriété d'un groupe de guerriers/clercs d'élite, sectateurs dévoués du Seigneur des Tempêtes, Talos. Le bouclier finit par être récupéré et vendu au clergé de Talos. Son destin depuis lors est inconnu.
+ 
+PARAMÈTRES :
+
+Capacités d'équipement :
+- Bonus à la Classe d'Armure : 2
+- Pas de protection contre les armes à projectiles
+- Bonus de résistance à l'électricité de 30 %
+- 30 % de Protection contre le froid
+- 30 % de Protection contre le feu
+
+Spécial :
+- Le bouclier recèle une petite charge électrique qui peut être déchargée sur la cible, avec 10 % de chance que le porteur soit également affecté
+
+Nécessite : 4 en Force
+
+Poids : 5~
+
+
+
+
+
+
+@100   = ~L'épée à deux mains est un dérivé de l'épée longue. Les forgerons d'armes ont toujours cherché à améliorer les armes de leur temps. Pour l'épée longue, ils ont allongé la lame. Après la lame, c'est la poignée qui s'est allongée. Il est alors devenu nécessaire d'utiliser les deux mains pour manier l'épée. La fonction première de l'épée à deux mains est de désarçonner les chevaliers montés et de désorganiser les haies de piques. 
+
+PARAMÈTRES :
+
+Dégâts :  1D10 (tranchant)
+Facteur de vitesse : 10
+Type de compétence : épée à 2 mains
+Type : arme à deux mains
+Nécessite : 14 en Force
+
+Poids : 15~
+@101   = ~Grande épée +1 : 'Le Saphir Étincelant'
+Un peu au nord d'Eauprofonde se situent le village d'Amphail et la demeure d'un Maître Forgeron Nain appelé Kathian Mainsmarteaux. Cette épée, ainsi que sa soeur, l'Oeil d'Emeraude, fut créée par le forgeron afin d'aider les Ménestrels dans leur lutte contre les espions du Zhentarim.
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+- TAC0 : +1
+- Détection du Mal
+
+Dégâts : 1D10 +1, +1D3 de dégâts de froid
+Type de dégâts : tranchant
+Facteur de vitesse : 8
+Type de compétence : épée à 2 mains
+Type : arme à deux mains
+Nécessite : 14 en Force
+
+Poids : 10~
+
+
+@104   = ~Egalement connue sous le nom d'épée à une main et demie, l'épée bâtarde tire son nom de son aspect intermédiaire entre l'épée à deux mains et l'épée longue. Elle possède une lame à double tranchant et une longue poignée, qui peut éventuellement accueillir les deux mains. La longueur de l'épée bâtarde varie entre 1,20 m et 1,50 m.  
+
+PARAMÈTRES :
+
+Dégâts : 2D4 (tranchant)
+Facteur de vitesse : 8
+Type de compétence : épée bâtarde
+Type : arme à une main
+Nécessite : 11 en Force
+
+Poids : 10~
+@105   = ~Faite pour les plaines de Toundra du grand Nord, l'épée large de barbare a été modifiée en prévision d'un climat gelé. La chaleur du métal procure une résistance contre la rigueur du froid.
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+- TAC0 : +1
+- 30 % de Protection contre le froid
+
+Dégâts : 2D4 +1, +1D3 de dégâts de feu
+Type de dégâts : tranchant
+Facteur de vitesse : 6
+Type de compétence : épée bâtarde
+Type : arme à une main
+Nécessite : 11 en Force
+
+Poids : 8~
+
+
+@108   = ~Arme des Tuigan et des Nar, le sabre est une épée longue et lourde spécialisée dans les longues entailles usuelles dans le combat monté.
+
+PARAMÈTRES :
+
+Dégâts : 1D8 (tranchant)
+Facteur de vitesse : 5
+Type de compétence : épée longue
+Type : arme à une main
+Nécessite : 6 en Force
+
+Poids : 4~
+@109   = ~Ce sabre a autrefois appartenu au capitaine Ergern Conwell, officier de cavalerie du Poing Enflammé. Il reçut ce sabre en récompense de sa bravoure au combat. Les compétences du Capitaine à l'épée égalaient presque son affinité avec la majeure partie des femmes de la région. Aucun talent d'épéiste ne put cependant le sauver de la lame empoisonnée d'un soupirant fou de jalousie. 
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+- TACO : +1 
+
+Capacités de charge :
+- 30 % de chance que la cible soit étourdie pendant un round
+
+Dégâts : 1D8 +1 (tranchant)
+Facteur de vitesse :  4
+Type de compétence : épée longue
+Type : arme à une main
+Nécessite : 6 en Force
+
+Poids : 6~
+@110   = ~Grande épée +1 : 'L'Oeil d'émeraude'
+Un peu au nord d'Eauprofonde se situent le village d'Amphail et la demeure d'un Maître Forgeron Nain appelé Kathian Mainsmarteaux. Cette épée ainsi que sa soeur, le Saphir Étincelant, fut créée par le forgeron afin d'aider les Ménestrels dans leur lutte contre les espions du Zhentarim.
+
+PARAMÈTRES :
+
+Capacités d'équipement : 
+- TAC0 : +1
+- Détection du Mal
+
+Dégâts : 1D10 +1, +1D3 de dégâts de feu
+Type de dégâts : tranchant
+Facteur de vitesse : 8
+Type de compétence : épée à 2 mains
+Type : arme à deux mains
+Nécessite : 14 en Force
+
+Poids : 10~
+
+
+
+@114   = ~Talisman d'Action Libre : 'L'étoile d'Eloen'
+L'histoire de ce talisman est inconnue mais nombreux sont ceux qui ont été trouvés gravés du nom d'une femme elfe. Ce talisman a été gravé au nom d'Eloen. Très probablement le cadeau d'une fille elfe.
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+- Le porteur est immunisé à tout ce qui, par la magie ou non, peut affecter la mobilité, bien qu'il puisse encore être accéléré. Attention cependant, il protègera aussi le porteur d'effets bénéfiques comme de celui des Bottes de Rapidité.~
+
+@116   = ~Talisman de Protection contre le Poison : 'L'étoile de Merris'
+L'histoire de ce talisman est inconnue mais nombreux sont ceux qui ont été trouvés gravés du nom d'une femme elfe. Ce talisman a été gravé au nom de Merris. Très probablement le cadeau d'une fille elfe.
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+- Le porteur est immunisé contre toute forme de poison et de maladie.~
+
+@118   = ~Talisman de Protection +1 : 'L'étoile de Riona'
+L'histoire de ce talisman est inconnue mais nombreux sont ceux qui ont été trouvés gravés du nom d'une femme elfe. Ce talisman a été gravé au nom de Riona. Très probablement le cadeau d'une fille elfe.
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+- Bonus à la classe d'armure : 1
+- Bonus aux jets de sauvegarde : 1~
+
+@120   = ~Talisman de Résistance au Feu : 'L'étoile d'Ishara'
+L'histoire de ce talisman est inconnue mais nombreux sont ceux qui ont été trouvés gravés du nom d'une femme elfe. Ce talisman a été gravé au nom d'Ishara. Très probablement le cadeau d'une fille elfe.
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+- Résistance au Feu : +30 %~
+
+@122   = ~Talisman de Résistance au Froid : 'L'étoile d'Ilithyia'
+L'histoire de ce talisman est inconnue mais nombreux sont ceux qui ont été trouvés gravés du nom d'une femme elfe. Ce talisman a été gravé au nom d'Ilithyia. Très probablement le cadeau d'une fille elfe.
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+- Résistance au froid : +30 %~

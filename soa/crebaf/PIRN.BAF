@@ -1,0 +1,66 @@
+IF
+	See([PC])
+	NumTimesTalkedTo(0)
+THEN
+	RESPONSE #100
+		StartDialog("pirn",[PC])
+END
+
+IF
+	Global("Pirn","GLOBAL",0)
+	See(NearestEnemyOf(Myself(Myself)))
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself(Myself)),WIZARD_CONE_OF_COLD)
+		SmallWait(5)
+		ForceSpell(Myself(Myself),WIZARD_RESIST_FEAR)
+		SetGlobal("Pirn","GLOBAL",1)
+END
+
+IF
+	Global("Pirn","GLOBAL",1)
+	See(NearestEnemyOf(Myself(Myself)))
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself(Myself)),WIZARD_FEEBLEMIND)
+		SetGlobal("Pirn","GLOBAL",2)
+END
+
+IF
+	Global("Pirn","GLOBAL",2)
+	See(NearestEnemyOf(Myself(Myself)))
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself(Myself)),WIZARD_MAGIC_MISSILE)
+		SetGlobal("Pirn","GLOBAL",3)
+END
+
+IF
+	HitBy([ANYONE],POISON)
+	HasItem("%tutu_var%POTN20",Myself) // Antidote
+THEN
+	RESPONSE #100
+		UseItem("%tutu_var%POTN20",Myself) // Antidote
+END
+
+IF
+	HPPercentLT(Myself,25)
+	HasItem("%tutu_var%POTN08",Myself) // Potion of Healing
+THEN
+	RESPONSE #100
+		UseItem("%tutu_var%POTN08",Myself) // Potion of Healing
+END
+
+IF
+	See(NearestEnemyOf(Myself(Myself)))
+	Global("Pirn","GLOBAL",3)
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		AttackOneRound(NearestEnemyOf(Myself(Myself)))
+		AttackOneRound(NearestEnemyOf(Myself(Myself)))
+		SetGlobal("Pirn","GLOBAL",4)
+		Continue()
+END
+
+

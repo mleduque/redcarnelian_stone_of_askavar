@@ -1,0 +1,27 @@
+IF
+	PartyHasItem("SOAITM31")
+	PartyHasItem("SOAITM32")
+	PartyHasItem("SOAITM33")
+	PartyHasItem("SOAITM34")
+	PartyHasItem("SOAITM35")
+	Global("CearwinQuest","GLOBAL",2)
+THEN
+	RESPONSE #100
+	SetGlobal("CearwinQuest","GLOBAL",3)
+	Continue()
+END
+
+IF
+	GlobalGT("Chapter","GLOBAL",%tutu_chapter_4%)
+	Global("TeldornMessSpawn","GLOBAL",1)
+	Global("CaerwinSpawn","GLOBAL",0)
+	PartyHasItem("SOAITM36")
+
+THEN
+	RESPONSE #100
+
+	CreateCreature("CEARWIN",[2664.3376]%FACE_8%) // Caerwin the bard
+	SetGlobal("CaerwinSpawn","GLOBAL",1)
+	Continue()
+END
+

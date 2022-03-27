@@ -1,0 +1,90 @@
+IF
+	Die()
+THEN
+	RESPONSE #100
+		ReallyForceSpell(Myself,RED_SWIRL)
+		ReallyForceSpell(Myself,RED_HOLY_MIGHT)
+END
+
+IF
+	Global("Cileencure","GLOBAL",0)
+	HPPercentLT(Myself,50)
+THEN
+	RESPONSE #100
+		SetGlobal("Cileencure","GLOBAL",1)
+		ForceSpell(Myself(Myself),CLERIC_CURE_CRITICAL_WOUNDS)
+		EquipMostDamagingMelee()
+		Continue()
+END
+
+IF
+	Global("Cileen","GLOBAL",0)
+	See(NearestEnemyOf(Myself(Myself)))
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself(Myself)),WIZARD_GREATER_MALISON)
+		SmallWait(5)
+		Spell(Myself(Myself),WIZARD_RESIST_FEAR)
+		SetGlobal("Cileen","GLOBAL",1)
+END
+
+IF
+	Global("Cileen","GLOBAL",1)
+	See(NearestEnemyOf(Myself(Myself)))
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself(Myself)),WIZARD_MONSTER_SUMMONING_2)
+		SetGlobal("Cileen","GLOBAL",2)
+END
+
+IF
+	Global("Cileen","GLOBAL",2)
+	See(NearestEnemyOf(Myself(Myself)))
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself(Myself)),WIZARD_CONFUSION)
+		SmallWait(5)
+		Spell(Myself(Myself),WIZARD_MINOR_GLOBE_OF_INVULNERABILITY)
+		SetGlobal("Cileen","GLOBAL",3)
+END
+
+IF
+	Global("Cileen","GLOBAL",3)
+	See(NearestEnemyOf(Myself(Myself)))
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself(Myself)),WIZARD_HORROR)
+		SmallWait(5)
+		Spell(NearestEnemyOf(Myself(Myself)),WIZARD_MAGIC_MISSILE)
+		SetGlobal("Cileen","GLOBAL",4)
+END
+
+IF
+	HitBy([ANYONE],POISON)
+	HasItem("%tutu_var%POTN20",Myself) // Antidote
+THEN
+	RESPONSE #100
+		UseItem("%tutu_var%POTN20",Myself) // Antidote
+END
+
+IF
+	HPPercentLT(Myself,50)
+	HasItem("%tutu_var%POTN08",Myself) // Potion of Healing
+THEN
+	RESPONSE #100
+		UseItem("%tutu_var%POTN08",Myself) // Potion of Healing
+END
+
+IF
+	See(NearestEnemyOf(Myself(Myself)))
+	Global("Cileen","GLOBAL",4)
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		AttackOneRound(NearestEnemyOf(Myself(Myself)))
+		AttackOneRound(NearestEnemyOf(Myself(Myself)))
+		SetGlobal("Cileen","GLOBAL",5)
+		Continue()
+END
+
+

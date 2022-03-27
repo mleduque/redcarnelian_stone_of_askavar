@@ -1,0 +1,221 @@
+/* Components:  */
+@189   = ~*       Ce fichier sera installe          *~
+@190   = ~*      dans votre repertoire de BG        *~
+@191   = ~*Tales of the Sword Coast n'est pas installe. L'installation de The Stone of Askavar ne peut continuer.*~
+@192   = ~The Stone of Askavar pour TotSC/Tutu/BGT/BGEE~
+
+
+/* Setup feedback:  */
+@196   = ~Tales of the Sword Coast detecte. Installation en cours...~
+@197   = ~Ce mod devrait etre installe dans votre dossier BG1, EasyTutu, BGT ou BGEE~
+@198   = ~Installation de Tutu detectee. Utilisation du code d'installation pour Tutu...~
+@199   = ~Les sons et les nouvelles zones ne seront pas installes. Pressez Entree pour sortir et attendez la fin du processus d'installation.~
+@200   = ~Installation de BGT detectee. Utilisation du code d'installation pour BGT...~
+@231   = ~Installation de BGEE detectee. Utilisation du code d'installation de BGEE...~
+
+@232   = ~Mise a jour de la carte du monde...~
+@233   = ~Version par defaut : zones reliees par des declencheurs de voyage~
+@234   = ~Plateformes supportees : TotSC, BGEE, BGT, Tutu. Les extensions TotSC et ToB sont requises pour BGT/Tutu.~
+// Texte apparemment pas utilisé
+@235   = ~Installation des animations de creatures...~
+@236   = ~Version BP-BGT Worldmap : ajout de toutes les zones a la carte du monde (requiert BP-BGT Worldmap)~
+@237   = ~Installation des animations de creatures...~
+@238   = ~The Stone of Askavar pour Tutu/BGT/BGEE~
+
+//Journal entries...
+
+//Deliver letter to Aranor in Beregost
+
+@10000  = ~Apporter une lettre à Aranor~
+
+//@34 (Cearwin.tra) @53(Aranor.tra)
+@10001  = ~Apporter une lettre à Aranor
+
+J'ai parlé au barde Cearwin qui a besoin d'envoyer un message à Bérégost. Il m'a proposé 250 pièces d'or pour cette mission.~
+
+//@16(Aranor.tra)
+@10002  = ~Apporter une lettre à Aranor
+
+J'ai remis le message de Cearwin à Aranor. J'espère que ça valait la peine de l'apporter jusqu'ici.~
+
+//@19(Aranor.tra)
+@10003  = ~Apporter une lettre à Aranor
+
+Après un long voyage j'ai remis le message de Cearwin à Aranor. J'espère que ça valait la peine de l'apporter jusqu'ici.~
+
+//Find the five lost talismans
+@10004  = ~Trouver les talismans volés~
+
+//@30(Aranor.tra) @62 (Cearwin.tra)
+@10005  = ~Trouver les talismans volés
+
+Les talismans volés de Cearwin sont la clef qui permet d'accéder à la chambre souterraine où la pierre est cachée. Aranor croit que Teldorn, un servant de Baine, pourrait ne pas être conscient de leur importance, et il me suggère de retourner à Nashkel afin de voir quelles nouvelles Cearwin aura d'eux.~
+
+//@49 (Cearwin.tra)
+@10006  = ~Trouver les talismans volés
+
+Cearwin a découvert l'emplacement des talismans volés. Malheureusement, il semblerait qu'ils soient dispersés sur toute la Côte des Épées. Cela prendra un peu de temps de les retrouver. Des rumeurs courent à propos de mercenaires installés à proximité de la vieille tour de garde de Dystra, un endroit situé loin à l'est d'ici. Je devrais aller voir ce qui se passe dans la région.~
+
+//Recover the stone Stone of Askavar
+
+@10007 = ~Récupérer la pierre d'Askavar~
+
+//@59 (Cearwin.tra) 
+@10008 = ~Récupérer la pierre d'Askavar
+
+Une fois tous les talismans entre mes mains, Cearwin m'a dirigé vers le Bois des Dents Acérés et l'entrée de la chambre souterraine où la pierre peut être trouvée. L'entrée se trouve au milieu des ruines du vieux temple. Cearwin espère que l'entrée est toujours cachée.~ ~Récupérer la pierre d'Askavar
+
+Une fois tous les talismans entre mes mains, Cearwin m'a dirigée vers le Bois des Dents Acérés et l'entrée de la chambre souterraine où la pierre peut être trouvée. L'entrée se trouve au milieu des ruines du vieux temple. Cearwin espère que l'entrée est toujours cachée.~
+
+//@54 (Aranor.tra)
+@10009 = ~Récupérer la pierre d'Askavar
+
+Je dois récupérer la pierre d'Askavar avant que les partisans Bainites de Teldorn ne mettent la main dessus.~
+
+//@52 (Aranor.tra)
+@10010 = ~Récupérer la pierre d'Askavar
+
+J'ai récupéré la pierre d'Askavar et l'ai transmise à Aranor. Cearwin en sera sûrement heureux. J'espère que la pierre elfique leur donnera l'avantage dont ils ont besoin pour contrer les partisans de Baine, de Cyric et de Mask.~
+
+//@20 (Lizzy.tra)
+@10011 = ~Délivrer Rebecca~
+
+@10012 = ~Délivrer Rebecca
+
+J'ai rencontré une jeune fille nommée Lizzy dont la mère a été assassinée et la soeur Rebecca enlevée par un groupe de malfaiteurs. J'ai accepté de l'aider. Lizzy a dit que la garde de la ville les avaient suivis jusqu'à l'est d'ici au-delà du temple.~
+
+@10013 = ~Délivrer Rebecca
+
+J'ai délivré Rebecca des malfaiteurs. En récompense elle m'a donné un des talismans. J'espère que Rebecca et sa soeur vont s'en sortir.~
+
+//Solve Carneth's puzzle
+@10014 = ~Résoudre l'énigme de Carneth~
+
+@10015 = ~Résoudre l'énigme de Carneth
+
+Il me faut résoudre une énigme pour Carneth avant qu'il ne me donne la moindre information.~
+
+@10016 = ~J'ai écrit l'énigme de Carneth dans mon journal afin de tester mes compagnons de voyage.
+
+Je suis quatre fois plus âgé que ma fille. Dans vingt ans je serai deux fois plus âgé qu'elle. Quel âge avons-nous aujourd'hui ?
+J'ai 60 ans et ma fille en a 15.
+J'ai 28 ans et ma fille en a 7.
+J'ai 36 ans et ma fille en a 9.
+J'ai 40 ans et ma fille en a 10.
+J'ai 48 ans et ma fille en a 12.~
+
+@10017 = ~Résoudre l'énigme de Carneth
+
+J'ai résolu l'énigme diabolique de Carneth.~
+
+//Dragons Heart Ruby
+@10018 = ~Acquérir le rubis Coeur de Dragon~
+
+//@33 (Carneth.tra)
+@10019 = ~Acquérir le rubis Coeur de Dragon
+
+Carneth veut que j'acquière le rubis Coeur de Dragon au magasin local. On dirait un artefact magique, il sera cher sans aucun doute.~
+
+//@34 (Carneth.tra)
+@10020 = ~Acquérir le rubis Coeur de Dragon
+
+Une fois le rubis Coeur de Dragon acquis pour Carneth, il m'a donné le talisman que je recherchais. L'Étoile de Merris.~
+
+@10021  = ~Trouver les talismans volés
+
+Après avoir voyagé tout le long de la Côte des Épées j'ai récupéré tous les talismans volés.~
+
+
+// WeiDU prompts
+@-1000= "Le mod %TP2_FILE_NAME% contient"
+@-1001= "composants optionnels distincts.
+Pour gagner du temps, vous pouvez choisir ce que vous souhaitez faire d'eux
+au niveau general plutot que de repondre aux questions pour chacun.
+"
+@-1002= "Que faut-il faire de tous les composants qui NE sont PAS ENCORE installes ?
+Les [I]nstaller, les [S]auter, dem[A]nder pour chacun ? "
+@-1003= "Que faut-il faire de tous les composants qui sont DEJA installes ?
+Les [R]einstaller, les s[U]pprimer, les [S]auter, dem[A]nder pour chacun ? "
+
+@-1004= "S'IL VOUS PLAIT, envoyez par e-mail le fichier"
+@-1005= "a"
+
+@-1006= "Installer le composant ["
+@-1007= "] ?
+[R]einstaller, co[N]server, s[U]pprimer ou [Q]uitter ? "
+@-1008= "] ?
+[I]nstaller, [N]e pas installer ou [Q]uitter ? "
+
+@-1009= "Entrez une partie du nom du module : "
+
+@-1010= "Reinstallation du composant ["
+@-1011= "] "
+@-1012= "Reinstallation dans la langue"
+
+@-1013= "Suppression de l'ancienne installation de ["
+@-1014= "] au prealable..."
+@-1015= "SUPPRESSION REUSSIE DE L'ANCIEN"
+
+@-1016= "Installation en cours"
+@-1017= "ERREUR pendant l'installation de ["
+@-1018= "], retour a l'etat anterieur"
+@-1019= "INSTALLATION REUSSIE"
+@-1020= "Saute"
+@-1021= "Suppression de ["
+@-1022= "] (composant #"
+@-1023= ")"
+@-1024= "SUPPRESSION REUSSIE DE ["
+
+@-1025= "] ?
+[R]einstaller, co[N]server, s[U]pprimer, [Q]uitter ou choisir un parmi :"
+@-1026= "] ?
+[N]e pas installer, [Q]uitter ou choisir un parmi :"
+@-1027= " (installe actuellement)"
+
+@-1028= "Souhaitez-vous afficher les composants de ["
+@-1029= "] ?
+[Y]Oui, [N]on ? "
+
+@-1030= "] ?
+choisir un parmi :"
+@-1031= "] ?
+[R]einstaller, co[N]server, [Q]uitter ou choisir un parmi :"
+@-1032= "INSTALLATION ECHOUEE A CAUSE D'ERREURS"
+@-1033= "INSTALLATION AVEC DES ALERTES"
+@-1034= "Souhaitez-vous afficher les instructions (ReadMe) ? [Y]Oui [N]on"
+@-1035= "Dans la langue"
+
+@-1036= "Saute le GROUPE ["
+@-1037= "] pour cause d'absence des pre-requis."
+
+@-1038= "dem[A]nder pour chaque composant, tout [S]auter, ou choisir une selection pre-definie :"
+@-1039= "dem[A]nder pour chaque composant, [R]einstaller la configuration courante, tout s[U]pprimer, tout [S]auter, ou choisir une selection pre-definie :"
+
+@-1040= "
+Veuillez choisir la langue dans laquelle vous souhaitez jouer au jeu.
+Si par la suite vous desirez jouer au jeu dans une langue differente, il vous
+faudra editer le fichier weidu.conf et reinstaller vos mods.
+"
+@-1041= "Tcheque"
+@-1042= "Allemand"
+@-1043= "Anglais"
+@-1044= "Espagnol"
+@-1045= "Francais"
+@-1046= "Italien"
+@-1047= "Polonais"
+@-1048= "Portugais"
+@-1049= "Turc"
+@-1050= "Japonais"
+@-1051= "Coreen"
+@-1052= "Chinois simplifie"
+@-1053= "Russe"
+@-1054= "Ukrainien"
+
+@-1060= "
+Ce jeu est disponible en plusieurs langues mais WeiDU ne sait pas laquelle a ete choisie quand ce mod a ete installe.
+
+Veuillez indiquer quelle langue du jeu a ete utilisee quand vous avez installe ce mod. Votre choix servira jusqu'a ce que WeiDU s'arrete mais ne sera pas memorise.
+"
+@-1061= "
+Utilisation de"
+@-1062= " et "

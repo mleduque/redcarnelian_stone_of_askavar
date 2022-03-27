@@ -1,0 +1,95 @@
+IF
+	See([PC])
+	NumTimesTalkedTo(0)
+THEN
+	RESPONSE #100
+		StartDialog("peleria",[PC])
+END
+
+IF
+	Global("Peleria","GLOBAL",0)
+	See(NearestEnemyOf(Myself(Myself)))
+THEN
+	RESPONSE #100
+		Enemy()
+		ReallyForceSpell(Myself(Myself),WIZARD_MINOR_GLOBE_OF_INVULNERABILITY)
+		SmallWait(5)
+		ForceSpell(Myself(Myself),WIZARD_PROTECTION_FROM_NORMAL_MISSILES)
+		SmallWait(5)
+		ForceSpell(NearestEnemyOf(Myself(Myself)),WIZARD_OTILUKES_RESILIENT_SPHERE)
+		SmallWait(5)
+		ForceSpell(SecondNearestEnemyOf(Myself(Myself)),WIZARD_OTILUKES_RESILIENT_SPHERE)
+		SetGlobal("Peleria","GLOBAL",1)
+END
+
+IF
+	See(NearestEnemyOf(Myself(Myself)))
+	Global("Peleria","GLOBAL",1)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself(Myself)),WIZARD_FEEBLEMIND)
+		Wait(1)
+		ForceSpell(SecondNearestEnemyOf(Myself(Myself)),WIZARD_MONSTER_SUMMONING_3)
+		SetGlobal("Peleria","GLOBAL",2)
+END
+
+IF
+	See(NearestEnemyOf(Myself(Myself)))
+	Global("Peleria","GLOBAL",2)
+THEN
+	RESPONSE #100
+		Spell(LeaderOf(GroupOf(NearestEnemyOf(Myself))),WIZARD_SLOW)
+		SmallWait(5)
+		ForceSpell(NearestEnemyOf(Myself(Myself)),WIZARD_HOLD_PERSON)
+		SetGlobal("Peleria","GLOBAL",3)
+END
+
+IF
+	See(NearestEnemyOf(Myself(Myself)))
+	Global("Peleria","GLOBAL",3)
+THEN
+	RESPONSE #100
+		SmallWait(5)
+		Spell(NearestEnemyOf(Myself(Myself)),WIZARD_FLAME_ARROW)
+		SetGlobal("Peleria","GLOBAL",4)
+END
+
+IF
+	See(NearestEnemyOf(Myself(Myself)))
+	Global("Peleria","GLOBAL",4)
+THEN
+	RESPONSE #100
+		Spell(ThirdNearestEnemyOf(Myself(Myself)),WIZARD_CHROMATIC_ORB)
+		SetGlobal("Peleria","GLOBAL",5)
+		Wait(1)
+END
+
+IF
+	See(NearestEnemyOf(Myself(Myself)))
+	Global("Peleria","GLOBAL",5)
+THEN
+	RESPONSE #100
+		Spell(LeaderOf(GroupOf(NearestEnemyOf(Myself))),WIZARD_MAGIC_MISSILE)
+		SetGlobal("Peleria","GLOBAL",6)
+		Wait(1)
+END
+
+IF
+	See(NearestEnemyOf(Myself(Myself)))
+	Global("Peleria","GLOBAL",6)
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		Enemy()
+		SetGlobal("Peleria","GLOBAL",7)
+END
+
+IF
+	See(NearestEnemyOf(Myself(Myself)))
+	HPPercentLT(Myself(Myself),25)
+THEN
+	RESPONSE #100
+		ForceSpell(Myself(Myself),CLERIC_CURE_CRITICAL_WOUNDS)
+END
+
+

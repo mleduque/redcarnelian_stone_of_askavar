@@ -1,0 +1,820 @@
+// BGEE specific texts
+
+//------------------------------------------------------------------------------------
+//  Creatures, characters, items, miscellaneous:
+//------------------------------------------------------------------------------------
+
+
+
+@2 = ~Chain mail is made of interlocking metal rings.  It is always worn over a layer of padded fabric or soft leather to prevent chafing and lessen the impact of blows.  
+
+STATISTICS:
+
+Armor Class: 5 (3 vs. slashing, 7 vs. crushing)
+Requires:
+ 8 Strength
+
+Weight: 40
+
+~
+
+@3 = ~This Chain Mail was made for the Sun elve Mecorima Sylerim. Mecorima was a Sun elve whose ambitions stretched far within elven society. A gifted diplomat Mecorima needed something extra to ward off rival factions. To achieve this she had a chain mail armor made that would save her life from assassination attempts and bend the will of noble lords. 
+
+STATISTICS:
+
+Armor Class: 3
+Equipped abilities:
+– Save vs. Death: +5
+- Charisma: +2 
+
+Requires:
+ 5 Strength
+ 
+Weight: 20
+
+~
+
+
+
+@6 = ~Plate mail is a combination of chain armor with metal plates covering the vital areas such as the chest, abdomen and groin. Similar in construction to bronze plate mail, true plate mail comprises chain and leather. 
+
+STATISTICS:
+
+Armor Class: 3 (0 vs. slashing)
+Requires:
+ 12 Strength
+
+Weight: 50
+
+~
+
+@7 = ~This armor almost feels alive as you hold it. The material it is made from is light and wraps around your body like supple leather. The only evidence of its origin is the name Kalindra etched inside.  
+
+STATISTICS:
+
+Armor Class: 2
+Equipped abilities:
+– Saving Throws: +1 
+
+Requires:
+ 10 Strength
+ 
+Weight: 30
+
+~
+
+
+
+@10 = ~The mace is a direct descendant of the basic club, being nothing more than a wooden shaft with a stone or iron head mounted on the end. The head design varies: Some are spiked, others flanged, and still others have pyramidal knobs.
+
+STATISTICS:
+
+Damage: 1d6+1 (crushing)
+Speed Factor: 7
+Proficiency Type: Mace
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 8
+
+~
+
+@11 = ~Mace +1 : 
+ 'Mace of the fearless'
+Many followers of Chauntea carry a Mace like this one. Most are given to new clerics but some are magically enhanced and given to the more gifted students. This is such a weapon.
+
+STATISTICS:
+
+Equipped abilities:
+– Resist fear: 30%
+
+THACO: +1
+Damage: 1D6 + 3(crushing)
+Speed Factor: 5
+Proficiency Type: Mace
+Type: One-handed
+Requires:
+ 9 Strength
+ 
+Weight: 7
+
+~
+
+
+
+@14 = ~The maul is a heavy hammer used extensively in the construction of ships and buildings. A domestic tool the maul is popular throughout the whole of Faerun especially with the shipbuilders of Waterdeep. Its heavy weight and excellent swing make it a deadly weapon in combat. 
+
+STATISTICS:
+
+Damage: 1d4+1 (crushing)
+Speed Factor: 4
+Proficiency Type: War Hammer
+Type: One-handed
+Requires:
+ 9 Strength
+
+Weight: 6
+
+~
+
+@15 = ~Maul +2:
+ 'Tholin's Ogre Smasher'
+This heavy Maul also known as 'The Maul of the Mighty' has weathered the storm of countless wars and battles. Originally the property of an Elk Tribe Chieftain the maul was forged to slay the increasing number of ogres and orcs along the Dessarin river. 
+
+STATISTICS:
+
+THACO: +2
+Damage: 1d4+3 (crushing)
+Speed Factor: 5
+Proficiency Type: War Hammer
+Type: One-handed
+Requires:
+ 10 Strength
+ 
+Weight: 7
+
+~
+
+
+
+@18 = ~The morning star is a wooden shaft topped with a metal head covered by a spiked iron sheath. Morning stars have an overall length of about four feet. Some have a round, oval, or cylindrical shaped head studded with spikes. Extending from most morning star heads, regardless of design, is a long point for thrusting.
+
+STATISTICS:
+
+Damage: 2d4 (crushing)
+Speed Factor: 7
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requires:
+ 11 Strength
+
+Weight: 12
+
+~
+
+@19 = ~Morning Star +2:
+ 'Gift of Ishandar'
+Golain spent most of his youth with his father exploring the Stronghorns around Cormyr. His father taught him to fight and appreciate the land around him. Having a love of adventure and Geography he became a Royal Explorer for the Obarskyr family. On a long expedition with a team of explorers surveying land in the Thunder peak mountains he noticed a small cave worthy of attention. Following a small fight with a number of orcs he discovered a small chest full of gold and a Morning Star shining in the darkness. The Morning Star remained with Golain for some time until losing his life fighting Ogres in the Stronghorns.  
+
+STATISTICS:
+
+THAC0: +2
+Damage: 2d4 +2
+Damage type: crushing
+Speed Factor: 6
+Proficiency Type: Flail/Morningstar
+Type: One-handed
+Requires:
+ 10 Strength
+ 
+Weight: 10
+
+~
+
+
+
+
+@23 = ~Book of Flames
+Once in the hands of a Red Wizard archmage this book was stolen by a run away slave and smuggled out of Thay into the safety of the Dalelands. The book is bound in human skin the result of countless slave experiments. As a result it has an aura only evil characters can use. 
+
+STATISTICS:
+
+Special:  When opened an arc of flame reaches out for the target
+Damage: 2d3
+Range: 0 
+Duration: Instantaneous
+Casting Time: 1
+Area of Effect: The Caster
+Saving Throw: None
+
+~
+
+
+
+@26 = ~Composite bows are longbows or shortbows whose staves are made from more than one type of material. This gives greater flexibility and makes arrows fired from this bow deliver more damage. These were developed after the normal longbow.
+
+STATISTICS:
+
+THAC0: +1
+Damage: +2
+Speed Factor: 7
+Proficiency Type: Longbow
+Type: Two-handed
+Requires:
+ 18 Strength
+
+Weight: 10
+
+~
+
+@27 = ~Composite Long Bow +2:
+'The Medussa's curse'
+During the year of the Broken Blade Laeroth was born. In his younger years he became a master of the bow and had the best eye for accuracy in his elven village. Stories told of a Medussa hiding out in a cave in the nearby mountains. As a test of courage it fell upon Laeroth to deliver the head of such a beast. After talking to the elders of his village a bow was crafted to tackle such an enemy. Built from weirwood the bow was made to be true to its user and resist the gaze of certain creatures. A long journey ensued before reaching the Medussa's lair. Inside the cave Laeroth used a glowstone to find his way deep within. Passing stone forms the result of countless failed attempts to capture the beast Laeroth finally fell upon his prey. Face to face with the Medussa the gaze fell upon him. At first he was paralysed to do anything but with the bow in his hand the effects of the gaze were neutralized and the fight for dominance began. One bow against another both adversaries trained on each other. The Medussa fired first and a poison arrow lodged into his shoulder just as the weirwood bow fired its own arrow into the Medussa's head. The monster writhed in pain but Laeroth drank an antidote to the poison in time to see the Medussa's last dying throws. With a steady hand he approached the creature and severed its head. After returning to his village the head was placed in a safe place to be used against orcs in times of need. Laeroth travelled in his later years and eventually sold the bow for a large sum of gold.        
+
+STATISTICS:
+
+Equipped abilities: Protection from Petrification 
+
+THACO: +2
+Damage: +3
+Speed Factor: 6
+Proficiency Type: Longbow
+Type: Two-handed
+Requires:
+ 18 Strength
+ 
+Weight: 9
+
+~
+
+
+
+
+@31 = ~The Travel Cloak is a lightweight garment that gives added protection against the elements. Furthermore the cloak gives a bonus to AC.
+ 
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: +1 
+- Resistance to cold and fire: 20%
+
+Weight: 3
+
+~
+
+
+
+
+
+@35 = ~This white robe is embroidered with the shapes of numerous spiders across its surface. The wearer is immune to any effects that cause encumbrance such as web and slow. It negates the effects of paralysis and hold spells. The robe also allows the Mage to cast a hold spell on a target but its duration is limited to one round only.
+
+STATISTICS:
+
+Equipped abilities:
+- Free Action (protects the Mage from any magics that effect movement such as hold and web).
+- Armor Class: 6
+
+Charge abilities:
+– Hold Person
+  Range: Visual range of caster 
+  Duration: 1 turn
+  Area of Effect: Special
+  Saving throw: Negates
+
+Weight:  6
+
+~
+
+
+
+@38 = ~The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter.
+
+STATISTICS:
+
+Damage: 1d4 (piercing)
+Speed Factor: 2
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1
+
+~
+
+@39 = ~Dagger +1:
+ 'Dagger of Defiance'
+These Daggers were first created in Myth Drannor. This dagger in particular has graced the hands of rogues, thieves and bandits alike.
+
+STATISTICS:
+
+Equipped abilities:
+- Save vs. spell: +2
+- Immunity to fear and charm 
+
+THACO: +1
+Damage: 1D4 +2 (piercing)
+Speed Factor: 2
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1
+
+~
+
+
+
+
+@43 = ~The Tabor Drum or Snare Drum is a favorite of Kobolds and Dwarfs. Held under the arm or in front of the body the drum can give a steady rythmic beat. Played together its sound can be mistaken for the advance of a small army and can scare most creatures within earshot.
+
+STATISTICS:
+
+Special: When played the target must make a saving throw at -2 or the sound of the drum causes panic
+Range: 40
+Duration: 2 rounds
+Weight: 5
+
+~
+ 
+
+@45 = ~Drums of this kind are known as Congos and are a favorite instrument for the larger creatures of the realm like Ogres and Giants for its deep sound. When played together the drum gives the impression of an army marching into battle that can scare most creatures within earshot.
+
+STATISTICS:
+
+Special: When played the target must make a saving throw at -2 or the sound of the drum causes panic
+Range: 60
+Duration: 2 rounds
+Weight: 8
+
+~
+
+
+
+
+@49 = ~This normal - seeming pearl radiates faintly of enchantment if magic is detected for. In any event, the stone will be very beautiful and worth at least 1,000 gp on this basis alone. If it is clasped firmly in hand (or to the breast) and the possessor attempts actions related to the pearl's power areas, they will understand and be able to employ the item.
+    The pearl enables its possessor to cast Dire Charm onto a target. The pearl must be held by the possessor to convey its powers. Such pearls only have a limited number of charges however.
+
+STATISTICS:
+
+Charge abilities:
+- Dire Charm (Neg)
+  Range: 20
+  Duration: 4 rounds
+  Area of Effect: 1 creature
+
+Weight: 1
+
+~
+
+
+
+@52 = ~By far the oldest and most often used polearm, the halberd consists of a cleaver-like axe blade mounted on a staff averaging six feet in length. The axe blade is balanced at the rear with a fluke and surmounted by a sharp spike, usually of quadrangular design. The fluke is sometimes replaced by a hook used to dismount cavalry. A halberd can be best described as a cross between a spear and an axe.
+
+STATISTICS:
+
+Damage: 1d10 (slashing or piercing, whichever is better)
+Speed Factor: 9
+Proficiency Type: Halberd
+Type: Two-handed
+Requires:
+ 13 Strength
+
+Weight: 15
+
+~
+
+@53 = ~Like others of its type, this halberd consists of a cleaver-like axe blade mounted on a staff approximately six feet in length. It has also been bestowed with a small number of magical properties, however, thus making it more effective in combat. Its keen blade, for instance, will shear through your opponent's flesh to find the bone while its barbed tip will seek out gaps in their armor.
+
+STATISTICS:
+
+THACO: +1
+Damage: 1d10+2 (slashing or piercing, whichever is better)
+Speed Factor: 8
+Proficiency Type: Halberd
+Type: Two-handed
+Requires:
+ 13 Strength
+ 
+Weight: 14
+
+~
+
+
+
+@56 = ~Mounted knights cannot effectively use long pole weapons while on horseback and, as a result, many weapons have been fitted with shorter shafts so they may be wielded with just one hand. Maces and flails are two examples of this—the war hammer is another. The horseman's war hammer is the descendent of the Lucerne hammer. It is made entirely of steel, with rondels protecting and strengthening the grip. (Rondels are small disks of metal, often shaped into decorative designs.) The shaft is about eighteen inches long.
+
+STATISTICS:
+
+Damage: 1d4+1 (crushing)
+Speed Factor: 4
+Proficiency Type: War Hammer
+Type: One-handed
+Requires:
+ 9 Strength
+
+Weight: 6
+
+~
+
+@57 = ~Ice Hammer +2:
+'Mydans Frost'
+Several of these hammers were made by Frost Giants to wreck havoc amongst local villages. Annoyed by  humans invading their territory the ice goddess Auril encouraged the giants to create weapons capable of great damage. Mydan a leader amongst his kind created this hammer to pay homage to his deity. Pleased by the gift the goddess enchanted the weapon with the power of ice.
+
+STATISTICS:
+
+Equipped abilities:
+- Cold Resistance: +30%
+
+THACO: +2 
+Damage: 1d4 +2  (+1d3 Cold Damage)
+Damage type: crushing
+Speed Factor: 4
+Proficiency Type: War Hammer
+Type: One-handed
+Requires:
+ 9 Strength
+ 
+Weight: 6
+
+~
+
+
+
+@60 = ~This class of open-face helmet, made of reinforced leather or metal, covers most of the head save the face and neck. These helmets commonly provide protection for the nose. 
+
+STATISTICS:
+
+Equipped abilities:
+– Protects against critical hits
+
+Weight: 2
+
+~
+
+@61 = ~This helmet has been passed down through generations of Purple Dragon Knights. The helmet has been imbued with magical properties to defend against certain enchantments
+
+STATISTICS:
+
+Equipped abilities:
+– Protects against critical hits, Confusion, Rigid Thinking and Fear attacks
+
+Weight: 2
+
+~
+
+
+@63 = ~This helmet shimmers when held and the metal feels strange to the touch. The only evidence of its origin is the name Kalindra etched inside.
+
+STATISTICS:
+
+Equipped abilities:
+– Protects against critical hits
+
+Special:
+- Wearer gains a +5 bonus to Saves vs. petrification and polymorth
+
+Weight: 2
+
+~
+
+
+
+
+@67 = ~When this horn is played a deep bellowing sound calls out to the Fiendish plane and from the abyss a lesser demon is summoned to aid its master in any way they choose. The creature can only stay in the realm for two rounds but can be summoned again when the horn is blown. When the demon is present all spell casting abilities are disabled. The horn can only summon a demon a small number of times so it is best to use it wisely.
+
+STATISTICS:
+
+Special: When played a lesser demon is summoned to aid its caller.
+Duration: 2 rounds
+
+Weight: 3
+
+~
+
+
+
+
+@71 = ~Cassandra's Lute
+ 'The Lions Courage'
+Cassandra started playing the lute when she was 5 years old, by the age of 14 she was a master performer. Her father Tarun Coriades a gifted elven luthier created a special lute for her 16th birthday. Made from mystical woods close to the Lake of Dreams the lute was created to give confidence and courage when played. Cassandra travelled many lands and played in many places with the instrument. Then during a visit to her homeland Evermeet the ship that bore her encountered high seas and the lute was lost overboard. The ship was wrecked on Araska but Cassandra survived only to search for her lute to this day.
+   
+STATISTICS:
+
+Special: When played the performer gains a sense of confidence and courage. 
+THACO: +1 bonus 
+Strength increased by 1 
+Immunity to fear
+5 temporary hit points
+Duration: 5 Rounds
+
+Weight: 7
+
+~
+
+
+
+@74 = ~Harmonica
+ 'Tarmaniels Warmth'
+This Mouth Organ was created by Tarmaniel a human bard well known throughout the land of Sembia. Tarmaniel was keen to travel and liked to share information amongst fellow bards. When played the Harmonica gives off a sound like no other which warms the hearts of its listeners.  Unfortunately he also had a love for gambling and lost the Harmonica in a card game somewhere in Baldurs Gate.  
+
+STATISTICS:
+
+Special: Charisma +1 bonus
+Party gains a +1 bonus to AC
+Duration: 3 rounds. 
+Range: 20
+
+Weight: 1
+
+~
+
+
+
+
+
+
+
+
+
+@82 = ~This orb glows with a blue flame and clouds begin to form as you move the orb about and electric charges rake the inside. A command word frees the orb of its energy and as a result lighting tears down from the sky. Anyone hit by lighting must make a saving throw at -3 or take 2d6 damage
+
+STATISTICS:
+
+Charge abilities:
+– Cast lighting (Neg)
+  Damage: 2d6
+  Range: 30
+
+Weight: 3
+
+~
+
+
+
+@85 = ~A ring is a small band of precious metal that is used as jewellery. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
+
+STATISTICS:
+
+Weight: 0
+
+~
+
+@86 = ~Ring of Invisibility
+ 'The Thieves Escape'
+This ring once belonged to a Calimshan Sea Captain called Josan Paris. A talented Seaman Josan captained a large warship out of Memnon whose purpose was to free the Shining Sea of pirates. The ring was retrieved from a pirate ship and Josan kept it as a token. When he discovered its ability for invisibility he turned his profession into a more opportunistic one eventually becoming the kind of pirate he once pursued.  
+
+STATISTICS:
+
+Special: When the ring is activated its wearer becomes invisible for 2 rounds~
+
+
+
+@89 = ~A medium shield is carried in the same manner as a small shield. Unlike the small shield, however, its weight prevents the character from using the shield hand for anything other than carrying the medium shield. Medium shields are usually made of metal, range from three to four feet in diameter, and can be of any shape, from round to square to a dragon's spread wings. A typical medieval shield resembles a triangle with one point facing downward.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1
+
+Requires:
+ 12 Strength
+
+Weight: 7
+
+~
+
+@90 = ~The origins of this strange shield are unknown but the faded shape of a blue wyrm decorating the outside may indicate that it came from the ancient empire of Mulhorand close to the Dragonsword mountains. There isn't an armourers mark anywhere on the shield and it bears no battle scars perhaps the shield was made by magical means. Regardless of its nature its blue sheen makes it a prize possession.
+  
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +2
+- Protection from fire: 30%
+
+Requires: 
+ 12 Strength
+
+Weight: 7
+
+~
+
+
+
+@93 = ~A small shield is usually round and is carried on the forearm, gripped with the shield hand. Its light weight as compared to a medium shield permits the user to carry other items in that hand, although the user cannot wield or carry another weapon. 
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1
+– No protection against missile attacks
+
+Requires:
+ 4 Strength
+
+Weight: 3
+
+~
+
+@94 = ~Loran Emarin an elven bard belonging to the Harper organisation heard a story of a golden coloured shield with the ability to protect against the elements. Intrigued by the story the bard set out on a quest to find the item. After searching for several years with no lead the bard almost gave up. Then on a cold night in a Neverwinter tavern the elve overheard a conversation between a pair of Ohgma priests. The shield was described as belonging to a group of elite fighter/clerics, devout followers of the storm lord Talos. Eventually the shield was recovered and sold on to the Talos priesthood. Its destiny from there is unknown.
+ 
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +2
+– No protection against missile attacks
+- Lighting resistance: 30%
+- Protection from cold: 30%
+- Protection from fire: 30%
+
+Special:
+- Shield holds a small Electrical Charge that can be discharged on the target but there is a 10% chance the charge will also effect you.
+
+Requires:
+ 4 Strength
+ 
+Weight: 5
+
+~
+
+
+
+
+
+
+
+@100 = ~The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
+
+STATISTICS:
+
+Damage: 1d10 (slashing)
+Speed Factor: 10
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 14 Strength
+
+Weight: 15
+
+~
+
+@101 = ~Large Sword +1 :
+ 'The Shining Sapphire'
+Just to the North of Waterdeep is the village of Amphail and the home of a Dwarfen Master Blacksmith called Kathian Hammer Hands. This sword along with its sister sword the Emerald Eye was created by the blacksmith to help the Harpers in their fight against Zhentarim spys.
+
+STATISTICS:
+
+Equipped abilities:
+- THACO: +1
+- Detect Evil
+
+Damage: 1d10 + 1, +1d3 Cold Damage 
+Damage type: slashing
+Speed Factor: 8
+Proficiency Type: Two handed sword
+Type: Two-handed
+Requires:
+ 14 Strength
+
+Weight: 10
+
+~
+
+
+
+@104 = ~Also known as the hand-and-a-half sword, the bastard sword derives its name from the fact that it is halfway between the two-handed sword and the long sword. The bastard sword has a double-edged blade and a long grip, which can accommodate both hands if preferred. The overall length of the bastard sword ranges between four feet and four feet ten inches.
+
+STATISTICS:
+
+Damage: 2d4 (slashing)
+Speed Factor: 8
+Proficiency Type: Bastard Sword
+Type: One-handed
+Requires:
+ 11 Strength
+
+Weight: 10
+
+~
+
+@105 = ~Built for the tundra wastes of the north the Barbarian Broad Sword has been tempered for freezing conditions. The warmth of the metal provides a resistance against the harsh cold climate.
+
+STATISTICS:
+
+Equipped abilities:
+- THACO: +1
+- Protection from cold: 30% 
+
+Damage: 2D4 + 1, 1D3 Fire damage
+Damage type: slashing
+Speed Factor: 6
+Proficiency Type: Bastard Sword
+Type: One-handed
+Requires:
+ 11 Strength
+ 
+Weight: 8
+
+~
+
+
+
+@108 = ~A weapon of the Tuigan and Nars, the sabre is a long, heavy sword specialized for the long cuts used in mounted combat.
+
+STATISTICS:
+
+Damage: 1d8 (slashing)
+Speed Factor: 5
+Proficiency Type: Scimitar/Wakizashi/Ninjato
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 4
+
+~
+
+@109 = ~This sabre once belonged to Captain Ergern Conwell, a cavalry officer of the Flaming Fist. He was awarded the sabre for bravery in the face of battle. The Captain's ability with the blade almost matched his affinity for the local female inhabitants. No skilled swordsmanship however could save him from the poisonous blade of an over jealous lover.
+
+STATISTICS:
+
+Equipped abilities:
+- THACO: +1
+
+Damage: 1D8 +1 (slashing)
+Speed Factor: 4
+Proficiency Type: Scimitar/Wakizashi/Ninjato
+Type: One-handed
+Requires:
+ 6 Strength
+ 
+Weight: 6
+
+~
+
+@110 = ~Large Sword +1 :
+ 'The Emerald Eye'
+Just to the North of Waterdeep is the village of Amphail and the home of a Dwarfen Master Blacksmith called Kathian Hammer Hands. This sword along with its sister sword the Shinning Sapphire was created by the blacksmith to help the Harpers in their fight against Zhentarim spys.
+
+STATISTICS:
+
+
+Equipped abilities:
+- THACO: +1
+- Detect Evil
+
+Damage: 1d10 + 1, +1d3 Fire Damage 
+Damage type: slashing
+Speed Factor: 8
+Proficiency Type: Two handed sword
+Type: Two-handed
+Requires:
+ 14 Strength
+
+Weight: 10
+
+~
+
+
+
+
+@114 = ~Talisman of Free Action:
+ 'The Star of Eloen'
+The history of this talisman is unknown but several have been found engraved with the name of an elven female. This talisman has been engraved with the name Eloen. Most likely the gift of an elven daughter. 
+
+STATISTICS:
+
+Equipped abilities:
+- The wearer is immune to everything,  magical and otherwise,  that effects mobility in any way, although can still be hasted. Be aware, however, this will also protect the wearer from beneficial effects such as those received from the boots of speed.
+
+~
+
+@116 = ~Talisman of Protection from Poison:
+ 'The Star of Merris'
+The history of this talisman is unknown but several have been found engraved with the name of an elven female. This talisman has been engraved with the name Merris. Most likely the gift of an elven daughter. 
+
+STATISTICS:
+
+Equipped abilities:
+- The wearer is immune to all forms of poison and disease.
+
+~
+
+@118 = ~Talisman of Protection +1
+ 'The Star of Riona'
+The history of this talisman is unknown but several have been found engraved with the name of an elven female. This talisman has been engraved with the name Riona. Most likely the gift of an elven daughter. 
+
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: +1
+- Saving Throws: +1
+
+~
+
+@120 = ~Talisman of Fire Resistance:
+'The Star of Ishara'
+The history of this talisman is unknown but several have been found engraved with the name of an elven female. This talisman has been engraved with the name Ishara. Most likely the gift of an elven daughter. 
+
+
+STATISTICS:
+
+Equipped abilities:
+- Fire Resistance: +30%
+
+~
+
+@122 = ~Talisman of Cold Resistance:
+'The Star of Ilithyia'
+The history of this talisman is unknown but several have been found engraved with the name of an elven female. This talisman has been engraved with the name Ilithyia. Most likely the gift of an elven daughter. 
+
+
+STATISTICS:
+
+Equipped abilities:
+- Cold Resistance: +30%
+
+~

@@ -1,0 +1,121 @@
+/*Components:  */
+@189 = ~*    Ten plik zainstaluje sie      *~
+@190 = ~*             w katalogu BG              *~
+@191 = ~*Opowiesci z Wybrzeza Mieczy nie sa zainstalowane. Instalacja The Stone of Askavar nie moze byc kontynuowana.*~
+@192 = ~The Stone of Askavar dla OzWM/Tutu/BGT/BGEE~
+
+/* Setup feedback:  */
+@196 = ~Wykryto Opowiesci z Wybrzeza Mieczy. Instalowanie... ~
+@197 = ~Ten mod powinien zostac zainstalowany w folderze BG1, EasyTutu, BGT lub BGEE~
+@198 = ~Wykryto instalacje BG1Tutu. Uzyj kodu instalacyjnego BG1Tutu...~
+@199 = ~Dzwieki i nowe obszary zostana teraz zainstalowane. Nacisnij enter, aby wyjsc i poczekac na koncowy proces instalacji~
+@200 = ~Wykryto instalacje BGT. Uzyj kodu instalacyjnego BGT...~
+@231 = ~Wykryto instalacje BGEE. Uzyj kodu instalacyjnego BGEE...~
+@232 = ~Aktualizacja mapy swiata...~
+@233 = ~Ustawienia domyslne: obszary dostepne poprzez triggery~
+@234 = ~Wspierane platformy: OzWM, BGEE, BGT, Tutu. OzWM i Tron Bhaala sa wymagane dla BGT/Tutu.~
+@235 = ~Instalacja animacji stworzen...~
+@236 = ~Wersja z BP-BGT Worldmap: wszystkie obszary dodane do mapy swiata (wymaga BP-BGT Worldmap)~
+@237 = ~Instalacja animacji stworzen...~
+@238 = ~The Stone of Askavar dla Tutu/BGT/BGEE~
+
+//Journal entries...
+
+//Z listem dla Aranora
+
+@10000  = ~Z listem dla Aranora~
+
+//@34 (Cearwin.tra) @53(Aranor.tra)
+@10001  = ~Z listem dla Aranora
+
+Rozmawialiœmy z bardem Cearwinem, który chce, abyœmy dostarczyli wiadomoœæ do Beregostu. Za to zadanie zaoferowa³ nam 250 sztuk z³ota.~
+
+//@16(Aranor.tra)
+@10002  = ~Z listem dla Aranora
+
+Dorêczyliœmy Aranorowi wiadomoœæ od Cearwina. Miejmy nadziejê, ¿e nie fatygowaliœmy siê na pró¿no.~
+
+//@19(Aranor.tra)
+@10003  = ~Z listem dla Aranora
+
+Po d³ugiej podró¿y, w koñcu dorêczyliœmy Aranorowi wiadomoœæ od Cearwina. Miejmy nadziejê, ¿e nie fatygowaliœmy siê na pró¿no.~
+
+//W poszukiwaniu piêciu zaginionych amuletów
+@10004  = ~W poszukiwaniu amuletów~
+
+//@30(Aranor.tra) @62 (Cearwin.tra)
+@10005  = ~W poszukiwaniu amuletów
+
+Skradzione amulety Cearwina stanowi¹ klucz do wejœcia do podziemnej komnaty, gdzie ukryto kamieñ. Aranor wierzy, ¿e Teldorn - wyznawca Bane'a mo¿e nie byæ œwiadom ich wagi. Aranor radzi, abyœmy wrócili do Nashkel i zobaczyli jakie wieœci o nich ma Cearwin.~
+
+//@49 (Cearwin.tra)
+@10006  = ~W poszukiwaniu amuletów
+
+Cearwin odkry³ lokalizacjê skradzionych amuletów. Niestety, wygl¹da to tak, jakby rozproszy³y siê one po ca³ym Wybrze¿u Mieczy. Odnalezienie ich zajmie trochê czasu. Dosz³y nas plotki o najemnikach ko³o dawnej wie¿y stra¿niczej Dystry, daleko na wschód st¹d. Powinniœmy zbadaæ to miejsce.~
+
+//Odzyskaæ Kamieñ z Askavaru
+
+@10007 = ~Odzyskaæ Kamieñ z Askavaru~
+
+//@59 (Cearwin.tra) 
+@10008 = ~Odzyskaæ Kamieñ z Askavaru
+
+Po odzyskaniu wszystkich amuletów Cearwin pokaza³ nam drogê do Lasu Ostrych K³ów i wejœcia do podziemnej komnaty, gdzie odnajdziemy kamieñ. Wejœcie zlokalizowane jest wœród ruin staro¿ytnej œwi¹tyni. Cearwin ma nadziejê, ¿e nie zosta³o ono jeszcze odkryte.~
+
+//@54 (Aranor.tra)
+@10009 = ~Odzyskaæ Kamieñ z Askavaru
+
+Musimy odzyskaæ Kamieñ z Askavaru, zanim wyznawcy Bane’a dowodzeni przez Teldorna po³o¿¹ na nim swoje ³apska.~
+
+//@52 (Aranor.tra)
+@10010 = ~Odzyskaæ Kamieñ z Askavaru
+
+Odzyskaliœmy Kamieñ z Askavaru i przekazaliœmy go Aranorowi. Cearwin na pewno bêdzie z tego zadowolony. Miejmy jednak nadziejê, ¿e elfi kamieñ zapewni im przewagê nad poplecznikami Bane'a, Cyrica i Maska.~
+
+//@20 (Lizzy.tra)
+@10011 = ~Na ratunek Rebece~
+
+@10012 = ~Na ratunek Rebece
+
+Spotkaliœmy dziewczynkê o imieniu Liza, której matka zosta³a zamordowana, a siostra Rebeka porwana przez grupê z³oczyñców. Zgodziliœmy siê jej pomóc. Liza powiedzia³a nam, ¿e stra¿ miejska ruszy³a tropem z³oczyñców na wschód, a¿ za œwi¹tyniê.~
+
+@10013 = ~Na ratunek Rebece
+
+Uratowaliœmy porwan¹ przez z³oczyñców Rebekê. W nagrodê otrzymaliœmy jeden z zaginionych amuletów. Miejmy nadziejê, ¿e obu siostrom bêdzie siê ju¿ teraz dobrze wiod³o.~
+
+//Zgadka Carnetha
+@10014 = ~Zagadka Carnetha~
+
+@10015 = ~Zagadka Carnetha
+
+¯eby uzyskaæ jakiekolwiek informacje od Carnetha, musimy najpierw rozwik³aæ jego zagadkê.~
+
+@10016 = ~Zapisaliœmy zagadkê Carnetha w dzienniku tak, ¿eby ka¿dy cz³onek dru¿yny móg³ siê z ni¹ zmierzyæ.
+
+Jestem cztery razy starszy od mojej córki. Za dwadzieœcia lat bêdê od niej dwa razy starszy. Ile ka¿de z nas ma dziœ lat?
+Ja mam 60, a moja córka 15.
+Ja mam 28, a moja córka 7.
+Ja mam 36, a moja córka 9.
+Ja mam 40, a moja córka 10.
+Ja mam 48, a moja córka 12.~
+
+@10017 = ~Zagadka Carnetha
+
+Rozwik³aliœmy diabelsk¹ zagadkê Carnetha.~
+
+//Rubin Smocze Serce
+@10018 = ~Rubin Smocze Serce~
+
+//@33 (Carneth.tra)
+@10019 = ~Rubin Smocze Serce
+
+Carneth chce, abyœmy kupili mu w jednej z tutejszych gospód rubin Smocze Serce. Nazwa sugeruje jakiœ magiczny artefakt. Nie mam w¹tpliwoœci, ¿e bêdzie kosztowny.~
+
+//@34 (Carneth.tra)
+@10020 = ~Rubin Smocze Serce
+
+Zdobyliœmy rubin Smocze Serce dla Carnetha, on z kolei da³ nam amulet, którego szukaliœmy - Gwiazdê Merris.~
+
+@10021  = ~W poszukiwaniu amuletów
+
+Po przemierzeniu wzd³u¿ i wszerz ca³ego Wybrze¿a Mieczy uda³o nam siê w koñcu odzyskaæ wszystkie zaginione amulety.~

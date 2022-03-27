@@ -1,0 +1,10 @@
+IF
+	Global("CearwinQuest","GLOBAL",2)
+	Global("CarnethSpawn","GLOBAL",0)
+THEN
+	RESPONSE #100
+    CreateCreature("CARNETH",[2716.2984]%FACE_0%) // Carneth the begger
+	CreateCreature("SALLY",[2770.2984]%FACE_0%) // Carneths companion
+	SetGlobal("CarnethSpawn","GLOBAL",1)
+END
+

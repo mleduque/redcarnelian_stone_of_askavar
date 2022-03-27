@@ -1,0 +1,37 @@
+// CARNETH translation file
+@1  = ~L'aumône ? L'aumône du pauvre ?~
+@2  = ~Une pièce en trop, étranger ? Les rues peuvent être très froides la nuit.~ ~Une pièce en trop, étrangère ? Les rues peuvent être très froides la nuit.~
+@3  = ~Voilà une pièce ; trouvez-vous un lit décent pour la nuit.~
+@4  = ~Hé, c'est sacrément généreux à vous, étranger. Puis-je faire quelque chose pour vous aider ?~ ~Hé, c'est sacrément généreux à vous, étrangère. Puis-je faire quelque chose pour vous aider ?~
+@5  = ~A vrai dire, oui. Je recherche un talisman récemment acquis dans un magasin local. Je crois que vous pourriez savoir où il se trouve.~
+@6  = ~Ainsi vous voulez des réponses ; on dirait que tout le monde veut des réponses de nos jours. Ma Sally que voilà aime créer des énigmes. Résolvez une de ses énigmes et je répondrai à votre question.~
+@7  = ~Très bien. Quelle est l'énigme ?~
+@8  = ~Je suis quatre fois plus âgé que ma fille. Dans vingt ans je serai deux fois plus âgé qu'elle. Quel âge avons-nous aujourd'hui ?~
+@9  = ~J'ai 60 ans et ma fille en a 15.~
+@10 = ~J'ai 28 ans et ma fille en a 7.~
+@11 = ~J'ai 36 ans et ma fille en a 9.~
+@12 = ~J'ai 40 ans et ma fille en a 10.~
+@13 = ~J'ai 48 ans et ma fille en a 12.~
+@14 = ~Non ce n'est pas la bonne réponse. Un nouvel essai ?~
+@15 = ~Bien joué. Le talisman que vous recherchez est appelé l'Étoile de Merris ; c'est un antique artefact elfique. Ils furent peu nombreux à être fabriqués et il se trouve justement que j'ai par hasard le talisman non loin de moi. Je vous l'échangerai mais le prix sera élevé.~
+@16 = ~Alors quel est le prix de cet échange ?~
+@17 = ~Je n'ai plus de temps pour ça. Donnez-moi le talisman ou vous mourez ici-même.~
+@18 = ~Il y a un genre particulier de rubis en vente dans une des auberges locales. Il est connu sous le nom de rubis Coeur de Dragon. Apportez-moi le rubis et je vous l'échangerai contre le talisman.~
+@19 = ~Un rubis Coeur de Dragon en vente dans une des auberges de Bérégost. Très bien, je vais acquérir cet objet pour vous.~
+@20 = ~Les menaces ne mènent à rien, étranger. Tuez-moi et vous aurez perdu le Talisman pour toujours.~ ~Les menaces ne mènent à rien, étrangère. Tuez-moi et vous aurez perdu le Talisman pour toujours.~
+@21 = ~Parfait... Vous n'avez manifestement aucun désir d'aider ma cause, alors dites-moi quel est le prix de ce marché ?~
+@22 = ~Peu m'importe. Vous mourrez aujourd'hui.~
+@23 = ~Le rubis.... Vous l'avez ?~
+@24 = ~Pas encore.~
+@25 = ~Oui, le voici. Maintenant, finissons-en avec ce marché, mendiant. Donnez-moi le talisman et je m'en irai.~
+@26 = ~Oh, aujourd'hui est un si grand jour. Je ne peux assez vous remercier. J'ai enfin le rubis Coeur de Dragon, après toutes ces années. Tenez, voici le Talisman et bonne chance dans votre quête.~
+@27 = ~Je n'ai pas de temps pour ça. J'ai mieux à faire.~
+@28 = ~D'accord, posez-moi l'énigme.~
+@29 = ~De retour, étranger. Voulez-vous essayer de résoudre l'énigme ?~ ~De retour, étrangère. Voulez-vous essayer de résoudre l'énigme ?~
+
+//@20 = ~Un nom étrange pour une pierre. Y a-t-il autre chose que je doive savoir sur elle avant de l'acquérir ?~
+//@14 = ~Oh oui, il y a autre chose. Le rubis a des pouvoirs magiques. N'y touchez pas ou vous pourriez vous prendre une méchante décharge !~
+//@31  = ~Un mendiant des rues m'a fait courir partout lui chercher une gemme pierre de soleil, rien que pour des informations.~
+//@32  = ~J'ai récupéré une gemme pierre de soleil pour Carneth, en échange d'informations sur le Talisman suivant.~
+//@33  = ~Carneth veut que j'acquière le rubis Coeur de Dragon au magasin local. On dirait un artefact magique, il sera cher sans aucun doute.~
+//@34  = ~Une fois le rubis Coeur de Dragon acquis pour Carneth, il m'a donné le talisman que je recherchais. L'Étoile de Merris.~

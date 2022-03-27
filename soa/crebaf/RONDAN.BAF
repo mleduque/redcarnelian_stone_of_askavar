@@ -1,0 +1,103 @@
+IF
+  See([PC])
+  NumTimesTalkedTo(0)
+THEN
+  RESPONSE #100
+    StartDialog("RONDAN",[PC])
+END
+
+IF
+  Die()
+THEN
+  RESPONSE #100
+    ReallyForceSpell(Myself,RED_SWIRL)
+    ReallyForceSpell(Myself,RED_HOLY_MIGHT)
+END
+
+IF
+  Global("Rondancure","GLOBAL",0)
+  HPPercentLT(Myself,50)
+THEN
+  RESPONSE #100
+    SetGlobal("Rondancure","GLOBAL",1)
+    ForceSpell(Myself(Myself),CLERIC_CURE_CRITICAL_WOUNDS)
+    EquipMostDamagingMelee()
+    Continue()
+END
+
+IF
+  HPPercentLT(Myself,50)
+  HasItem("_POTN08",Myself)
+THEN
+  RESPONSE #100
+    UseItem("_POTN08",Myself)
+    Continue()
+END
+
+IF
+  HitBy([0],POISON)
+  HasItem("_POTN20",Myself)
+THEN
+  RESPONSE #100
+    UseItem("_POTN20",Myself)
+    Continue()
+END
+
+IF
+  Global("Rondan","GLOBAL",0)
+  See(Nearestenemyof(Myself(Myself)))
+THEN
+  RESPONSE #100
+    ForceSpell(Nearestenemyof(Myself(Myself)),WIZARD_MAGIC_MISSILE)
+    SmallWait(5)
+    ForceSpell(Myself(Myself),WIZARD_RESIST_FEAR)
+    SetGlobal("Rondan","GLOBAL",1)
+    Continue()
+END
+
+IF
+  Global("Rondan","GLOBAL",1)
+  See(Nearestenemyof(Myself(Myself)))
+THEN
+  RESPONSE #100
+    Spell(Nearestenemyof(Myself(Myself)),WIZARD_HORROR)
+    SetGlobal("Rondan","GLOBAL",2)
+    Continue()
+END
+
+IF
+  Global("Rondan","GLOBAL",2)
+  See(Nearestenemyof(Myself(Myself)))
+THEN
+  RESPONSE #100
+    Spell(Nearestenemyof(Myself(Myself)),WIZARD_FLAME_ARROW)
+    SmallWait(5)
+    ForceSpell(Myself(Myself),SUMMON_SKELETON_WARRIOR)
+    SetGlobal("Rondan","GLOBAL",3)
+    Continue()
+END
+
+IF
+  Global("Rondan","GLOBAL",3)
+  See(Nearestenemyof(Myself(Myself)))
+THEN
+  RESPONSE #100
+    Spell(Nearestenemyof(Myself(Myself)),WIZARD_MAGIC_MISSILE)
+    SmallWait(5)
+    Spell(Nearestenemyof(Myself(Myself)),WIZARD_MONSTER_SUMMONING_3)
+    SetGlobal("Rondan","GLOBAL",4)
+    Continue()
+END
+
+IF
+  See(Nearestenemyof(Myself(Myself)))
+  Global("Rondan","GLOBAL",4)
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    AttackOneRound(Nearestenemyof(Myself(Myself)))
+    AttackOneRound(Nearestenemyof(Myself(Myself)))
+    SetGlobal("Rondan","GLOBAL",5)
+    Continue()
+END
+

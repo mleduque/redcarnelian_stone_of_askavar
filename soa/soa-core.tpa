@@ -1,0 +1,2257 @@
+// ---------------------------------------------------------------------------------------------------
+DEFINE_ACTION_MACRO ~SOA_CORE_COMPONENT~ BEGIN
+// ---------------------------------------------------------------------------------------------------
+
+//Journal Entries for BGEE only 
+ADD_JOURNAL TITLE (@10000) @10001 @10002 @10003 USING ~soa/Language/%LANGUAGE%/setup.tra~
+ADD_JOURNAL TITLE (@10004) @10005 @10006 @10021 USING ~soa/Language/%LANGUAGE%/setup.tra~
+ADD_JOURNAL TITLE (@10007) @10008 @10009 @10010 USING ~soa/Language/%LANGUAGE%/setup.tra~
+ADD_JOURNAL TITLE (@10011) @10012 @10013 USING ~soa/Language/%LANGUAGE%/setup.tra~
+ADD_JOURNAL TITLE (@10014) @10015 @10016 @10017 USING ~soa/Language/%LANGUAGE%/setup.tra~
+ADD_JOURNAL TITLE (@10018) @10019 @10020 USING ~soa/Language/%LANGUAGE%/setup.tra~
+
+
+COMPILE EVALUATE_BUFFER ~soa/dlg/CEARWIN.D~
+COMPILE EVALUATE_BUFFER ~soa/dlg/ARANOR.D~
+COMPILE EVALUATE_BUFFER ~soa/dlg/CARNETH.D~
+COMPILE EVALUATE_BUFFER ~soa/dlg/LIZZY.D~
+COMPILE ~soa/dlg/PELERIA.D~
+COMPILE ~soa/dlg/PIRN.D~
+COMPILE ~soa/dlg/REBECCA.D~
+COMPILE ~soa/dlg/RONDAN.D~
+COMPILE ~soa/dlg/SALLY.D~
+
+//2da tables
+//APPEND ~Arealink.2da~
+//~AREAS005              0           NO_AREA      NO_AREA      NO_AREA      NO_AREA      NO_AREA      NO_AREA
+//AREAS002              0           NO_AREA      NO_AREA      NO_AREA      NO_AREA      NO_AREA      NO_AREA~
+
+APPEND ~Mastarea.2da~
+~ARS001  value 
+ARS002  value
+ARS003  value
+ARS004  value
+ARS005  value
+ARS006  value
+ARS007  value~
+
+//AREA IMAGES
+
+COPY ~soa/areaimages~   ~override~
+
+//Mos files - Larger for bgee
+COPY ~soa/mos/%SrcFolder%~   ~override~
+
+//BAMS
+
+COPY ~soa/itembams~   ~override~
+
+//SOUNDS
+
+//COPY ~soa/sounds~   ~override~
+
+//Creatures
+
+PRINT @237
+
+COPY ~soa/creatures/andrath.cre~     ~override~
+  SAY NAME1 @163
+  SAY NAME2 @163
+  PATCH_IF (SOURCE_SIZE > 0x2d3) BEGIN
+    ADD_CRE_ITEM ~%tutu_var%PLAT04~ #0 #0 #0 ~NONE~ ~ARMOR~
+  END
+BUT_ONLY_IF_IT_CHANGES
+
+COPY ~soa/creatures/aranor.cre~     ~override~
+  SAY NAME1 @164
+  SAY NAME2 @164
+  PATCH_IF (SOURCE_SIZE > 0x2d3) BEGIN
+    ADD_CRE_ITEM ~%tutu_var%STAF01~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP TWOHANDED
+    ADD_CRE_ITEM ~%tutu_var%DART01~ #10 #0 #0 ~NONE~ ~INV1~
+    ADD_CRE_ITEM ~%tutu_var%SLNG01~ #0 #0 #0 ~NONE~ ~INV2~
+    ADD_CRE_ITEM ~%tutu_var%BULL01~ #10 #0 #0 ~NONE~ ~INV3~
+    ADD_CRE_ITEM ~%tutu_var%BULL01~ #10 #0 #0 ~NONE~ ~INV4~
+    ADD_CRE_ITEM ~%tutu_var%BULL01~ #10 #0 #0 ~NONE~ ~INV5~
+  END
+BUT_ONLY_IF_IT_CHANGES
+
+COPY ~soa/creatures/carneth.cre~     ~override~
+  SAY NAME1 @165
+  SAY NAME2 @165
+
+COPY ~soa/creatures/cearwin.cre~     ~override~
+  SAY NAME1 @166
+  SAY NAME2 @166
+  PATCH_IF (SOURCE_SIZE > 0x2d3) BEGIN
+    ADD_CRE_ITEM ~%tutu_var%LEAT02~ #0 #0 #0 ~NONE~ ~ARMOR~
+    ADD_CRE_ITEM ~%tutu_var%RING12~ #0 #0 #0 ~NONE~ ~LRING~
+    ADD_CRE_ITEM ~%tutu_var%AMUL04~ #0 #0 #0 ~NONE~ ~AMULET~
+  END
+BUT_ONLY_IF_IT_CHANGES
+
+COPY ~soa/creatures/cileen.cre~     ~override~
+  SAY NAME1 @167
+  SAY NAME2 @167
+  PATCH_IF (SOURCE_SIZE > 0x2d3) BEGIN
+    ADD_CRE_ITEM ~%tutu_var%STAF02~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP TWOHANDED
+    ADD_CRE_ITEM ~%tutu_var%POTN08~ #0 #0 #0 ~NONE~ ~INV1~
+    ADD_CRE_ITEM ~%tutu_var%POTN20~ #0 #0 #0 ~NONE~ ~INV2~
+  END
+BUT_ONLY_IF_IT_CHANGES
+
+COPY ~soa/creatures/hanwen.cre~     ~override~
+  SAY NAME1 @168
+  SAY NAME2 @168
+  PATCH_IF (SOURCE_SIZE > 0x2d3) BEGIN
+    ADD_CRE_ITEM ~%tutu_var%STAF02~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP TWOHANDED
+    ADD_CRE_ITEM ~%tutu_var%POTN08~ #0 #0 #0 ~NONE~ ~INV1~
+    ADD_CRE_ITEM ~%tutu_var%POTN20~ #0 #0 #0 ~NONE~ ~INV2~
+  END
+BUT_ONLY_IF_IT_CHANGES
+
+COPY ~soa/creatures/harpmess.cre~     ~override~
+  SAY NAME1 @169
+  SAY NAME2 @169
+  PATCH_IF (SOURCE_SIZE > 0x2d3) BEGIN
+    ADD_CRE_ITEM ~%tutu_var%LEAT01~ #0 #0 #0 ~NONE~ ~ARMOR~
+    ADD_CRE_ITEM ~%tutu_var%SW1H07~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP
+    ADD_CRE_ITEM ~%tutu_var%POTN20~ #0 #0 #0 ~NONE~ ~QITEM1~
+  END
+BUT_ONLY_IF_IT_CHANGES
+
+COPY ~soa/creatures/ithkim.cre~     ~override~
+  SAY NAME1 @170
+  SAY NAME2 @170
+  PATCH_IF (SOURCE_SIZE > 0x2d3) BEGIN
+    ADD_CRE_ITEM ~%tutu_var%HELM10~ #0 #0 #0 ~NONE~ ~HELMET~
+    ADD_CRE_ITEM ~%tutu_var%PLAT01~ #0 #0 #0 ~NONE~ ~ARMOR~
+    ADD_CRE_ITEM ~%tutu_var%POTN20~ #0 #0 #0 ~NONE~ ~QITEM1~
+    ADD_CRE_ITEM ~%tutu_var%POTN08~ #0 #0 #0 ~NONE~ ~INV1~
+  END
+BUT_ONLY_IF_IT_CHANGES
+
+COPY ~soa/creatures/jonell.cre~     ~override~
+  SAY NAME1 @171
+  SAY NAME2 @171
+  PATCH_IF (SOURCE_SIZE > 0x2d3) BEGIN
+    ADD_CRE_ITEM ~%tutu_var%CLCK17~ #0 #0 #0 ~NONE~ ~ARMOR~
+    ADD_CRE_ITEM ~%tutu_var%STAF02~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP TWOHANDED
+    ADD_CRE_ITEM ~%tutu_var%POTN08~ #0 #0 #0 ~NONE~ ~INV1~
+    ADD_CRE_ITEM ~%tutu_var%POTN20~ #0 #0 #0 ~NONE~ ~INV2~
+  END
+BUT_ONLY_IF_IT_CHANGES
+
+COPY ~soa/creatures/lelthorn.cre~     ~override~
+  SAY NAME1 @172
+  SAY NAME2 @172
+  PATCH_IF (SOURCE_SIZE > 0x2d3) BEGIN
+    ADD_CRE_ITEM ~%tutu_var%PLAT04~ #0 #0 #0 ~NONE~ ~ARMOR~
+    ADD_CRE_ITEM ~%tutu_var%POTN20~ #0 #0 #0 ~NONE~ ~QITEM1~
+    ADD_CRE_ITEM ~%tutu_var%POTN08~ #0 #0 #0 ~NONE~ ~INV1~
+  END
+BUT_ONLY_IF_IT_CHANGES
+
+COPY ~soa/creatures/lizzy.cre~     ~override~
+  SAY NAME1 @173
+  SAY NAME2 @173
+
+COPY ~soa/creatures/peleria.cre~     ~override~
+  SAY NAME1 @174
+  SAY NAME2 @174
+  PATCH_IF (SOURCE_SIZE > 0x2d3) BEGIN
+    ADD_CRE_ITEM ~%tutu_var%RING06~ #0 #0 #0 ~NONE~ ~LRING~
+    ADD_CRE_ITEM ~%tutu_var%STAF02~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP TWOHANDED
+    ADD_CRE_ITEM ~%tutu_var%POTN02~ #0 #0 #0 ~NONE~ ~INV1~
+  END
+BUT_ONLY_IF_IT_CHANGES
+
+COPY ~soa/creatures/pirn.cre~     ~override~
+  SAY NAME1 @175
+  SAY NAME2 @175
+  PATCH_IF (SOURCE_SIZE > 0x2d3) BEGIN
+    ADD_CRE_ITEM ~%tutu_var%CLCK17~ #0 #0 #0 ~NONE~ ~ARMOR~
+    ADD_CRE_ITEM ~%tutu_var%STAF02~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP TWOHANDED
+    ADD_CRE_ITEM ~%tutu_var%POTN08~ #0 #0 #0 ~NONE~ ~INV1~
+    ADD_CRE_ITEM ~%tutu_var%POTN20~ #0 #0 #0 ~NONE~ ~INV2~
+  END
+BUT_ONLY_IF_IT_CHANGES
+
+COPY ~soa/creatures/rebecca.cre~     ~override~
+  SAY NAME1 @176
+  SAY NAME2 @176
+
+COPY ~soa/creatures/rondan.cre~     ~override~
+  SAY NAME1 @177
+  SAY NAME2 @177
+  PATCH_IF (SOURCE_SIZE > 0x2d3) BEGIN
+    ADD_CRE_ITEM ~%tutu_var%CLCK17~ #0 #0 #0 ~NONE~ ~ARMOR~
+    ADD_CRE_ITEM ~%tutu_var%STAF02~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP TWOHANDED
+    ADD_CRE_ITEM ~%tutu_var%POTN08~ #0 #0 #0 ~NONE~ ~INV1~
+    ADD_CRE_ITEM ~%tutu_var%POTN20~ #0 #0 #0 ~NONE~ ~INV2~
+  END
+BUT_ONLY_IF_IT_CHANGES
+
+COPY ~soa/creatures/sally.cre~     ~override~
+  SAY NAME1 @178
+  SAY NAME2 @178
+
+COPY ~soa/creatures/shaerlee.cre~     ~override~
+  SAY NAME1 @179
+  SAY NAME2 @179
+  PATCH_IF (SOURCE_SIZE > 0x2d3) BEGIN
+    ADD_CRE_ITEM ~%tutu_var%HELM01~ #0 #0 #0 ~NONE~ ~HELMET~
+    ADD_CRE_ITEM ~%tutu_var%RING06~ #0 #0 #0 ~NONE~ ~LRING~
+    ADD_CRE_ITEM ~%tutu_var%DAGG02~ #0 #0 #0 ~NONE~ ~WEAPON2~
+    ADD_CRE_ITEM ~%tutu_var%AROW09~ #20 #0 #0 ~NONE~ ~QUIVER1~
+    ADD_CRE_ITEM ~%tutu_var%AROW11~ #20 #0 #0 ~NONE~ ~QUIVER2~
+    ADD_CRE_ITEM ~%tutu_var%POTN08~ #0 #0 #0 ~NONE~ ~INV1~
+    ADD_CRE_ITEM ~%tutu_var%POTN20~ #0 #0 #0 ~NONE~ ~INV2~
+    ADD_CRE_ITEM ~%tutu_var%POTN36~ #0 #0 #0 ~NONE~ ~INV3~
+    ADD_CRE_ITEM ~%tutu_var%AMUL11~ #0 #0 #0 ~NONE~ ~INV4~
+  END
+BUT_ONLY_IF_IT_CHANGES
+
+COPY ~soa/creatures/stonegol.cre~     ~override~
+  SAY NAME1 @180
+  SAY NAME2 @180
+  PATCH_IF (SOURCE_SIZE > 0x2d3) BEGIN
+    ADD_CRE_ITEM ~%tutu_var%IMMUNE1~ #0 #0 #0 ~NONE~ ~LRING~
+    ADD_CRE_ITEM ~%tutu_var%B2-16~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP
+  END
+BUT_ONLY_IF_IT_CHANGES
+
+COPY ~soa/creatures/talmur.cre~     ~override~
+  SAY NAME1 @181
+  SAY NAME2 @181
+  PATCH_IF (SOURCE_SIZE > 0x2d3) BEGIN
+    ADD_CRE_ITEM ~%tutu_var%HELM12~ #0 #0 #0 ~NONE~ ~HELMET~
+    ADD_CRE_ITEM ~%tutu_var%PLAT01~ #0 #0 #0 ~NONE~ ~ARMOR~
+    ADD_CRE_ITEM ~%tutu_var%SHLD06~ #0 #0 #0 ~NONE~ ~SHIELD~
+    ADD_CRE_ITEM ~%tutu_var%POTN20~ #0 #0 #0 ~NONE~ ~QITEM1~
+    ADD_CRE_ITEM ~%tutu_var%POTN08~ #0 #0 #0 ~NONE~ ~INV1~
+  END
+BUT_ONLY_IF_IT_CHANGES
+
+COPY ~soa/creatures/telagent.cre~     ~override~
+  SAY NAME1 @182
+  SAY NAME2 @182
+  PATCH_IF (SOURCE_SIZE > 0x2d3) BEGIN
+    ADD_CRE_ITEM ~%tutu_var%ILEAT04~ #0 #0 #0 ~NONE~ ~ARMOR~
+    ADD_CRE_ITEM ~%tutu_var%BOW05~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP TWOHANDED
+    ADD_CRE_ITEM ~%tutu_var%AROW01~ #20 #0 #0 ~NONE~ ~QUIVER1~
+    ADD_CRE_ITEM ~%tutu_var%BOOK61~ #0 #0 #0 ~NONE~ ~INV1~
+    ADD_CRE_ITEM ~%tutu_var%POTN25~ #0 #0 #0 ~NONE~ ~INV2~
+  END
+BUT_ONLY_IF_IT_CHANGES
+
+COPY ~soa/creatures/telarch1.cre~     ~override~
+  SAY NAME1 @183
+  SAY NAME2 @183
+  PATCH_IF (SOURCE_SIZE > 0x2d3) BEGIN
+    ADD_CRE_ITEM ~%tutu_var%HELM10~ #0 #0 #0 ~NONE~ ~HELMET~
+    ADD_CRE_ITEM ~%tutu_var%CHAN04~ #0 #0 #0 ~NONE~ ~ARMOR~
+    ADD_CRE_ITEM ~%tutu_var%BOW01~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP TWOHANDED
+    ADD_CRE_ITEM ~%tutu_var%SW1H04~ #0 #0 #0 ~NONE~ ~WEAPON2~
+    ADD_CRE_ITEM ~%tutu_var%AROW09~ #20 #0 #0 ~NONE~ ~QUIVER1~
+    ADD_CRE_ITEM ~%tutu_var%AROW02~ #20 #0 #0 ~NONE~ ~QUIVER2~
+    ADD_CRE_ITEM ~%tutu_var%AROW01~ #20 #0 #0 ~NONE~ ~QUIVER3~
+    ADD_CRE_ITEM ~%tutu_var%POTN08~ #0 #0 #0 ~NONE~ ~QITEM1~
+  END
+BUT_ONLY_IF_IT_CHANGES
+
+COPY ~soa/creatures/telarch2.cre~     ~override~
+  SAY NAME1 @183
+  SAY NAME2 @183
+  PATCH_IF (SOURCE_SIZE > 0x2d3) BEGIN
+    ADD_CRE_ITEM ~%tutu_var%HELM01~ #0 #0 #0 ~NONE~ ~HELMET~
+    ADD_CRE_ITEM ~%tutu_var%CHAN04~ #0 #0 #0 ~NONE~ ~ARMOR~
+    ADD_CRE_ITEM ~%tutu_var%BOW03~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP TWOHANDED
+    ADD_CRE_ITEM ~%tutu_var%SW1H04~ #0 #0 #0 ~NONE~ ~WEAPON2~
+    ADD_CRE_ITEM ~%tutu_var%AROW09~ #20 #0 #0 ~NONE~ ~QUIVER1~
+    ADD_CRE_ITEM ~%tutu_var%AROW02~ #20 #0 #0 ~NONE~ ~QUIVER2~
+    ADD_CRE_ITEM ~%tutu_var%AROW01~ #20 #0 #0 ~NONE~ ~QUIVER3~
+    ADD_CRE_ITEM ~%tutu_var%POTN08~ #0 #0 #0 ~NONE~ ~QITEM1~
+  END
+BUT_ONLY_IF_IT_CHANGES
+
+COPY ~soa/creatures/telcler1.cre~     ~override~
+  SAY NAME1 @184
+  SAY NAME2 @184
+  PATCH_IF (SOURCE_SIZE > 0x2d3) BEGIN
+    ADD_CRE_ITEM ~%tutu_var%HELM01~ #0 #0 #0 ~NONE~ ~HELMET~
+    ADD_CRE_ITEM ~%tutu_var%CHAN04~ #0 #0 #0 ~NONE~ ~ARMOR~
+    ADD_CRE_ITEM ~%tutu_var%SHLD15~ #0 #0 #0 ~NONE~ ~SHIELD~
+    ADD_CRE_ITEM ~%tutu_var%BLUN06~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP
+  END
+BUT_ONLY_IF_IT_CHANGES
+
+COPY ~soa/creatures/telfght1.cre~     ~override~
+  SAY NAME1 @185
+  SAY NAME2 @185
+  PATCH_IF (SOURCE_SIZE > 0x2d3) BEGIN
+    ADD_CRE_ITEM ~%tutu_var%HELM01~ #0 #0 #0 ~NONE~ ~HELMET~
+    ADD_CRE_ITEM ~%tutu_var%CHAN01~ #0 #0 #0 ~NONE~ ~ARMOR~
+    ADD_CRE_ITEM ~%tutu_var%SHLD03~ #0 #0 #0 ~NONE~ ~SHIELD~
+    ADD_CRE_ITEM ~%tutu_var%SW1H04~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP
+    ADD_CRE_ITEM ~%tutu_var%POTN44~ #0 #0 #0 ~NONE~ ~QITEM1~
+    ADD_CRE_ITEM ~%tutu_var%RING11~ #0 #0 #0 ~NONE~ ~INV1~
+    ADD_CRE_ITEM ~%tutu_var%MISC43~ #0 #0 #0 ~NONE~ ~INV2~
+  END
+BUT_ONLY_IF_IT_CHANGES
+
+COPY ~soa/creatures/telfght2.cre~     ~override~
+  SAY NAME1 @185
+  SAY NAME2 @185
+  PATCH_IF (SOURCE_SIZE > 0x2d3) BEGIN
+    ADD_CRE_ITEM ~%tutu_var%HELM01~ #0 #0 #0 ~NONE~ ~HELMET~
+    ADD_CRE_ITEM ~%tutu_var%CHAN01~ #0 #0 #0 ~NONE~ ~ARMOR~
+    ADD_CRE_ITEM ~%tutu_var%SHLD11~ #0 #0 #0 ~NONE~ ~SHIELD~
+    ADD_CRE_ITEM ~%tutu_var%SW1H04~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP
+    ADD_CRE_ITEM ~%tutu_var%POTN09~ #0 #0 #0 ~NONE~ ~QITEM1~
+    ADD_CRE_ITEM ~%tutu_var%AMUL07~ #0 #0 #0 ~NONE~ ~INV1~
+  END
+BUT_ONLY_IF_IT_CHANGES
+
+COPY ~soa/creatures/telfght3.cre~     ~override~
+  SAY NAME1 @185
+  SAY NAME2 @185
+  PATCH_IF (SOURCE_SIZE > 0x2d3) BEGIN
+    ADD_CRE_ITEM ~%tutu_var%HELM08~ #0 #0 #0 ~NONE~ ~HELMET~
+    ADD_CRE_ITEM ~%tutu_var%PLAT01~ #0 #0 #0 ~NONE~ ~ARMOR~
+    ADD_CRE_ITEM ~%tutu_var%SHLD15~ #0 #0 #0 ~NONE~ ~SHIELD~
+    ADD_CRE_ITEM ~%tutu_var%SW1H01~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP
+    ADD_CRE_ITEM ~%tutu_var%POTN09~ #0 #0 #0 ~NONE~ ~QITEM1~
+  END
+BUT_ONLY_IF_IT_CHANGES
+
+COPY ~soa/creatures/telfght4.cre~     ~override~
+  SAY NAME1 @185
+  SAY NAME2 @185
+  PATCH_IF (SOURCE_SIZE > 0x2d3) BEGIN
+    ADD_CRE_ITEM ~%tutu_var%HELM10~ #0 #0 #0 ~NONE~ ~HELMET~
+    ADD_CRE_ITEM ~%tutu_var%PLAT01~ #0 #0 #0 ~NONE~ ~ARMOR~
+    ADD_CRE_ITEM ~%tutu_var%SHLD12~ #0 #0 #0 ~NONE~ ~SHIELD~
+    ADD_CRE_ITEM ~%tutu_var%SW1H01~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP
+    ADD_CRE_ITEM ~%tutu_var%POTN09~ #0 #0 #0 ~NONE~ ~QITEM1~
+  END
+BUT_ONLY_IF_IT_CHANGES
+
+COPY ~soa/creatures/telmess1.cre~     ~override~
+  SAY NAME1 @186
+  SAY NAME2 @186
+  PATCH_IF (SOURCE_SIZE > 0x2d3) BEGIN
+    ADD_CRE_ITEM ~%tutu_var%HELM01~ #0 #0 #0 ~NONE~ ~HELMET~
+    ADD_CRE_ITEM ~%tutu_var%CHAN01~ #0 #0 #0 ~NONE~ ~ARMOR~
+    ADD_CRE_ITEM ~%tutu_var%SHLD03~ #0 #0 #0 ~NONE~ ~SHIELD~
+    ADD_CRE_ITEM ~%tutu_var%SW1H01~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP
+    ADD_CRE_ITEM ~%tutu_var%POTN44~ #0 #0 #0 ~NONE~ ~QITEM1~
+    ADD_CRE_ITEM ~%tutu_var%RING11~ #0 #0 #0 ~NONE~ ~INV1~
+    ADD_CRE_ITEM ~%tutu_var%MISC43~ #0 #0 #0 ~NONE~ ~INV2~
+  END
+BUT_ONLY_IF_IT_CHANGES
+
+COPY ~soa/creatures/telmess2.cre~     ~override~
+  SAY NAME1 @186
+  SAY NAME2 @186
+  PATCH_IF (SOURCE_SIZE > 0x2d3) BEGIN
+    ADD_CRE_ITEM ~%tutu_var%HELM01~ #0 #0 #0 ~NONE~ ~HELMET~
+    ADD_CRE_ITEM ~%tutu_var%CHAN01~ #0 #0 #0 ~NONE~ ~ARMOR~
+    ADD_CRE_ITEM ~%tutu_var%SHLD11~ #0 #0 #0 ~NONE~ ~SHIELD~
+    ADD_CRE_ITEM ~%tutu_var%SW1H04~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP
+    ADD_CRE_ITEM ~%tutu_var%POTN09~ #0 #0 #0 ~NONE~ ~QITEM1~
+    ADD_CRE_ITEM ~%tutu_var%AMUL07~ #0 #0 #0 ~NONE~ ~INV1~
+  END
+BUT_ONLY_IF_IT_CHANGES
+
+COPY ~soa/creatures/kalindra.cre~     ~override~
+  SAY NAME1 @187
+  SAY NAME2 @187
+
+//Scripts
+COMPILE EVALUATE_BUFFER ~soa/crebaf~
+COMPILE ~soa/trapbaf~
+
+//Scripts
+EXTEND_BOTTOM ~%Beregost_BCS%.bcs~ ~soa/snips/ar3300.baf~
+      EVALUATE_BUFFER
+EXTEND_BOTTOM ~%Beregost_BurningWizard_L1_BCS%.bcs~ ~soa/snips/ar3307.baf~
+      EVALUATE_BUFFER
+EXTEND_BOTTOM ~%BanditCamp_BCS%.bcs~ ~soa/snips/ar1900.baf~
+      EVALUATE_BUFFER
+EXTEND_BOTTOM ~%NashkelCarnival_BCS%.bcs~ ~soa/snips/ar4900.baf~
+      EVALUATE_BUFFER
+EXTEND_BOTTOM ~%Beregost_House22_L1_BCS%.bcs~ ~soa/snips/ar3337.baf~
+      EVALUATE_BUFFER
+EXTEND_BOTTOM ~%Temple_BCS%.bcs~ ~soa/snips/ar3400.baf~
+      EVALUATE_BUFFER
+	  
+//Different script to sort out conflict with BGEE
+ACTION_IF GAME_IS ~BGEE~ THEN BEGIN
+EXTEND_TOP ~%NNashkelRoad_BCS%.bcs~ ~soa/snips/bgee/ar4300.baf~
+    EVALUATE_BUFFER
+END ELSE BEGIN
+    EXTEND_TOP ~%NNashkelRoad_BCS%.bcs~ ~soa/snips/ar4300.baf~
+    EVALUATE_BUFFER
+END
+
+ACTION_IF GAME_IS ~TotSC~ THEN BEGIN // TotSC
+
+//Area Stuff
+
+COPY ~soa/areas/bg~  ~override~
+ 
+//BAMS
+
+COPY ~soa/spellbams~   ~override~
+
+//SPELLS IDS (New spells only for TotSC)
+APPEND ~Spell.IDS~
+ ~1219 CLERIC_IMPROVED_SANCTUARY
+ 1318 CLERIC_INGENUITY
+ 1516 CLERIC_KHELBANS_DEFENSIVE_LINK
+ 2121 WIZARD_ICE_DAGGER
+ 2122 WIZARD_HERALDS_CALL
+ 2123 WIZARD_NYBORS_GENTLE_REMINDER
+ 2223 WIZARD_SKELETON_ARMOR
+ 2318 WIZARD_MAGIC_SHIELD
+ 2319 WIZARD_NYBORS_ADMONISMENT~
+
+ 
+//ITEMS
+
+COPY ~soa/items/SOAITM01.ITM~      ~override~
+  SAY NAME1 @0
+  SAY NAME2 @1
+  SAY UNIDENTIFIED_DESC @2
+  SAY DESC @3
+
+COPY ~soa/items/SOAITM02.ITM~      ~override~
+  SAY NAME1 @4
+  SAY NAME2 @5
+  SAY UNIDENTIFIED_DESC @6
+  SAY DESC @7
+
+COPY ~soa/items/SOAITM03.ITM~      ~override~
+  SAY NAME1 @8
+  SAY NAME2 @9
+  SAY UNIDENTIFIED_DESC @10
+  SAY DESC @11
+
+COPY ~soa/items/SOAITM04.ITM~      ~override~
+  SAY NAME1 @12
+  SAY NAME2 @13
+  SAY UNIDENTIFIED_DESC @14
+  SAY DESC @15
+
+COPY ~soa/items/SOAITM05.ITM~      ~override~
+  SAY NAME1 @16
+  SAY NAME2 @17
+  SAY UNIDENTIFIED_DESC @18
+  SAY DESC @19
+
+COPY ~soa/items/SOAITM06.ITM~      ~override~
+  SAY NAME1 @20
+  SAY NAME2 @21
+  SAY UNIDENTIFIED_DESC @22
+  SAY DESC @23
+
+COPY ~soa/items/SOAITM07.ITM~      ~override~
+  SAY NAME1 @24
+  SAY NAME2 @25
+  SAY UNIDENTIFIED_DESC @26
+  SAY DESC @27
+
+COPY ~soa/items/SOAITM08.ITM~      ~override~
+  SAY NAME1 @28
+  SAY NAME2 @29
+  SAY UNIDENTIFIED_DESC @30
+  SAY DESC @31
+
+COPY ~soa/items/SOAITM09.ITM~      ~override~
+  SAY NAME1 @32
+  SAY NAME2 @33
+  SAY UNIDENTIFIED_DESC @34
+  SAY DESC @35
+
+COPY ~soa/items/SOAITM10.ITM~      ~override~
+  SAY NAME1 @36
+  SAY NAME2 @37
+  SAY UNIDENTIFIED_DESC @38
+  SAY DESC @39
+
+COPY ~soa/items/SOAITM11.ITM~      ~override~
+  SAY NAME1 @40
+  SAY NAME2 @41
+  SAY UNIDENTIFIED_DESC @42
+  SAY DESC @43
+
+COPY ~soa/items/SOAITM12.ITM~      ~override~
+  SAY NAME1 @40
+  SAY NAME2 @44
+  SAY UNIDENTIFIED_DESC @42
+  SAY DESC @45
+
+COPY ~soa/items/SOAITM13.ITM~      ~override~
+  SAY NAME1 @46
+  SAY NAME2 @47
+  SAY UNIDENTIFIED_DESC @48
+  SAY DESC @49
+
+COPY ~soa/items/SOAITM14.ITM~      ~override~
+  SAY NAME1 @50
+  SAY NAME2 @51
+  SAY UNIDENTIFIED_DESC @52
+  SAY DESC @53
+
+COPY ~soa/items/SOAITM15.ITM~      ~override~
+  SAY NAME1 @54
+  SAY NAME2 @55
+  SAY UNIDENTIFIED_DESC @56
+  SAY DESC @57
+
+COPY ~soa/items/SOAITM16.ITM~      ~override~
+  SAY NAME1 @58
+  SAY NAME2 @59
+  SAY UNIDENTIFIED_DESC @60
+  SAY DESC @61
+
+COPY ~soa/items/SOAITM17.ITM~      ~override~
+  SAY NAME1 @58
+  SAY NAME2 @62
+  SAY UNIDENTIFIED_DESC @60
+  SAY DESC @63
+
+COPY ~soa/items/SOAITM18.ITM~      ~override~
+  SAY NAME1 @64
+  SAY NAME2 @65
+  SAY UNIDENTIFIED_DESC @66
+  SAY DESC @67
+
+COPY ~soa/items/SOAITM19.ITM~      ~override~
+  SAY NAME1 @68
+  SAY NAME2 @69
+  SAY UNIDENTIFIED_DESC @70
+  SAY DESC @71
+
+COPY ~soa/items/SOAITM20.ITM~      ~override~
+  SAY NAME1 @72
+  SAY NAME2 @72
+  SAY UNIDENTIFIED_DESC @73
+  SAY DESC @74
+
+COPY ~soa/items/SOAITM21.ITM~      ~override~
+  SAY NAME1 @75
+  SAY NAME2 @76
+  SAY UNIDENTIFIED_DESC @77
+  SAY DESC @78
+
+COPY ~soa/items/SOAITM22.ITM~      ~override~
+  SAY NAME1 @79
+  SAY NAME2 @80
+  SAY UNIDENTIFIED_DESC @81
+  SAY DESC @82
+
+COPY ~soa/items/SOAITM23.ITM~      ~override~
+  SAY NAME1 @83
+  SAY NAME2 @84
+  SAY UNIDENTIFIED_DESC @85
+  SAY DESC @86
+
+COPY ~soa/items/SOAITM24.ITM~      ~override~
+  SAY NAME1 @87
+  SAY NAME2 @88
+  SAY UNIDENTIFIED_DESC @89
+  SAY DESC @90
+
+COPY ~soa/items/SOAITM25.ITM~      ~override~
+  SAY NAME1 @91
+  SAY NAME2 @92
+  SAY UNIDENTIFIED_DESC @93
+  SAY DESC @94
+
+COPY ~soa/items/SOAITM26.ITM~      ~override~
+  SAY NAME1 @95
+  SAY NAME2 @96
+  SAY UNIDENTIFIED_DESC @97
+  SAY DESC @97
+
+COPY ~soa/items/SOAITM27.ITM~      ~override~
+  SAY NAME1 @98
+  SAY NAME2 @99
+  SAY UNIDENTIFIED_DESC @100
+  SAY DESC @101
+
+COPY ~soa/items/SOAITM28.ITM~      ~override~
+  SAY NAME1 @102
+  SAY NAME2 @103
+  SAY UNIDENTIFIED_DESC @104
+  SAY DESC @105
+
+COPY ~soa/items/SOAITM29.ITM~      ~override~
+  SAY NAME1 @106
+  SAY NAME2 @107
+  SAY UNIDENTIFIED_DESC @108
+  SAY DESC @109
+
+COPY ~soa/items/SOAITM30.ITM~      ~override~
+  SAY NAME1 @98
+  SAY NAME2 @99
+  SAY UNIDENTIFIED_DESC @100
+  SAY DESC @110
+
+COPY ~soa/items/SOAITM31.ITM~      ~override~
+  SAY NAME1 @111
+  SAY NAME2 @112
+  SAY UNIDENTIFIED_DESC @113
+  SAY DESC @114
+
+COPY ~soa/items/SOAITM32.ITM~      ~override~
+  SAY NAME1 @111
+  SAY NAME2 @115
+  SAY UNIDENTIFIED_DESC @113
+  SAY DESC @116
+
+COPY ~soa/items/SOAITM33.ITM~      ~override~
+  SAY NAME1 @111
+  SAY NAME2 @117
+  SAY UNIDENTIFIED_DESC @113
+  SAY DESC @118
+
+COPY ~soa/items/SOAITM34.ITM~      ~override~
+  SAY NAME1 @111
+  SAY NAME2 @119
+  SAY UNIDENTIFIED_DESC @113
+  SAY DESC @120
+
+COPY ~soa/items/SOAITM35.ITM~      ~override~
+  SAY NAME1 @111
+  SAY NAME2 @121
+  SAY UNIDENTIFIED_DESC @113
+  SAY DESC @122
+
+COPY ~soa/items/SOAITM36.ITM~      ~override~
+  SAY NAME1 @123
+  SAY NAME2 @123
+  SAY UNIDENTIFIED_DESC @124
+  SAY DESC @124
+
+COPY ~soa/items/SOAITM37.ITM~      ~override~
+  SAY NAME1 @125
+  SAY NAME2 @125
+  SAY UNIDENTIFIED_DESC @126
+  SAY DESC @126
+
+COPY ~soa/items/SOAITM38.ITM~      ~override~
+  SAY NAME1 @127
+  SAY NAME2 @128
+  SAY UNIDENTIFIED_DESC @129
+  SAY DESC @130
+
+COPY ~soa/items/SOAITM39.ITM~      ~override~
+  SAY NAME1 @131
+  SAY NAME2 @132
+  SAY UNIDENTIFIED_DESC @133
+  SAY DESC @134
+
+COPY ~soa/items/SOAITM40.ITM~      ~override~
+  SAY NAME1 @123
+  SAY NAME2 @123
+  SAY UNIDENTIFIED_DESC @135
+  SAY DESC @135
+
+COPY ~soa/items/SOAITM41.ITM~      ~override~
+  SAY NAME1 @123
+  SAY NAME2 @123
+  SAY UNIDENTIFIED_DESC @188
+  SAY DESC @188
+
+COPY ~soa/items/SOAITM50.ITM~      ~override~
+  SAY NAME1 @136
+  SAY NAME2 @137
+  SAY UNIDENTIFIED_DESC @138
+  SAY DESC @138
+
+COPY ~soa/items/SOAITM51.ITM~      ~override~
+  SAY NAME1 @136
+  SAY NAME2 @139
+  SAY UNIDENTIFIED_DESC @140
+  SAY DESC @140
+
+COPY ~soa/items/SOAITM52.ITM~      ~override~
+  SAY NAME1 @136
+  SAY NAME2 @141
+  SAY UNIDENTIFIED_DESC @142
+  SAY DESC @142
+
+COPY ~soa/items/SOAITM54.ITM~      ~override~
+  SAY NAME1 @136
+  SAY NAME2 @145
+  SAY UNIDENTIFIED_DESC @146
+  SAY DESC @146
+
+COPY ~soa/items/SOAITM56.ITM~      ~override~
+  SAY NAME1 @136
+  SAY NAME2 @149
+  SAY UNIDENTIFIED_DESC @150
+  SAY DESC @150
+
+COPY ~soa/items/SOAITM58.ITM~      ~override~
+  SAY NAME1 @136
+  SAY NAME2 @153
+  SAY UNIDENTIFIED_DESC @154
+  SAY DESC @154
+
+COPY ~soa/items/SOAITM61.ITM~      ~override~
+  SAY NAME1 @176
+  SAY NAME2 @176
+  SAY UNIDENTIFIED_DESC @176
+  SAY DESC @176
+
+//STORES (Spells scrolls only for totsc)
+
+COPY_EXISTING ~highhed3.sto~ ~override~
+ADD_STORE_ITEM ~SOAITM50~ #1 #0 #0 ~IDENTIFIED~ #5
+ADD_STORE_ITEM ~SOAITM51~ #1 #0 #0 ~IDENTIFIED~ #5
+ADD_STORE_ITEM ~SOAITM56~ #1 #0 #0 ~IDENTIFIED~ #5
+ADD_STORE_ITEM ~SOAITM58~ #1 #0 #0 ~IDENTIFIED~ #5
+ADD_STORE_ITEM ~SOAITM52~ #1 #0 #0 ~IDENTIFIED~ #5
+ADD_STORE_ITEM ~SOAITM54~ #1 #0 #0 ~IDENTIFIED~ #5
+ADD_STORE_ITEM ~SOAITM08~ #1 #0 #0 ~IDENTIFIED~ #1
+
+COPY_EXISTING ~highhedg.sto~ ~override~
+ADD_STORE_ITEM ~SOAITM50~ #1 #0 #0 ~IDENTIFIED~ #5
+ADD_STORE_ITEM ~SOAITM51~ #1 #0 #0 ~IDENTIFIED~ #5
+ADD_STORE_ITEM ~SOAITM56~ #1 #0 #0 ~IDENTIFIED~ #5
+ADD_STORE_ITEM ~SOAITM58~ #1 #0 #0 ~IDENTIFIED~ #5
+ADD_STORE_ITEM ~SOAITM52~ #1 #0 #0 ~IDENTIFIED~ #5
+ADD_STORE_ITEM ~SOAITM54~ #1 #0 #0 ~IDENTIFIED~ #5
+ADD_STORE_ITEM ~SOAITM08~ #1 #0 #0 ~IDENTIFIED~ #1
+ADD_STORE_ITEM ~SOAITM04~ #1 #0 #0 ~IDENTIFIED~ #1
+ADD_STORE_ITEM ~SOAITM05~ #1 #0 #0 ~IDENTIFIED~ #1
+
+COPY_EXISTING ~sto0703.sto~ ~override~
+ADD_STORE_ITEM ~SOAITM50~ #1 #0 #0 ~IDENTIFIED~ #5
+ADD_STORE_ITEM ~SOAITM51~ #1 #0 #0 ~IDENTIFIED~ #5
+ADD_STORE_ITEM ~SOAITM56~ #1 #0 #0 ~IDENTIFIED~ #5
+ADD_STORE_ITEM ~SOAITM58~ #1 #0 #0 ~IDENTIFIED~ #5
+ADD_STORE_ITEM ~SOAITM52~ #1 #0 #0 ~IDENTIFIED~ #5
+ADD_STORE_ITEM ~SOAITM54~ #1 #0 #0 ~IDENTIFIED~ #5
+ADD_STORE_ITEM ~SOAITM06~ #1 #0 #0 ~IDENTIFIED~ #1
+ADD_STORE_ITEM ~SOAITM19~ #1 #0 #0 ~IDENTIFIED~ #1
+ADD_STORE_ITEM ~SOAITM20~ #1 #0 #0 ~IDENTIFIED~ #1
+
+COPY_EXISTING ~INN3351.sto~ ~override~
+ADD_STORE_ITEM ~SOAITM11~ LAST #1 #0 #0 ~IDENTIFIED~ #1
+ADD_STORE_ITEM ~SOAITM12~ LAST #1 #0 #0 ~IDENTIFIED~ #1
+ADD_STORE_ITEM ~SOAITM39~ LAST #1 #0 #0 ~IDENTIFIED~ #1
+
+COPY_EXISTING ~TAERUM.sto~ ~override~
+ADD_STORE_ITEM ~SOAITM10~ LAST #1 #0 #0 ~IDENTIFIED~ #1
+ADD_STORE_ITEM ~SOAITM14~ LAST #1 #0 #0 ~IDENTIFIED~ #1
+ADD_STORE_ITEM ~SOAITM29~ LAST #1 #0 #0 ~IDENTIFIED~ #1
+
+
+//SPELLS (Only for totsc)
+
+COPY ~soa/spells/SPWI121.SPL~     ~override~
+  SAY NAME1 @139
+  SAY UNIDENTIFIED_DESC @140
+
+COPY ~soa/spells/SPWI122.SPL~     ~override~
+  SAY NAME1 @137
+  SAY UNIDENTIFIED_DESC @138
+
+COPY ~soa/spells/SPWI123.SPL~     ~override~
+  SAY NAME1 @149
+  SAY UNIDENTIFIED_DESC @150
+
+COPY ~soa/spells/SPWI223.SPL~     ~override~
+  SAY NAME1 @153
+  SAY UNIDENTIFIED_DESC @154
+
+COPY ~soa/spells/SPWI318.SPL~     ~override~
+  SAY NAME1 @141
+  SAY UNIDENTIFIED_DESC @142
+
+COPY ~soa/spells/SPWI319.SPL~     ~override~
+  SAY NAME1 @145
+  SAY UNIDENTIFIED_DESC @146
+
+COPY ~soa/spells/SPPR219.SPL~     ~override~
+  SAY NAME1 @157
+  SAY UNIDENTIFIED_DESC @158
+
+COPY ~soa/spells/SPPR318.SPL~     ~override~
+  SAY NAME1 @159
+  SAY UNIDENTIFIED_DESC @160
+
+COPY ~soa/spells/SPPR516.SPL~     ~override~
+  SAY NAME1 @161
+  SAY UNIDENTIFIED_DESC @162
+
+END //Game is TotSC
+
+ACTION_IF GAME_IS ~Tutu_TotSC~ THEN BEGIN //Tutu
+
+//Area Stuff
+
+COPY ~soa/areas/tutu~ ~override~
+
+//Items
+
+COPY ~soa/items/tutu/SOAITM01.ITM~      ~override~
+  SAY NAME1 @0
+  SAY NAME2 @1
+  SAY UNIDENTIFIED_DESC @2
+  SAY DESC @3
+
+COPY ~soa/items/tutu/SOAITM02.ITM~      ~override~
+  SAY NAME1 @4
+  SAY NAME2 @5
+  SAY UNIDENTIFIED_DESC @6
+  SAY DESC @7
+
+COPY ~soa/items/tutu/SOAITM03.ITM~      ~override~
+  SAY NAME1 @8
+  SAY NAME2 @9
+  SAY UNIDENTIFIED_DESC @10
+  SAY DESC @11
+
+COPY ~soa/items/tutu/SOAITM04.ITM~      ~override~
+  SAY NAME1 @12
+  SAY NAME2 @13
+  SAY UNIDENTIFIED_DESC @14
+  SAY DESC @15
+
+COPY ~soa/items/tutu/SOAITM05.ITM~      ~override~
+  SAY NAME1 @16
+  SAY NAME2 @17
+  SAY UNIDENTIFIED_DESC @18
+  SAY DESC @19
+
+COPY ~soa/items/tutu/SOAITM06.ITM~      ~override~
+  SAY NAME1 @20
+  SAY NAME2 @21
+  SAY UNIDENTIFIED_DESC @22
+  SAY DESC @23
+
+COPY ~soa/items/tutu/SOAITM07.ITM~      ~override~
+  SAY NAME1 @24
+  SAY NAME2 @25
+  SAY UNIDENTIFIED_DESC @26
+  SAY DESC @27
+
+COPY ~soa/items/tutu/SOAITM08.ITM~      ~override~
+  SAY NAME1 @28
+  SAY NAME2 @29
+  SAY UNIDENTIFIED_DESC @30
+  SAY DESC @31
+
+COPY ~soa/items/tutu/SOAITM09.ITM~      ~override~
+  SAY NAME1 @32
+  SAY NAME2 @33
+  SAY UNIDENTIFIED_DESC @34
+  SAY DESC @35
+
+COPY ~soa/items/tutu/SOAITM10.ITM~      ~override~
+  SAY NAME1 @36
+  SAY NAME2 @37
+  SAY UNIDENTIFIED_DESC @38
+  SAY DESC @39
+
+COPY ~soa/items/tutu/SOAITM11.ITM~      ~override~
+  SAY NAME1 @40
+  SAY NAME2 @41
+  SAY UNIDENTIFIED_DESC @42
+  SAY DESC @43
+
+COPY ~soa/items/tutu/SOAITM12.ITM~      ~override~
+  SAY NAME1 @40
+  SAY NAME2 @44
+  SAY UNIDENTIFIED_DESC @42
+  SAY DESC @45
+
+COPY ~soa/items/tutu/SOAITM13.ITM~      ~override~
+  SAY NAME1 @46
+  SAY NAME2 @47
+  SAY UNIDENTIFIED_DESC @48
+  SAY DESC @49
+
+COPY ~soa/items/tutu/SOAITM14.ITM~      ~override~
+  SAY NAME1 @50
+  SAY NAME2 @51
+  SAY UNIDENTIFIED_DESC @52
+  SAY DESC @53
+
+COPY ~soa/items/tutu/SOAITM15.ITM~      ~override~
+  SAY NAME1 @54
+  SAY NAME2 @55
+  SAY UNIDENTIFIED_DESC @56
+  SAY DESC @57
+
+COPY ~soa/items/tutu/SOAITM16.ITM~      ~override~
+  SAY NAME1 @58
+  SAY NAME2 @59
+  SAY UNIDENTIFIED_DESC @60
+  SAY DESC @61
+
+COPY ~soa/items/tutu/SOAITM17.ITM~      ~override~
+  SAY NAME1 @58
+  SAY NAME2 @62
+  SAY UNIDENTIFIED_DESC @60
+  SAY DESC @63
+
+COPY ~soa/items/tutu/SOAITM18.ITM~      ~override~
+  SAY NAME1 @64
+  SAY NAME2 @65
+  SAY UNIDENTIFIED_DESC @66
+  SAY DESC @67
+
+COPY ~soa/items/tutu/SOAITM19.ITM~      ~override~
+  SAY NAME1 @68
+  SAY NAME2 @69
+  SAY UNIDENTIFIED_DESC @70
+  SAY DESC @71
+
+COPY ~soa/items/tutu/SOAITM20.ITM~      ~override~
+  SAY NAME1 @72
+  SAY NAME2 @72
+  SAY UNIDENTIFIED_DESC @73
+  SAY DESC @74
+
+COPY ~soa/items/tutu/SOAITM21.ITM~      ~override~
+  SAY NAME1 @75
+  SAY NAME2 @76
+  SAY UNIDENTIFIED_DESC @77
+  SAY DESC @78
+
+COPY ~soa/items/tutu/SOAITM22.ITM~      ~override~
+  SAY NAME1 @79
+  SAY NAME2 @80
+  SAY UNIDENTIFIED_DESC @81
+  SAY DESC @82
+
+COPY ~soa/items/tutu/SOAITM23.ITM~      ~override~
+  SAY NAME1 @83
+  SAY NAME2 @84
+  SAY UNIDENTIFIED_DESC @85
+  SAY DESC @86
+
+COPY ~soa/items/tutu/SOAITM24.ITM~      ~override~
+  SAY NAME1 @87
+  SAY NAME2 @88
+  SAY UNIDENTIFIED_DESC @89
+  SAY DESC @90
+
+COPY ~soa/items/tutu/SOAITM25.ITM~      ~override~
+  SAY NAME1 @91
+  SAY NAME2 @92
+  SAY UNIDENTIFIED_DESC @93
+  SAY DESC @94
+
+COPY ~soa/items/tutu/SOAITM26.ITM~      ~override~
+  SAY NAME1 @95
+  SAY NAME2 @96
+  SAY UNIDENTIFIED_DESC @97
+  SAY DESC @97
+
+COPY ~soa/items/tutu/SOAITM27.ITM~      ~override~
+  SAY NAME1 @98
+  SAY NAME2 @99
+  SAY UNIDENTIFIED_DESC @100
+  SAY DESC @101
+
+COPY ~soa/items/tutu/SOAITM28.ITM~      ~override~
+  SAY NAME1 @102
+  SAY NAME2 @103
+  SAY UNIDENTIFIED_DESC @104
+  SAY DESC @105
+
+COPY ~soa/items/tutu/SOAITM29.ITM~      ~override~
+  SAY NAME1 @106
+  SAY NAME2 @107
+  SAY UNIDENTIFIED_DESC @108
+  SAY DESC @109
+
+COPY ~soa/items/tutu/SOAITM30.ITM~      ~override~
+  SAY NAME1 @98
+  SAY NAME2 @99
+  SAY UNIDENTIFIED_DESC @100
+  SAY DESC @110
+
+COPY ~soa/items/tutu/SOAITM31.ITM~      ~override~
+  SAY NAME1 @111
+  SAY NAME2 @112
+  SAY UNIDENTIFIED_DESC @113
+  SAY DESC @114
+
+COPY ~soa/items/tutu/SOAITM32.ITM~      ~override~
+  SAY NAME1 @111
+  SAY NAME2 @115
+  SAY UNIDENTIFIED_DESC @113
+  SAY DESC @116
+
+COPY ~soa/items/tutu/SOAITM33.ITM~      ~override~
+  SAY NAME1 @111
+  SAY NAME2 @117
+  SAY UNIDENTIFIED_DESC @113
+  SAY DESC @118
+
+COPY ~soa/items/tutu/SOAITM34.ITM~      ~override~
+  SAY NAME1 @111
+  SAY NAME2 @119
+  SAY UNIDENTIFIED_DESC @113
+  SAY DESC @120
+
+COPY ~soa/items/tutu/SOAITM35.ITM~      ~override~
+  SAY NAME1 @111
+  SAY NAME2 @121
+  SAY UNIDENTIFIED_DESC @113
+  SAY DESC @122
+
+COPY ~soa/items/tutu/SOAITM36.ITM~      ~override~
+  SAY NAME1 @123
+  SAY NAME2 @123
+  SAY UNIDENTIFIED_DESC @124
+  SAY DESC @124
+
+COPY ~soa/items/tutu/SOAITM37.ITM~      ~override~
+  SAY NAME1 @125
+  SAY NAME2 @125
+  SAY UNIDENTIFIED_DESC @126
+  SAY DESC @126
+
+COPY ~soa/items/tutu/SOAITM38.ITM~      ~override~
+  SAY NAME1 @127
+  SAY NAME2 @128
+  SAY UNIDENTIFIED_DESC @129
+  SAY DESC @130
+
+COPY ~soa/items/tutu/SOAITM39.ITM~      ~override~
+  SAY NAME1 @131
+  SAY NAME2 @132
+  SAY UNIDENTIFIED_DESC @133
+  SAY DESC @134
+
+COPY ~soa/items/tutu/SOAITM40.ITM~      ~override~
+  SAY NAME1 @123
+  SAY NAME2 @123
+  SAY UNIDENTIFIED_DESC @135
+  SAY DESC @135
+
+COPY ~soa/items/tutu/SOAITM41.ITM~      ~override~
+  SAY NAME1 @123
+  SAY NAME2 @123
+  SAY UNIDENTIFIED_DESC @188
+  SAY DESC @188
+
+COPY ~soa/items/tutu/SOAITM61.ITM~      ~override~
+  SAY NAME1 @176
+  SAY NAME2 @176
+  SAY UNIDENTIFIED_DESC @176
+  SAY DESC @176
+  
+  // Append Stores*********************
+
+  COPY_EXISTING ~_IGHHEDG.sto~ ~override~
+  ADD_STORE_ITEM ~SOAITM08~ #1 #0 #0 ~IDENTIFIED~ #1
+  ADD_STORE_ITEM ~SOAITM04~ #1 #0 #0 ~IDENTIFIED~ #1
+  ADD_STORE_ITEM ~SOAITM05~ #1 #0 #0 ~IDENTIFIED~ #1
+  
+  COPY_EXISTING ~_STO0703.sto~ ~override~
+  ADD_STORE_ITEM ~SOAITM06~ #1 #0 #0 ~IDENTIFIED~ #1
+  ADD_STORE_ITEM ~SOAITM19~ #1 #0 #0 ~IDENTIFIED~ #1
+  ADD_STORE_ITEM ~SOAITM20~ #1 #0 #0 ~IDENTIFIED~ #1
+
+  COPY_EXISTING ~_INN3351.sto~ ~override~
+  ADD_STORE_ITEM ~SOAITM11~ LAST #1 #0 #0 ~IDENTIFIED~ #1
+  ADD_STORE_ITEM ~SOAITM12~ LAST #1 #0 #0 ~IDENTIFIED~ #1
+  ADD_STORE_ITEM ~SOAITM39~ LAST #1 #0 #0 ~IDENTIFIED~ #1
+
+  COPY_EXISTING ~_TAERUM.sto~ ~override~
+  ADD_STORE_ITEM ~SOAITM10~ LAST #1 #0 #0 ~IDENTIFIED~ #1
+  ADD_STORE_ITEM ~SOAITM14~ LAST #1 #0 #0 ~IDENTIFIED~ #1
+  ADD_STORE_ITEM ~SOAITM29~ LAST #1 #0 #0 ~IDENTIFIED~ #1
+
+END //Game is TUTU
+
+ACTION_IF GAME_IS ~BGT~ THEN BEGIN	 //BGT
+
+//Area Stuff
+
+COPY ~soa/areas/bgt~ ~override~
+
+//ITEMS
+
+COPY ~soa/items/SOAITM01.ITM~      ~override~
+  SAY NAME1 @0
+  SAY NAME2 @1
+  SAY UNIDENTIFIED_DESC @2
+  SAY DESC @3
+
+COPY ~soa/items/SOAITM02.ITM~      ~override~
+  SAY NAME1 @4
+  SAY NAME2 @5
+  SAY UNIDENTIFIED_DESC @6
+  SAY DESC @7
+
+COPY ~soa/items/SOAITM03.ITM~      ~override~
+  SAY NAME1 @8
+  SAY NAME2 @9
+  SAY UNIDENTIFIED_DESC @10
+  SAY DESC @11
+
+COPY ~soa/items/SOAITM04.ITM~      ~override~
+  SAY NAME1 @12
+  SAY NAME2 @13
+  SAY UNIDENTIFIED_DESC @14
+  SAY DESC @15
+
+COPY ~soa/items/SOAITM05.ITM~      ~override~
+  SAY NAME1 @16
+  SAY NAME2 @17
+  SAY UNIDENTIFIED_DESC @18
+  SAY DESC @19
+
+COPY ~soa/items/SOAITM06.ITM~      ~override~
+  SAY NAME1 @20
+  SAY NAME2 @21
+  SAY UNIDENTIFIED_DESC @22
+  SAY DESC @23
+
+COPY ~soa/items/SOAITM07.ITM~      ~override~
+  SAY NAME1 @24
+  SAY NAME2 @25
+  SAY UNIDENTIFIED_DESC @26
+  SAY DESC @27
+
+COPY ~soa/items/SOAITM08.ITM~      ~override~
+  SAY NAME1 @28
+  SAY NAME2 @29
+  SAY UNIDENTIFIED_DESC @30
+  SAY DESC @31
+
+COPY ~soa/items/SOAITM09.ITM~      ~override~
+  SAY NAME1 @32
+  SAY NAME2 @33
+  SAY UNIDENTIFIED_DESC @34
+  SAY DESC @35
+
+COPY ~soa/items/SOAITM10.ITM~      ~override~
+  SAY NAME1 @36
+  SAY NAME2 @37
+  SAY UNIDENTIFIED_DESC @38
+  SAY DESC @39
+
+COPY ~soa/items/SOAITM11.ITM~      ~override~
+  SAY NAME1 @40
+  SAY NAME2 @41
+  SAY UNIDENTIFIED_DESC @42
+  SAY DESC @43
+
+COPY ~soa/items/SOAITM12.ITM~      ~override~
+  SAY NAME1 @40
+  SAY NAME2 @44
+  SAY UNIDENTIFIED_DESC @42
+  SAY DESC @45
+
+COPY ~soa/items/SOAITM13.ITM~      ~override~
+  SAY NAME1 @46
+  SAY NAME2 @47
+  SAY UNIDENTIFIED_DESC @48
+  SAY DESC @49
+
+COPY ~soa/items/SOAITM14.ITM~      ~override~
+  SAY NAME1 @50
+  SAY NAME2 @51
+  SAY UNIDENTIFIED_DESC @52
+  SAY DESC @53
+
+COPY ~soa/items/SOAITM15.ITM~      ~override~
+  SAY NAME1 @54
+  SAY NAME2 @55
+  SAY UNIDENTIFIED_DESC @56
+  SAY DESC @57
+
+COPY ~soa/items/SOAITM16.ITM~      ~override~
+  SAY NAME1 @58
+  SAY NAME2 @59
+  SAY UNIDENTIFIED_DESC @60
+  SAY DESC @61
+
+COPY ~soa/items/SOAITM17.ITM~      ~override~
+  SAY NAME1 @58
+  SAY NAME2 @62
+  SAY UNIDENTIFIED_DESC @60
+  SAY DESC @63
+
+COPY ~soa/items/SOAITM18.ITM~      ~override~
+  SAY NAME1 @64
+  SAY NAME2 @65
+  SAY UNIDENTIFIED_DESC @66
+  SAY DESC @67
+
+COPY ~soa/items/SOAITM19.ITM~      ~override~
+  SAY NAME1 @68
+  SAY NAME2 @69
+  SAY UNIDENTIFIED_DESC @70
+  SAY DESC @71
+
+COPY ~soa/items/SOAITM20.ITM~      ~override~
+  SAY NAME1 @72
+  SAY NAME2 @72
+  SAY UNIDENTIFIED_DESC @73
+  SAY DESC @74
+
+COPY ~soa/items/SOAITM21.ITM~      ~override~
+  SAY NAME1 @75
+  SAY NAME2 @76
+  SAY UNIDENTIFIED_DESC @77
+  SAY DESC @78
+
+COPY ~soa/items/SOAITM22.ITM~      ~override~
+  SAY NAME1 @79
+  SAY NAME2 @80
+  SAY UNIDENTIFIED_DESC @81
+  SAY DESC @82
+
+COPY ~soa/items/SOAITM23.ITM~      ~override~
+  SAY NAME1 @83
+  SAY NAME2 @84
+  SAY UNIDENTIFIED_DESC @85
+  SAY DESC @86
+
+COPY ~soa/items/SOAITM24.ITM~      ~override~
+  SAY NAME1 @87
+  SAY NAME2 @88
+  SAY UNIDENTIFIED_DESC @89
+  SAY DESC @90
+
+COPY ~soa/items/SOAITM25.ITM~      ~override~
+  SAY NAME1 @91
+  SAY NAME2 @92
+  SAY UNIDENTIFIED_DESC @93
+  SAY DESC @94
+
+COPY ~soa/items/SOAITM26.ITM~      ~override~
+  SAY NAME1 @95
+  SAY NAME2 @96
+  SAY UNIDENTIFIED_DESC @97
+  SAY DESC @97
+
+COPY ~soa/items/SOAITM27.ITM~      ~override~
+  SAY NAME1 @98
+  SAY NAME2 @99
+  SAY UNIDENTIFIED_DESC @100
+  SAY DESC @101
+
+COPY ~soa/items/SOAITM28.ITM~      ~override~
+  SAY NAME1 @102
+  SAY NAME2 @103
+  SAY UNIDENTIFIED_DESC @104
+  SAY DESC @105
+
+COPY ~soa/items/SOAITM29.ITM~      ~override~
+  SAY NAME1 @106
+  SAY NAME2 @107
+  SAY UNIDENTIFIED_DESC @108
+  SAY DESC @109
+
+COPY ~soa/items/SOAITM30.ITM~      ~override~
+  SAY NAME1 @98
+  SAY NAME2 @99
+  SAY UNIDENTIFIED_DESC @100
+  SAY DESC @110
+
+COPY ~soa/items/SOAITM31.ITM~      ~override~
+  SAY NAME1 @111
+  SAY NAME2 @112
+  SAY UNIDENTIFIED_DESC @113
+  SAY DESC @114
+
+COPY ~soa/items/SOAITM32.ITM~      ~override~
+  SAY NAME1 @111
+  SAY NAME2 @115
+  SAY UNIDENTIFIED_DESC @113
+  SAY DESC @116
+
+COPY ~soa/items/SOAITM33.ITM~      ~override~
+  SAY NAME1 @111
+  SAY NAME2 @117
+  SAY UNIDENTIFIED_DESC @113
+  SAY DESC @118
+
+COPY ~soa/items/SOAITM34.ITM~      ~override~
+  SAY NAME1 @111
+  SAY NAME2 @119
+  SAY UNIDENTIFIED_DESC @113
+  SAY DESC @120
+
+COPY ~soa/items/SOAITM35.ITM~      ~override~
+  SAY NAME1 @111
+  SAY NAME2 @121
+  SAY UNIDENTIFIED_DESC @113
+  SAY DESC @122
+
+COPY ~soa/items/SOAITM36.ITM~      ~override~
+  SAY NAME1 @123
+  SAY NAME2 @123
+  SAY UNIDENTIFIED_DESC @124
+  SAY DESC @124
+
+COPY ~soa/items/SOAITM37.ITM~      ~override~
+  SAY NAME1 @125
+  SAY NAME2 @125
+  SAY UNIDENTIFIED_DESC @126
+  SAY DESC @126
+
+COPY ~soa/items/SOAITM38.ITM~      ~override~
+  SAY NAME1 @127
+  SAY NAME2 @128
+  SAY UNIDENTIFIED_DESC @129
+  SAY DESC @130
+
+COPY ~soa/items/SOAITM39.ITM~      ~override~
+  SAY NAME1 @131
+  SAY NAME2 @132
+  SAY UNIDENTIFIED_DESC @133
+  SAY DESC @134
+
+COPY ~soa/items/SOAITM40.ITM~      ~override~
+  SAY NAME1 @123
+  SAY NAME2 @123
+  SAY UNIDENTIFIED_DESC @135
+  SAY DESC @135
+
+COPY ~soa/items/SOAITM41.ITM~      ~override~
+  SAY NAME1 @123
+  SAY NAME2 @123
+  SAY UNIDENTIFIED_DESC @188
+  SAY DESC @188
+
+COPY ~soa/items/SOAITM50.ITM~      ~override~
+  SAY NAME1 @136
+  SAY NAME2 @137
+  SAY UNIDENTIFIED_DESC @138
+  SAY DESC @138
+
+COPY ~soa/items/SOAITM51.ITM~      ~override~
+  SAY NAME1 @136
+  SAY NAME2 @139
+  SAY UNIDENTIFIED_DESC @140
+  SAY DESC @140
+
+COPY ~soa/items/SOAITM52.ITM~      ~override~
+  SAY NAME1 @136
+  SAY NAME2 @141
+  SAY UNIDENTIFIED_DESC @142
+  SAY DESC @142
+
+COPY ~soa/items/SOAITM54.ITM~      ~override~
+  SAY NAME1 @136
+  SAY NAME2 @145
+  SAY UNIDENTIFIED_DESC @146
+  SAY DESC @146
+
+COPY ~soa/items/SOAITM56.ITM~      ~override~
+  SAY NAME1 @136
+  SAY NAME2 @149
+  SAY UNIDENTIFIED_DESC @150
+  SAY DESC @150
+
+COPY ~soa/items/SOAITM58.ITM~      ~override~
+  SAY NAME1 @136
+  SAY NAME2 @153
+  SAY UNIDENTIFIED_DESC @154
+  SAY DESC @154
+
+COPY ~soa/items/SOAITM61.ITM~      ~override~
+  SAY NAME1 @176
+  SAY NAME2 @176
+  SAY UNIDENTIFIED_DESC @176
+  SAY DESC @176
+  
+  //Stores
+  COPY_EXISTING ~highhedg.sto~ ~override~
+  ADD_STORE_ITEM ~SOAITM08~ #1 #0 #0 ~IDENTIFIED~ #1
+  ADD_STORE_ITEM ~SOAITM04~ #1 #0 #0 ~IDENTIFIED~ #1
+  ADD_STORE_ITEM ~SOAITM05~ #1 #0 #0 ~IDENTIFIED~ #1
+  
+  COPY_EXISTING ~sto0703.sto~ ~override~
+  ADD_STORE_ITEM ~SOAITM06~ #1 #0 #0 ~IDENTIFIED~ #1
+  ADD_STORE_ITEM ~SOAITM19~ #1 #0 #0 ~IDENTIFIED~ #1
+  ADD_STORE_ITEM ~SOAITM20~ #1 #0 #0 ~IDENTIFIED~ #1
+  
+  COPY_EXISTING ~INN3351.sto~ ~override~
+  ADD_STORE_ITEM ~SOAITM11~ LAST #1 #0 #0 ~IDENTIFIED~ #1
+  ADD_STORE_ITEM ~SOAITM12~ LAST #1 #0 #0 ~IDENTIFIED~ #1
+  ADD_STORE_ITEM ~SOAITM39~ LAST #1 #0 #0 ~IDENTIFIED~ #1
+  
+  COPY_EXISTING ~TAERUM.sto~ ~override~
+  ADD_STORE_ITEM ~SOAITM10~ LAST #1 #0 #0 ~IDENTIFIED~ #1
+  ADD_STORE_ITEM ~SOAITM14~ LAST #1 #0 #0 ~IDENTIFIED~ #1
+  ADD_STORE_ITEM ~SOAITM29~ LAST #1 #0 #0 ~IDENTIFIED~ #1
+
+END //Game is BGT
+
+ACTION_IF GAME_IS ~BGEE~ THEN BEGIN	 //BGEE
+
+//Area Stuff
+
+COPY ~soa/areas/bg~  ~override~
+
+//item bmps
+
+COPY ~soa/bmp~   ~override~
+
+//ITEMS
+
+COPY ~soa/items/SOAITM01.ITM~      ~override~
+  SAY NAME1 @0
+  SAY NAME2 @1
+  SAY UNIDENTIFIED_DESC @2
+  SAY DESC @3
+
+COPY ~soa/items/SOAITM02.ITM~      ~override~
+  SAY NAME1 @4
+  SAY NAME2 @5
+  SAY UNIDENTIFIED_DESC @6
+  SAY DESC @7
+
+COPY ~soa/items/SOAITM03.ITM~      ~override~
+  SAY NAME1 @8
+  SAY NAME2 @9
+  SAY UNIDENTIFIED_DESC @10
+  SAY DESC @11
+
+COPY ~soa/items/SOAITM04.ITM~      ~override~
+  SAY NAME1 @12
+  SAY NAME2 @13
+  SAY UNIDENTIFIED_DESC @14
+  SAY DESC @15
+
+COPY ~soa/items/SOAITM05.ITM~      ~override~
+  SAY NAME1 @16
+  SAY NAME2 @17
+  SAY UNIDENTIFIED_DESC @18
+  SAY DESC @19
+
+COPY ~soa/items/SOAITM06.ITM~      ~override~
+  SAY NAME1 @20
+  SAY NAME2 @21
+  SAY UNIDENTIFIED_DESC @22
+  SAY DESC @23
+
+COPY ~soa/items/SOAITM07.ITM~      ~override~
+  SAY NAME1 @24
+  SAY NAME2 @25
+  SAY UNIDENTIFIED_DESC @26
+  SAY DESC @27
+
+COPY ~soa/items/SOAITM08.ITM~      ~override~
+  SAY NAME1 @28
+  SAY NAME2 @29
+  SAY UNIDENTIFIED_DESC @30
+  SAY DESC @31
+
+COPY ~soa/items/SOAITM09.ITM~      ~override~
+  SAY NAME1 @32
+  SAY NAME2 @33
+  SAY UNIDENTIFIED_DESC @34
+  SAY DESC @35
+
+COPY ~soa/items/SOAITM10.ITM~      ~override~
+  SAY NAME1 @36
+  SAY NAME2 @37
+  SAY UNIDENTIFIED_DESC @38
+  SAY DESC @39
+
+//Drums not included for bgee. Charges don't work
+/*
+COPY ~soa/items/bgee/SOAITM11.ITM~      ~override~
+  SAY NAME1 @40
+  SAY NAME2 @41
+  SAY UNIDENTIFIED_DESC @42
+  SAY DESC @43
+
+COPY ~soa/items/bgee/SOAITM12.ITM~      ~override~
+  SAY NAME1 @40
+  SAY NAME2 @44
+  SAY UNIDENTIFIED_DESC @42
+  SAY DESC @45
+*/
+
+COPY ~soa/items/SOAITM13.ITM~      ~override~
+  SAY NAME1 @46
+  SAY NAME2 @47
+  SAY UNIDENTIFIED_DESC @48
+  SAY DESC @49
+
+COPY ~soa/items/SOAITM14.ITM~      ~override~
+  SAY NAME1 @50
+  SAY NAME2 @51
+  SAY UNIDENTIFIED_DESC @52
+  SAY DESC @53
+
+COPY ~soa/items/SOAITM15.ITM~      ~override~
+  SAY NAME1 @54
+  SAY NAME2 @55
+  SAY UNIDENTIFIED_DESC @56
+  SAY DESC @57
+
+COPY ~soa/items/SOAITM16.ITM~      ~override~
+  SAY NAME1 @58
+  SAY NAME2 @59
+  SAY UNIDENTIFIED_DESC @60
+  SAY DESC @61
+
+COPY ~soa/items/SOAITM17.ITM~      ~override~
+  SAY NAME1 @58
+  SAY NAME2 @62
+  SAY UNIDENTIFIED_DESC @60
+  SAY DESC @63
+
+COPY ~soa/items/bgee/SOAITM18.ITM~      ~override~
+  SAY NAME1 @64
+  SAY NAME2 @65
+  SAY UNIDENTIFIED_DESC @66
+  SAY DESC @67
+
+COPY ~soa/items/bgee/SOAITM19.ITM~      ~override~
+  SAY NAME1 @68
+  SAY NAME2 @69
+  SAY UNIDENTIFIED_DESC @70
+  SAY DESC @71
+
+COPY ~soa/items/bgee/SOAITM20.ITM~      ~override~
+  SAY NAME1 @72
+  SAY NAME2 @72
+  SAY UNIDENTIFIED_DESC @73
+  SAY DESC @74
+
+COPY ~soa/items/bgee/SOAITM21.ITM~      ~override~
+  SAY NAME1 @75
+  SAY NAME2 @76
+  SAY UNIDENTIFIED_DESC @77
+  SAY DESC @78
+
+COPY ~soa/items/bgee/SOAITM22.ITM~      ~override~
+  SAY NAME1 @79
+  SAY NAME2 @80
+  SAY UNIDENTIFIED_DESC @81
+  SAY DESC @82
+
+COPY ~soa/items/bgee/SOAITM23.ITM~      ~override~
+  SAY NAME1 @83
+  SAY NAME2 @84
+  SAY UNIDENTIFIED_DESC @85
+  SAY DESC @86
+
+COPY ~soa/items/SOAITM24.ITM~      ~override~
+  SAY NAME1 @87
+  SAY NAME2 @88
+  SAY UNIDENTIFIED_DESC @89
+  SAY DESC @90
+
+COPY ~soa/items/SOAITM25.ITM~      ~override~
+  SAY NAME1 @91
+  SAY NAME2 @92
+  SAY UNIDENTIFIED_DESC @93
+  SAY DESC @94
+
+COPY ~soa/items/SOAITM26.ITM~      ~override~
+  SAY NAME1 @95
+  SAY NAME2 @96
+  SAY UNIDENTIFIED_DESC @97
+  SAY DESC @97
+
+COPY ~soa/items/bgee/SOAITM27.ITM~      ~override~
+  SAY NAME1 @98
+  SAY NAME2 @99
+  SAY UNIDENTIFIED_DESC @100
+  SAY DESC @101
+
+COPY ~soa/items/bgee/SOAITM28.ITM~      ~override~
+  SAY NAME1 @102
+  SAY NAME2 @103
+  SAY UNIDENTIFIED_DESC @104
+  SAY DESC @105
+
+COPY ~soa/items/bgee/SOAITM29.ITM~      ~override~
+  SAY NAME1 @106
+  SAY NAME2 @107
+  SAY UNIDENTIFIED_DESC @108
+  SAY DESC @109
+
+COPY ~soa/items/bgee/SOAITM30.ITM~      ~override~
+  SAY NAME1 @98
+  SAY NAME2 @99
+  SAY UNIDENTIFIED_DESC @100
+  SAY DESC @110
+
+COPY ~soa/items/bgee/SOAITM31.ITM~      ~override~
+  SAY NAME1 @111
+  SAY NAME2 @112
+  SAY UNIDENTIFIED_DESC @113
+  SAY DESC @114
+
+COPY ~soa/items/bgee/SOAITM32.ITM~      ~override~
+  SAY NAME1 @111
+  SAY NAME2 @115
+  SAY UNIDENTIFIED_DESC @113
+  SAY DESC @116
+
+COPY ~soa/items/bgee/SOAITM33.ITM~      ~override~
+  SAY NAME1 @111
+  SAY NAME2 @117
+  SAY UNIDENTIFIED_DESC @113
+  SAY DESC @118
+
+COPY ~soa/items/bgee/SOAITM34.ITM~      ~override~
+  SAY NAME1 @111
+  SAY NAME2 @119
+  SAY UNIDENTIFIED_DESC @113
+  SAY DESC @120
+
+COPY ~soa/items/bgee/SOAITM35.ITM~      ~override~
+  SAY NAME1 @111
+  SAY NAME2 @121
+  SAY UNIDENTIFIED_DESC @113
+  SAY DESC @122
+
+COPY ~soa/items/SOAITM36.ITM~      ~override~
+  SAY NAME1 @123
+  SAY NAME2 @123
+  SAY UNIDENTIFIED_DESC @124
+  SAY DESC @124
+
+COPY ~soa/items/SOAITM37.ITM~      ~override~
+  SAY NAME1 @125
+  SAY NAME2 @125
+  SAY UNIDENTIFIED_DESC @126
+  SAY DESC @126
+
+COPY ~soa/items/SOAITM38.ITM~      ~override~
+  SAY NAME1 @127
+  SAY NAME2 @128
+  SAY UNIDENTIFIED_DESC @129
+  SAY DESC @130
+
+COPY ~soa/items/SOAITM39.ITM~      ~override~
+  SAY NAME1 @131
+  SAY NAME2 @132
+  SAY UNIDENTIFIED_DESC @133
+  SAY DESC @134
+
+COPY ~soa/items/SOAITM40.ITM~      ~override~
+  SAY NAME1 @123
+  SAY NAME2 @123
+  SAY UNIDENTIFIED_DESC @135
+  SAY DESC @135
+
+COPY ~soa/items/SOAITM41.ITM~      ~override~
+  SAY NAME1 @123
+  SAY NAME2 @123
+  SAY UNIDENTIFIED_DESC @188
+  SAY DESC @188
+
+COPY ~soa/items/SOAITM61.ITM~      ~override~
+  SAY NAME1 @176
+  SAY NAME2 @176
+  SAY UNIDENTIFIED_DESC @176
+  SAY DESC @176
+  
+   //Stores
+  COPY_EXISTING ~highhedg.sto~ ~override~
+  ADD_STORE_ITEM ~SOAITM08~ #1 #0 #0 ~IDENTIFIED~ #1
+  ADD_STORE_ITEM ~SOAITM04~ #1 #0 #0 ~IDENTIFIED~ #1
+  ADD_STORE_ITEM ~SOAITM05~ #1 #0 #0 ~IDENTIFIED~ #1
+  
+  COPY_EXISTING ~sto0703.sto~ ~override~
+  ADD_STORE_ITEM ~SOAITM06~ #1 #0 #0 ~IDENTIFIED~ #1
+  ADD_STORE_ITEM ~SOAITM19~ #1 #0 #0 ~IDENTIFIED~ #1
+  ADD_STORE_ITEM ~SOAITM20~ #1 #0 #0 ~IDENTIFIED~ #1
+  
+  COPY_EXISTING ~INN3351.sto~ ~override~
+  ADD_STORE_ITEM ~SOAITM39~ LAST #1 #0 #0 ~IDENTIFIED~ #1
+  //Drums removed
+  
+  COPY_EXISTING ~TAERUM.sto~ ~override~
+  ADD_STORE_ITEM ~SOAITM10~ LAST #1 #0 #0 ~IDENTIFIED~ #1
+  ADD_STORE_ITEM ~SOAITM14~ LAST #1 #0 #0 ~IDENTIFIED~ #1
+  ADD_STORE_ITEM ~SOAITM29~ LAST #1 #0 #0 ~IDENTIFIED~ #1
+
+END //Game is BGEE
+
+//START OF AREA MODIFICATION (Affects all versions)
+
+//BanditCamp gets new travel region and new entrance for ARS007
+COPY_EXISTING ~%BanditCamp%.ARE~ ~override~
+
+ READ_LONG  0x54  "actors_offset"
+ READ_SHORT 0x58  "actors_num"
+ READ_SHORT 0x5a  "infotrig_num"
+ READ_LONG  0x5c  "infotrig_offset"
+ READ_LONG  0x60  "spawns_offset"
+ READ_LONG  0x64  "spawns_num"
+ READ_LONG  0x68  "entrances_offset"
+ READ_LONG  0x6c  "entrances_num"
+ READ_LONG  0x70  "cont_offset"
+ READ_SHORT 0x74  "cont_num"
+ READ_SHORT 0x76  "items_num"
+ READ_LONG  0x78  "items_offset"
+ READ_LONG  0x7c  "vert_offset"
+ READ_SHORT 0x80  "vert_num"
+ READ_SHORT 0x82  "amb_num"
+ READ_LONG  0x84  "amb_offset"
+ READ_LONG  0x88  "vars_offset"
+ READ_LONG  0x8c  "vars_num"
+ READ_LONG  0xa0  "expbmp_offset"
+ READ_LONG  0xa4  "doors_num"
+ READ_LONG  0xa8  "doors_offset"
+ READ_LONG  0xac  "anim_num"
+ READ_LONG  0xb0  "anim_offset"
+ READ_LONG  0xb4  "tiled_num"
+ READ_LONG  0xb8  "tiled_offset"
+ READ_LONG  0xbc  "songs_offset"
+ READ_LONG  0xc0  "rest_spawns_offset"
+ READ_LONG  0xc4  "automap_offset"
+ READ_LONG  0xc8  "automap_num"
+
+//adding new trigger ************************************************
+   SET offset = ("%infotrig_offset%"+0xc4*"%infotrig_num%")
+   INSERT_BYTES offset 0xc4
+   WRITE_ASCII offset ~DoorAR1900~
+   WRITE_SHORT (offset+0x20) 2            //travel trigger
+   WRITE_SHORT (offset+0x22) 2573         //bounding box
+   WRITE_SHORT (offset+0x24) 2033         //bounding box
+   WRITE_SHORT (offset+0x26) 2632         //bounding box
+   WRITE_SHORT (offset+0x28) 2073         //bounding box
+   WRITE_SHORT (offset+0x2a) 12           //vertices number
+   WRITE_LONG  (offset+0x2c) "%vert_num%" //first vertex index
+   WRITE_LONG  (offset+0x34) 30           //cursor
+   WRITE_ASCII (offset+0x38) ~ARS007~     //destination area
+   WRITE_ASCII (offset+0x40) ~Entrance1~   //destination area's entrance name
+   WRITE_LONG  (offset+0x60) 0x00000004   //flags - party required
+   WRITE_SHORT (offset+0x70) 2602         //Trap location X
+   WRITE_SHORT (offset+0x72) 2053         //Trap location Y
+   SET "infotrig_num"="%infotrig_num%"+1
+   WRITE_SHORT 0x5a  "%infotrig_num%"
+
+   SET "info_ext"=0xc4
+   PATCH_IF ("%actors_offset%">="%infotrig_offset%") BEGIN
+     "actors_offset"="%actors_offset%"+"%info_ext%"
+     WRITE_LONG  0x54 "%actors_offset%"
+   END
+   PATCH_IF ("%spawns_offset%">="%infotrig_offset%") BEGIN
+     "spawns_offset"="%spawns_offset%"+"%info_ext%"
+     WRITE_LONG  0x60  "%spawns_offset%"
+   END
+   PATCH_IF ("%entrances_offset%">="%infotrig_offset%") BEGIN
+     "entrances_offset"="%entrances_offset%"+"%info_ext%"
+     WRITE_LONG  0x68  "%entrances_offset%"
+   END
+   PATCH_IF ("%cont_offset%">="%infotrig_offset%") BEGIN
+     "cont_offset"="%cont_offset%"+"%info_ext%"
+     WRITE_LONG  0x70  "%cont_offset%"
+   END
+   PATCH_IF ("%items_offset%">="%infotrig_offset%") BEGIN
+     "items_offset"="%items_offset%"+"%info_ext%"
+     WRITE_LONG  0x78  "%items_offset%"
+   END
+   PATCH_IF ("%vert_offset%">="%infotrig_offset%") BEGIN
+     "vert_offset"="%vert_offset%"+"%info_ext%"
+     WRITE_LONG  0x7c  "%vert_offset%"
+   END
+   PATCH_IF ("%amb_offset%">="%infotrig_offset%") BEGIN
+     "amb_offset"="%amb_offset%"+"%info_ext%"
+     WRITE_LONG  0x84  "%amb_offset%"
+   END
+   PATCH_IF ("%vars_offset%">="%infotrig_offset%") BEGIN
+     "vars_offset"="%vars_offset%"+"%info_ext%"
+     WRITE_LONG  0x88  "%vars_offset%"
+   END
+   PATCH_IF ("%expbmp_offset%">="%infotrig_offset%") BEGIN
+     "expbmp_offset"="%expbmp_offset%"+"%info_ext%"
+     WRITE_LONG  0xa0  "%expbmp_offset%"
+   END
+   PATCH_IF ("%doors_offset%">="%infotrig_offset%") BEGIN
+     "doors_offset"="%doors_offset%"+"%info_ext%"
+     WRITE_LONG  0xa8  "%doors_offset%"
+   END
+   PATCH_IF ("%anim_offset%">="%infotrig_offset%") BEGIN
+     "anim_offset"="%anim_offset%"+"%info_ext%"
+     WRITE_LONG  0xb0  "%anim_offset%"
+   END
+   PATCH_IF ("%tiled_offset%">="%infotrig_offset%") BEGIN
+     "tiled_offset"="%tiled_offset%"+"%info_ext%"
+     WRITE_LONG  0xb8  "%tiled_offset%"
+   END
+   PATCH_IF ("%songs_offset%">="%infotrig_offset%") BEGIN
+     "songs_offset"="%songs_offset%"+"%info_ext%"
+     WRITE_LONG  0xbc  "%songs_offset%"
+   END
+   PATCH_IF ("%rest_spawns_offset%">="%infotrig_offset%") BEGIN
+     "rest_spawns_offset"="%rest_spawns_offset%"+"%info_ext%"
+     WRITE_LONG  0xc0  "%rest_spawns_offset%"
+   END
+   PATCH_IF ("%automap_offset%">="%infotrig_offset%") BEGIN
+     "automap_offset"="%automap_offset%"+"%info_ext%"
+     WRITE_LONG  0xc4  "%automap_offset%"
+   END
+
+//adding 12 new vertices for triggers
+   SET offset = ("%vert_offset%"+0x04*"%vert_num%")
+   INSERT_BYTES offset (0x04*12)
+   WRITE_SHORT  offset      2632
+   WRITE_SHORT  (offset+2)  2055
+   WRITE_SHORT  (offset+4)  2622
+   WRITE_SHORT  (offset+6)  2069
+   WRITE_SHORT  (offset+8)  2601
+   WRITE_SHORT  (offset+10) 2071
+   WRITE_SHORT  (offset+12) 2585
+   WRITE_SHORT  (offset+14) 2073
+   WRITE_SHORT  (offset+16) 2573
+   WRITE_SHORT  (offset+18) 2063
+   WRITE_SHORT  (offset+20) 2578
+   WRITE_SHORT  (offset+22) 2048
+   WRITE_SHORT  (offset+24) 2587
+   WRITE_SHORT  (offset+26) 2038
+   WRITE_SHORT  (offset+28) 2598
+   WRITE_SHORT  (offset+30) 2033
+   WRITE_SHORT  (offset+32) 2611
+   WRITE_SHORT  (offset+34) 2033
+   WRITE_SHORT  (offset+36) 2621
+   WRITE_SHORT  (offset+38) 2033
+   WRITE_SHORT  (offset+40) 2629
+   WRITE_SHORT  (offset+42) 2043
+   WRITE_SHORT  (offset+44) 2632
+   WRITE_SHORT  (offset+46) 2055
+
+   SET "vert_num"="%vert_num%"+12
+   WRITE_SHORT 0x80  "%vert_num%"
+
+   SET "info_ext"=0x04*12
+   PATCH_IF ("%actors_offset%">="%vert_offset%") BEGIN
+     "actors_offset"="%actors_offset%"+"%info_ext%"
+     WRITE_LONG  0x54 "%actors_offset%"
+   END
+   PATCH_IF ("%spawns_offset%">="%vert_offset%") BEGIN
+     "spawns_offset"="%spawns_offset%"+"%info_ext%"
+     WRITE_LONG  0x60  "%spawns_offset%"
+   END
+   PATCH_IF ("%entrances_offset%">="%vert_offset%") BEGIN
+     "entrances_offset"="%entrances_offset%"+"%info_ext%"
+     WRITE_LONG  0x68  "%entrances_offset%"
+   END
+   PATCH_IF ("%cont_offset%">="%vert_offset%") BEGIN
+     "cont_offset"="%cont_offset%"+"%info_ext%"
+     WRITE_LONG  0x70  "%cont_offset%"
+   END
+   PATCH_IF ("%items_offset%">="%vert_offset%") BEGIN
+     "items_offset"="%items_offset%"+"%info_ext%"
+     WRITE_LONG  0x78  "%items_offset%"
+   END
+   PATCH_IF ("%infotrig_offset%">="%vert_offset%") BEGIN
+     "infotrig_offset"="%infotrig_offset%"+"%info_ext%"
+     WRITE_LONG  0x5c  "%infotrig_offset%"
+   END
+   PATCH_IF ("%amb_offset%">="%vert_offset%") BEGIN
+     "amb_offset"="%amb_offset%"+"%info_ext%"
+     WRITE_LONG  0x84  "%amb_offset%"
+   END
+   PATCH_IF ("%vars_offset%">="%vert_offset%") BEGIN
+     "vars_offset"="%vars_offset%"+"%info_ext%"
+     WRITE_LONG  0x88  "%vars_offset%"
+   END
+   PATCH_IF ("%expbmp_offset%">="%vert_offset%") BEGIN
+     "expbmp_offset"="%expbmp_offset%"+"%info_ext%"
+     WRITE_LONG  0xa0  "%expbmp_offset%"
+   END
+   PATCH_IF ("%doors_offset%">="%vert_offset%") BEGIN
+     "doors_offset"="%doors_offset%"+"%info_ext%"
+     WRITE_LONG  0xa8  "%doors_offset%"
+   END
+   PATCH_IF ("%anim_offset%">="%vert_offset%") BEGIN
+     "anim_offset"="%anim_offset%"+"%info_ext%"
+     WRITE_LONG  0xb0  "%anim_offset%"
+   END
+   PATCH_IF ("%tiled_offset%">="%vert_offset%") BEGIN
+     "tiled_offset"="%tiled_offset%"+"%info_ext%"
+     WRITE_LONG  0xb8  "%tiled_offset%"
+   END
+   PATCH_IF ("%songs_offset%">="%vert_offset%") BEGIN
+     "songs_offset"="%songs_offset%"+"%info_ext%"
+     WRITE_LONG  0xbc  "%songs_offset%"
+   END
+   PATCH_IF ("%rest_spawns_offset%">="%vert_offset%") BEGIN
+     "rest_spawns_offset"="%rest_spawns_offset%"+"%info_ext%"
+     WRITE_LONG  0xc0  "%rest_spawns_offset%"
+   END
+   PATCH_IF ("%automap_offset%">="%vert_offset%") BEGIN
+     "automap_offset"="%automap_offset%"+"%info_ext%"
+     WRITE_LONG  0xc4  "%automap_offset%"
+   END
+
+//adding 1 new entrance
+ SET offset = ("%entrances_offset%"+0x68*"%entrances_num%")
+ INSERT_BYTES offset 0x68
+ WRITE_ASCII  offset      ~EXITARS007~
+ WRITE_SHORT  (offset+0x20)  2573     //X
+ WRITE_SHORT  (offset+0x22)  2101      //Y
+ WRITE_LONG   (offset+0x24)  "0"      // facing
+ SET "entrances_num"="%entrances_num%"+1
+ WRITE_LONG 0x6c  "%entrances_num%"
+
+ SET "info_ext"=0x68
+ PATCH_IF ("%actors_offset%">="%entrances_offset%") BEGIN
+   "actors_offset"="%actors_offset%"+"%info_ext%"
+   WRITE_LONG  0x54 "%actors_offset%"
+ END
+ PATCH_IF ("%spawns_offset%">="%entrances_offset%") BEGIN
+   "spawns_offset"="%spawns_offset%"+"%info_ext%"
+   WRITE_LONG  0x60  "%spawns_offset%"
+ END
+ PATCH_IF ("%vert_offset%">="%entrances_offset%") BEGIN
+   "vert_offset"="%vert_offset%"+"%info_ext%"
+   WRITE_LONG  0x7c  "%vert_offset%"
+ END
+ PATCH_IF ("%cont_offset%">="%entrances_offset%") BEGIN
+   "cont_offset"="%cont_offset%"+"%info_ext%"
+   WRITE_LONG  0x70  "%cont_offset%"
+ END
+ PATCH_IF ("%items_offset%">="%entrances_offset%") BEGIN
+   "items_offset"="%items_offset%"+"%info_ext%"
+   WRITE_LONG  0x78  "%items_offset%"
+ END
+ PATCH_IF ("%infotrig_offset%">="%entrances_offset%") BEGIN
+   "infotrig_offset"="%infotrig_offset%"+"%info_ext%"
+   WRITE_LONG  0x5c  "%infotrig_offset%"
+ END
+ PATCH_IF ("%amb_offset%">="%entrances_offset%") BEGIN
+   "amb_offset"="%amb_offset%"+"%info_ext%"
+   WRITE_LONG  0x84  "%amb_offset%"
+ END
+ PATCH_IF ("%vars_offset%">="%entrances_offset%") BEGIN
+   "vars_offset"="%vars_offset%"+"%info_ext%"
+   WRITE_LONG  0x88  "%vars_offset%"
+ END
+ PATCH_IF ("%expbmp_offset%">="%entrances_offset%") BEGIN
+   "expbmp_offset"="%expbmp_offset%"+"%info_ext%"
+   WRITE_LONG  0xa0  "%expbmp_offset%"
+ END
+ PATCH_IF ("%doors_offset%">="%entrances_offset%") BEGIN
+   "doors_offset"="%doors_offset%"+"%info_ext%"
+   WRITE_LONG  0xa8  "%doors_offset%"
+ END
+ PATCH_IF ("%anim_offset%">="%entrances_offset%") BEGIN
+   "anim_offset"="%anim_offset%"+"%info_ext%"
+   WRITE_LONG  0xb0  "%anim_offset%"
+ END
+ PATCH_IF ("%tiled_offset%">="%entrances_offset%") BEGIN
+   "tiled_offset"="%tiled_offset%"+"%info_ext%"
+   WRITE_LONG  0xb8  "%tiled_offset%"
+ END
+ PATCH_IF ("%songs_offset%">="%entrances_offset%") BEGIN
+   "songs_offset"="%songs_offset%"+"%info_ext%"
+   WRITE_LONG  0xbc  "%songs_offset%"
+ END
+ PATCH_IF ("%rest_spawns_offset%">="%entrances_offset%") BEGIN
+   "rest_spawns_offset"="%rest_spawns_offset%"+"%info_ext%"
+   WRITE_LONG  0xc0  "%rest_spawns_offset%"
+ END
+ PATCH_IF ("%automap_offset%">="%entrances_offset%") BEGIN
+   "automap_offset"="%automap_offset%"+"%info_ext%"
+   WRITE_LONG  0xc4  "%automap_offset%"
+ END
+
+BUT_ONLY_IF_IT_CHANGES  //********************************************************  ~BanditCamp~
+
+//NorthNashkelRoad gets new travel region and new entrance for ARS001
+COPY_EXISTING ~%NorthNashkelRoad%.ARE~ ~override~
+ WRITE_EVALUATED_ASCII 0x94 "%NNashkelRoad_BCS%"
+ READ_LONG  0x54  "actors_offset"
+ READ_SHORT 0x58  "actors_num"
+ READ_SHORT 0x5a  "infotrig_num"
+ READ_LONG  0x5c  "infotrig_offset"
+ READ_LONG  0x60  "spawns_offset"
+ READ_LONG  0x64  "spawns_num"
+ READ_LONG  0x68  "entrances_offset"
+ READ_LONG  0x6c  "entrances_num"
+ READ_LONG  0x70  "cont_offset"
+ READ_SHORT 0x74  "cont_num"
+ READ_SHORT 0x76  "items_num"
+ READ_LONG  0x78  "items_offset"
+ READ_LONG  0x7c  "vert_offset"
+ READ_SHORT 0x80  "vert_num"
+ READ_SHORT 0x82  "amb_num"
+ READ_LONG  0x84  "amb_offset"
+ READ_LONG  0x88  "vars_offset"
+ READ_LONG  0x8c  "vars_num"
+ READ_LONG  0xa0  "expbmp_offset"
+ READ_LONG  0xa4  "doors_num"
+ READ_LONG  0xa8  "doors_offset"
+ READ_LONG  0xac  "anim_num"
+ READ_LONG  0xb0  "anim_offset"
+ READ_LONG  0xb4  "tiled_num"
+ READ_LONG  0xb8  "tiled_offset"
+ READ_LONG  0xbc  "songs_offset"
+ READ_LONG  0xc0  "rest_spawns_offset"
+ READ_LONG  0xc4  "automap_offset"
+ READ_LONG  0xc8  "automap_num"
+
+//adding new trigger ************************************************
+   SET offset = ("%infotrig_offset%"+0xc4*"%infotrig_num%")
+   INSERT_BYTES offset 0xc4
+   WRITE_ASCII offset ~DoorS001~
+   WRITE_SHORT (offset+0x20) 2            //travel trigger
+   WRITE_SHORT (offset+0x22) 1584         //bounding box
+   WRITE_SHORT (offset+0x24) 3443         //bounding box
+   WRITE_SHORT (offset+0x26) 1676         //bounding box
+   WRITE_SHORT (offset+0x28) 3540         //bounding box
+   WRITE_SHORT (offset+0x2a) 7           //vertices number
+   WRITE_LONG  (offset+0x2c) "%vert_num%" //first vertex index
+   WRITE_LONG  (offset+0x34) 30           //cursor
+   WRITE_ASCII (offset+0x38) ~ARS001~     //destination area
+   WRITE_ASCII (offset+0x40) ~Entrance1~   //destination area's entrance name
+   WRITE_LONG  (offset+0x60) 0x00000004   //flags - party required
+   WRITE_LONG  (offset+0x61) 0x00000001   //flags - Trigger deactivated
+   WRITE_SHORT (offset+0x70) 1630         //Trap location X
+   WRITE_SHORT (offset+0x72) 3491         //Trap location Y
+   SET "infotrig_num"="%infotrig_num%"+1
+   WRITE_SHORT 0x5a  "%infotrig_num%"
+
+   SET "info_ext"=0xc4
+   PATCH_IF ("%actors_offset%">="%infotrig_offset%") BEGIN
+     "actors_offset"="%actors_offset%"+"%info_ext%"
+     WRITE_LONG  0x54 "%actors_offset%"
+   END
+   PATCH_IF ("%spawns_offset%">="%infotrig_offset%") BEGIN
+     "spawns_offset"="%spawns_offset%"+"%info_ext%"
+     WRITE_LONG  0x60  "%spawns_offset%"
+   END
+   PATCH_IF ("%entrances_offset%">="%infotrig_offset%") BEGIN
+     "entrances_offset"="%entrances_offset%"+"%info_ext%"
+     WRITE_LONG  0x68  "%entrances_offset%"
+   END
+   PATCH_IF ("%cont_offset%">="%infotrig_offset%") BEGIN
+     "cont_offset"="%cont_offset%"+"%info_ext%"
+     WRITE_LONG  0x70  "%cont_offset%"
+   END
+   PATCH_IF ("%items_offset%">="%infotrig_offset%") BEGIN
+     "items_offset"="%items_offset%"+"%info_ext%"
+     WRITE_LONG  0x78  "%items_offset%"
+   END
+   PATCH_IF ("%vert_offset%">="%infotrig_offset%") BEGIN
+     "vert_offset"="%vert_offset%"+"%info_ext%"
+     WRITE_LONG  0x7c  "%vert_offset%"
+   END
+   PATCH_IF ("%amb_offset%">="%infotrig_offset%") BEGIN
+     "amb_offset"="%amb_offset%"+"%info_ext%"
+     WRITE_LONG  0x84  "%amb_offset%"
+   END
+   PATCH_IF ("%vars_offset%">="%infotrig_offset%") BEGIN
+     "vars_offset"="%vars_offset%"+"%info_ext%"
+     WRITE_LONG  0x88  "%vars_offset%"
+   END
+   PATCH_IF ("%expbmp_offset%">="%infotrig_offset%") BEGIN
+     "expbmp_offset"="%expbmp_offset%"+"%info_ext%"
+     WRITE_LONG  0xa0  "%expbmp_offset%"
+   END
+   PATCH_IF ("%doors_offset%">="%infotrig_offset%") BEGIN
+     "doors_offset"="%doors_offset%"+"%info_ext%"
+     WRITE_LONG  0xa8  "%doors_offset%"
+   END
+   PATCH_IF ("%anim_offset%">="%infotrig_offset%") BEGIN
+     "anim_offset"="%anim_offset%"+"%info_ext%"
+     WRITE_LONG  0xb0  "%anim_offset%"
+   END
+   PATCH_IF ("%tiled_offset%">="%infotrig_offset%") BEGIN
+     "tiled_offset"="%tiled_offset%"+"%info_ext%"
+     WRITE_LONG  0xb8  "%tiled_offset%"
+   END
+   PATCH_IF ("%songs_offset%">="%infotrig_offset%") BEGIN
+     "songs_offset"="%songs_offset%"+"%info_ext%"
+     WRITE_LONG  0xbc  "%songs_offset%"
+   END
+   PATCH_IF ("%rest_spawns_offset%">="%infotrig_offset%") BEGIN
+     "rest_spawns_offset"="%rest_spawns_offset%"+"%info_ext%"
+     WRITE_LONG  0xc0  "%rest_spawns_offset%"
+   END
+   PATCH_IF ("%automap_offset%">="%infotrig_offset%") BEGIN
+     "automap_offset"="%automap_offset%"+"%info_ext%"
+     WRITE_LONG  0xc4  "%automap_offset%"
+   END
+
+//adding 7 new vertices for triggers
+   SET offset = ("%vert_offset%"+0x04*"%vert_num%")
+   INSERT_BYTES offset (0x04*7)
+   WRITE_SHORT  offset      1602
+   WRITE_SHORT  (offset+2)  3540
+   WRITE_SHORT  (offset+4)  1676
+   WRITE_SHORT  (offset+6)  3506
+   WRITE_SHORT  (offset+8)  1641
+   WRITE_SHORT  (offset+10) 3450
+   WRITE_SHORT  (offset+12) 1621
+   WRITE_SHORT  (offset+14) 3442
+   WRITE_SHORT  (offset+16) 1589
+   WRITE_SHORT  (offset+18) 3456
+   WRITE_SHORT  (offset+20) 1548
+   WRITE_SHORT  (offset+22) 3481
+   WRITE_SHORT  (offset+24) 1602
+   WRITE_SHORT  (offset+26) 3540
+   
+
+   SET "vert_num"="%vert_num%"+7
+   WRITE_SHORT 0x80  "%vert_num%"
+
+   SET "info_ext"=0x04*7
+   PATCH_IF ("%actors_offset%">="%vert_offset%") BEGIN
+     "actors_offset"="%actors_offset%"+"%info_ext%"
+     WRITE_LONG  0x54 "%actors_offset%"
+   END
+   PATCH_IF ("%spawns_offset%">="%vert_offset%") BEGIN
+     "spawns_offset"="%spawns_offset%"+"%info_ext%"
+     WRITE_LONG  0x60  "%spawns_offset%"
+   END
+   PATCH_IF ("%entrances_offset%">="%vert_offset%") BEGIN
+     "entrances_offset"="%entrances_offset%"+"%info_ext%"
+     WRITE_LONG  0x68  "%entrances_offset%"
+   END
+   PATCH_IF ("%cont_offset%">="%vert_offset%") BEGIN
+     "cont_offset"="%cont_offset%"+"%info_ext%"
+     WRITE_LONG  0x70  "%cont_offset%"
+   END
+   PATCH_IF ("%items_offset%">="%vert_offset%") BEGIN
+     "items_offset"="%items_offset%"+"%info_ext%"
+     WRITE_LONG  0x78  "%items_offset%"
+   END
+   PATCH_IF ("%infotrig_offset%">="%vert_offset%") BEGIN
+     "infotrig_offset"="%infotrig_offset%"+"%info_ext%"
+     WRITE_LONG  0x5c  "%infotrig_offset%"
+   END
+   PATCH_IF ("%amb_offset%">="%vert_offset%") BEGIN
+     "amb_offset"="%amb_offset%"+"%info_ext%"
+     WRITE_LONG  0x84  "%amb_offset%"
+   END
+   PATCH_IF ("%vars_offset%">="%vert_offset%") BEGIN
+     "vars_offset"="%vars_offset%"+"%info_ext%"
+     WRITE_LONG  0x88  "%vars_offset%"
+   END
+   PATCH_IF ("%expbmp_offset%">="%vert_offset%") BEGIN
+     "expbmp_offset"="%expbmp_offset%"+"%info_ext%"
+     WRITE_LONG  0xa0  "%expbmp_offset%"
+   END
+   PATCH_IF ("%doors_offset%">="%vert_offset%") BEGIN
+     "doors_offset"="%doors_offset%"+"%info_ext%"
+     WRITE_LONG  0xa8  "%doors_offset%"
+   END
+   PATCH_IF ("%anim_offset%">="%vert_offset%") BEGIN
+     "anim_offset"="%anim_offset%"+"%info_ext%"
+     WRITE_LONG  0xb0  "%anim_offset%"
+   END
+   PATCH_IF ("%tiled_offset%">="%vert_offset%") BEGIN
+     "tiled_offset"="%tiled_offset%"+"%info_ext%"
+     WRITE_LONG  0xb8  "%tiled_offset%"
+   END
+   PATCH_IF ("%songs_offset%">="%vert_offset%") BEGIN
+     "songs_offset"="%songs_offset%"+"%info_ext%"
+     WRITE_LONG  0xbc  "%songs_offset%"
+   END
+   PATCH_IF ("%rest_spawns_offset%">="%vert_offset%") BEGIN
+     "rest_spawns_offset"="%rest_spawns_offset%"+"%info_ext%"
+     WRITE_LONG  0xc0  "%rest_spawns_offset%"
+   END
+   PATCH_IF ("%automap_offset%">="%vert_offset%") BEGIN
+     "automap_offset"="%automap_offset%"+"%info_ext%"
+     WRITE_LONG  0xc4  "%automap_offset%"
+   END
+
+//adding 1 new entrance
+ SET offset = ("%entrances_offset%"+0x68*"%entrances_num%")
+ INSERT_BYTES offset 0x68
+ WRITE_ASCII  offset      ~EXITARS001~
+ WRITE_SHORT  (offset+0x20)  1693     //X
+ WRITE_SHORT  (offset+0x22)  3569     //Y
+ WRITE_LONG   (offset+0x24)  "13"      // facing
+ SET "entrances_num"="%entrances_num%"+1
+ WRITE_LONG 0x6c  "%entrances_num%"
+
+ SET "info_ext"=0x68
+ PATCH_IF ("%actors_offset%">="%entrances_offset%") BEGIN
+   "actors_offset"="%actors_offset%"+"%info_ext%"
+   WRITE_LONG  0x54 "%actors_offset%"
+ END
+ PATCH_IF ("%spawns_offset%">="%entrances_offset%") BEGIN
+   "spawns_offset"="%spawns_offset%"+"%info_ext%"
+   WRITE_LONG  0x60  "%spawns_offset%"
+ END
+ PATCH_IF ("%vert_offset%">="%entrances_offset%") BEGIN
+   "vert_offset"="%vert_offset%"+"%info_ext%"
+   WRITE_LONG  0x7c  "%vert_offset%"
+ END
+ PATCH_IF ("%cont_offset%">="%entrances_offset%") BEGIN
+   "cont_offset"="%cont_offset%"+"%info_ext%"
+   WRITE_LONG  0x70  "%cont_offset%"
+ END
+ PATCH_IF ("%items_offset%">="%entrances_offset%") BEGIN
+   "items_offset"="%items_offset%"+"%info_ext%"
+   WRITE_LONG  0x78  "%items_offset%"
+ END
+ PATCH_IF ("%infotrig_offset%">="%entrances_offset%") BEGIN
+   "infotrig_offset"="%infotrig_offset%"+"%info_ext%"
+   WRITE_LONG  0x5c  "%infotrig_offset%"
+ END
+ PATCH_IF ("%amb_offset%">="%entrances_offset%") BEGIN
+   "amb_offset"="%amb_offset%"+"%info_ext%"
+   WRITE_LONG  0x84  "%amb_offset%"
+ END
+ PATCH_IF ("%vars_offset%">="%entrances_offset%") BEGIN
+   "vars_offset"="%vars_offset%"+"%info_ext%"
+   WRITE_LONG  0x88  "%vars_offset%"
+ END
+ PATCH_IF ("%expbmp_offset%">="%entrances_offset%") BEGIN
+   "expbmp_offset"="%expbmp_offset%"+"%info_ext%"
+   WRITE_LONG  0xa0  "%expbmp_offset%"
+ END
+ PATCH_IF ("%doors_offset%">="%entrances_offset%") BEGIN
+   "doors_offset"="%doors_offset%"+"%info_ext%"
+   WRITE_LONG  0xa8  "%doors_offset%"
+ END
+ PATCH_IF ("%anim_offset%">="%entrances_offset%") BEGIN
+   "anim_offset"="%anim_offset%"+"%info_ext%"
+   WRITE_LONG  0xb0  "%anim_offset%"
+ END
+ PATCH_IF ("%tiled_offset%">="%entrances_offset%") BEGIN
+   "tiled_offset"="%tiled_offset%"+"%info_ext%"
+   WRITE_LONG  0xb8  "%tiled_offset%"
+ END
+ PATCH_IF ("%songs_offset%">="%entrances_offset%") BEGIN
+   "songs_offset"="%songs_offset%"+"%info_ext%"
+   WRITE_LONG  0xbc  "%songs_offset%"
+ END
+ PATCH_IF ("%rest_spawns_offset%">="%entrances_offset%") BEGIN
+   "rest_spawns_offset"="%rest_spawns_offset%"+"%info_ext%"
+   WRITE_LONG  0xc0  "%rest_spawns_offset%"
+ END
+ PATCH_IF ("%automap_offset%">="%entrances_offset%") BEGIN
+   "automap_offset"="%automap_offset%"+"%info_ext%"
+   WRITE_LONG  0xc4  "%automap_offset%"
+ END
+
+
+BUT_ONLY_IF_IT_CHANGES  //********************************************************  ~NorthNashkelRoad~
+
+LAF HANDLE_AUDIO END
+
+ACTION_IF GAME_IS ~bgee~ BEGIN
+  COPY ~soa/tis~ ~override~  
+END ELSE BEGIN 
+  LAF HANDLE_TILESETS END
+END
+
+
+
+// ---------------------------------------------------------------------------------------------------
+END 	// DEFINE_ACTION_MACRO
+

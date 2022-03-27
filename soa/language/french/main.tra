@@ -1,0 +1,994 @@
+//------------------------------------------------------------------------------------
+//  Creatures, characters, items, miscellaneous:
+//------------------------------------------------------------------------------------
+
+@0     = ~Cotte de Mailles~
+@1     = ~Cotte de Mailles de Mecorima~
+// Formely @201
+@2     = ~L'armure en cottes de mailles est constituée d'anneaux métalliques imbriqués les uns dans les autres. Elle est toujours portée par-dessus une couche de tissu matelassé ou de cuir souple pour empêcher le frottement et réduire l'impact des chocs. 
+
+PARAMÈTRES :
+
+Classe d'Armure : 5
+Poids : 40
+Force nécessaire : 8
+Non utilisable par :
+ Druide 
+ Mage
+ Voleur~
+// Formely @202
+@3     =~Cette cotte de mailles a été fabriquée pour l'elfe du soleil Mecorima Sylerim. Mecorima était une elfe dorée dont les ambitions s'étendaient loin au sein de la société elfique. Diplomate douée, Mecorima avait besoin d'un petit extra pour contrecarrer les factions rivales. Afin d'y parvenir, elle fit forger une cotte de mailles qui préserverait sa vie des tentatives d'assassinat et ferait ployer la volonté des seigneurs nobles.
+
+PARAMÈTRES :
+
+Classe d'Armure : 3
+Poids : 20
+Spécial : le porteur reçoit un bonus de +5 au jet de sauvegarde contre la Mort
+Charisme augmenté de 2
+Force nécessaire : 5
+Non utilisable par :
+ Druide
+ Mage
+ Voleur~
+@4     = ~Armure de plates~
+@5     = ~Armure de Kalindra~
+// Formely @203
+@6     = ~L'armure de plates est une combinaison de cottes de mailles et de plaques métalliques recouvrant les zones vitales telles que le torse, l'abdomen et l'aine. De fabrication semblable à l'armure de plates en bronze, la véritable armure de plates est constituée de mailles et de cuir. 
+
+PARAMÈTRES :
+
+Classe d'Armure : 3
+Poids : 50
+Force nécessaire : 12
+Non utilisable par :
+ Druide
+ Mage
+ Voleur~
+// Formely @204
+@7     = ~Cette armure paraît presque vivante lorsque vous la soulevez. Le matériau dont elle est constituée est léger et enveloppe votre corps comme du cuir souple. Le seul indice de son origine est le nom de Kalindra gravé à l'intérieur.  
+
+PARAMÈTRES :
+
+Classe d'Armure : 2
+Poids : 30
+Spécial: jets de sauvegarde augmentés de 1
+Force nécessaire : 10
+Non utilisable par :
+ Barde 
+ Druide
+ Mage
+ Voleur~
+@8     = ~Masse~
+@9     = ~Masse +1~
+// Formely @205
+@10    = ~La masse descend directement du simple gourdin ; elle n'est rien de plus qu'une hampe de bois avec une tête en pierre ou en fer fixée à l'extrémité. La forme de la tête varie ; certaines sont pointues, d'autres à rebord, et d'autres encore ont un pommeau pyramidal.
+
+PARAMÈTRES :
+
+Dégâts : 1D6 +1
+Type de dégâts : contondant
+Poids : 8
+Facteur de vitesse : 7
+Type de compétence : masse
+Type : arme à 1 main
+Force nécessaire : 10
+Non utilisable par :
+ Druide
+ Mage
+ Voleur~
+// Formely @206
+@11    =  ~Masse +1 : 'Masse des Impavides'
+De nombreux suivants de Chauntea portent une masse semblable à celle-ci. La plupart d'entre elles sont offertes aux nouveaux clercs mais certaines sont renforcées par magie et offertes aux étudiants les plus doués. Voici l'une de ces armes.
+
+PARAMÈTRES :
+
+Dégâts : 1D6 +3
+TAC0 : +1 
+Spécial : 30 % de Résistance à la Peur
+Type de dégâts : contondant
+Poids : 7
+Facteur de vitesse : 5
+Type de compétence : masse
+Type : arme à 1 main
+Force nécessaire : 9
+Non utilisable par :
+ Druide
+ Mage
+ Voleur~
+@12    = ~Mailloche~
+@13    = ~Mailloche +2~
+// Formely @207
+@14    =~La mailloche est un lourd marteau largement utilisé dans la construction de navires ou de bâtiments. Instrument domestique, la mailloche est populaire à travers tout Féérune, tout particulièrement auprès des constructeurs de navires d'Eauprofonde. Son poids imposant et son excellente maniabilité en font une arme mortelle au combat.
+
+PARAMÈTRES :
+
+Dégâts : 1D4 +1
+Type de dégâts : contondant
+Poids : 6
+Facteur de vitesse : 4
+Type de compétence : marteau de guerre
+Type : arme à 1 main
+Force nécessaire : 9
+Non utilisable par :
+ Druide
+ Mage
+ Voleur~
+// Formely @208
+@15    = ~Mailloche +2 : 'Défonceur d'Ogre de Tholin'
+Cette lourde mailloche aussi connue sous le nom de 'Mailloche du Puissant' a essuyé les tempêtes d'innombrables guerres et batailles. A l'origine propriété d'un chef de la tribu des Elans, la mailloche fut forgée afin d'anéantir le nombre croissant d'ogres et d'orcs le long de la rivière Dessarin. 
+
+PARAMÈTRES :
+
+Dégâts : 1D4 +3, +3 contre les Géants  
+TAC0 : +2
+Type de dégâts : contondant
+Poids : 7
+Facteur de vitesse : 5
+Type de compétence : marteau de guerre
+Type : arme à 1 main
+Force nécessaire : 10
+Non utilisable par :
+ Druide
+ Mage
+ Voleur~
+@16    = ~Morgenstern~
+@17    = ~Morgenstern +2~
+// Formely @209
+@18    = ~Le morgenstern est un manche en bois couronné d'une tête en métal constituée d'une gaine de fer cloutée. Les morgensterns mesurent environ 1,20 m. Certaines de ces armes possèdent une tête de forme ronde, ovale ou cylindrique garnie de clous. Sur la plupart des têtes de morgenstern, quelle que soit leur forme, se trouve une longue pointe pour porter une attaque perforante. 
+
+PARAMÈTRES :
+
+Dégâts : 2D4
+Type de dégâts : contondant
+Poids : 12
+Facteur de vitesse : 7
+Type de compétence : fléau/étoile du matin
+Type : arme à 1 main
+Force nécessaire : 11
+Non utilisable par :
+ Druide
+ Mage 
+ Voleur~
+// Formely @210
+@19    = ~Morgenstern +2 : 'Présent d'Ishandar'
+Golain passa la plus grande partie de sa jeunesse avec son père, à explorer la Corne des Tempêtes dans le Cormyr. Son père lui apprit à se battre et à apprécier le pays qui l'entourait. Passionné d'aventure et de géographie, il devint Explorateur Royal pour le compte de la famille Obarskyr. Durant une longue expédition avec une équipe d'explorateurs chargée d'étudier le territoire des montagnes des Pics du Tonnerre, il remarqua une petite caverne digne de son attention. Après un bref combat contre des orques nombreux, il découvrit un petit coffre rempli d'or et un morgenstern qui brillait dans l'obscurité. Le morgenstern resta avec Golain durant quelques temps, jusqu'à ce qu'il perde la vie en combattant des Ogres dans la Corne des Tempêtes. 
+
+PARAMÈTRES :
+
+Dégâts : 2D4 +2
+TAC0 : +2
+Type de dégâts : contondant
+Poids : 10
+Facteur de vitesse : 6
+Type de compétence : fléau/étoile du matin
+Type : arme à 1 main
+Force nécessaire : 10
+Non utilisable par :
+ Druide
+ Mage 
+ Voleur~
+@20    = ~Livre~
+@21    = ~Livre de sorts de Sorcier Rouge~
+// Formely @304 (though identical to @22)
+@22    = ~Un livre de sorts de sorcier. La plupart des livres de ce type sont utilisés pour y conserver des sorts ou tout type d'enchantement magique.~
+// Formely @305
+@23    = ~Livre de Flammes
+Autrefois aux mains d'un archimage des Sorciers Rouges, ce livre fut volé par un esclave en fuite et sortit clandestinement de Thay pour rejoindre la sécurité des Vaux. Le livre, relié en chair humaine, est le fruit d'innombrables expérimentations réalisées sur des esclaves. Il en résulte une aura que seuls les personnages maléfiques peuvent manipuler.
+
+PARAMÈTRES :
+
+Spécial : quand il s'ouvre, une flamme décrit un arc de cercle pour venir frapper la cible
+Dégâts : 2D3
+Portée : 0 
+Durée : instantanée
+Temps d'incantation : 1
+Zone d'effet : le lanceur de sorts
+Jet de sauvegarde : aucun
+
+Utilisable seulement par :
+ Mage~
+@24    = ~Arc long composite~
+@25    = ~Arc long composite +2~
+// Formely @211
+@26    = ~Les arcs composites sont des arcs longs ou courts dont les branches sont faites de plusieurs matériaux. Cela rend l'arc plus souple, ce qui fait que les flèches tirées par cet arc provoquent davantage de dégâts. Ceux-ci ont été conçus après l'arc long ordinaire.
+
+PARAMÈTRES :
+
+Dégâts : +2
+TAC0 : +1
+Poids : 10
+Facteur de vitesse : 7
+Type de compétence : arc
+Type : arme à 2 mains
+Force nécessaire : 18
+Non utilisable par :
+ Druide
+ Clerc
+ Mage 
+ Voleur
+ Barde~
+// Formely @212
+@27    = ~Arc long composite +2 : 'La Malédiction de la Méduse'
+Laeroth naquit durant l'année de la Lame Brisée. Dès son plus jeune âge, il acquit la maîtrise de l'arc, et c'était lui qui avait la vue la plus perçante parmi les elfes de son village. Des récits mentionnaient une Méduse cachée dans une grotte des montagnes alentours. En guise de test de courage, il incomba à Laeroth de livrer la tête de ce monstre. Quand il eut parlé aux anciens de son village, un arc fut fabriqué tout spécialement pour attaquer un ennemi de ce genre. Taillé dans un barral, l'arc était fait pour rester fidèle à son utilisateur et résister au regard de certaines créatures. S'ensuivit un long voyage avant que Laeroth ne puisse atteindre l'antre de la Méduse. A l'intérieur de la grotte, il employa une gemme de lumière afin de retrouver son chemin dans les profondeurs. Après avoir dépassé des formes pétrifiées, résultat d'innombrables tentatives avortées de capturer le monstre, Laeroth finit par tomber sur sa proie. Alors qu'il était face à face avec la Méduse, son regard tomba sur lui. Il fut d'abord paralysé, incapable de faire quoi que ce soit, mais grâce à l'arc qu'il tenait à la main, les effets du regard furent neutralisés et le combat pour la prédominance put commencer. Chacun armé d'un arc, les adversaires se préparèrent à l'affrontement. La Méduse tira la première et une flèche empoisonnée se logea dans son épaule juste au moment où l'arc de barral libérait sa propre flèche vers la tête de la Méduse. Le monstre se tordit de douleur tandis que Laeroth buvait un antidote, juste à temps pour assister aux derniers sursauts d'agonie de la Méduse. Il approcha la créature et, d'une main sûre, lui trancha la tête. Après son retour au village, celle-ci fut placée en lieu sûr afin d'être utilisée contre les orques en cas de nécessité. Laeroth voyagea durant les années qui suivirent et finit par vendre l'arc contre une importante somme d'argent.
+
+PARAMÈTRES :
+
+Dégâts : +3
+TAC0 : +2
+Spécial : Protection contre la Pétrification 
+Poids : 9
+Facteur de vitesse : 6
+Type de compétence : arc
+Type : arme à 2 mains
+Force nécessaire : 18
+Non utilisable par :
+ Druide
+ Clerc
+ Mage 
+ Voleur
+ Barde~
+@28    = ~Cape~
+@29    = ~Cape de voyage~
+// Formely @300 (though identical to @30)
+@30    = ~La cape peut être fabriquée dans presque n'importe quel type de tissu et prendre n'importe quelle forme. Les capes les plus courantes sont faites d'un morceau de tissu circulaire troué en son centre pour passer la tête et d'un tissu drapé à partir du cou, attaché par une chaîne, une broche, une ficelle ou des épingles.~
+// Formely @301
+@31    = ~La cape de voyage est un vêtement léger qui donne une protection supplémentaire contre les éléments. En outre, la cape donne un bonus à la classe d'armure.
+ 
+PARAMÈTRES :
+
+Classe d'Armure : bonus de 1 
+Spécial : 20 % de résistance au froid et au feu
+Poids : 3
+Non utilisable par :~
+@32    = ~Robe de mage~
+@33    = ~Robe blanche de l'Araignée~
+// Formely @302 (though identical to @34)
+@34    = ~Depuis l'ère de Néthéril, les mages ont appris à conférer aux objets quotidiens qui les entourent une grande variété de propriétés magiques. L'un des plus usités de ces objets est la robe courante. Elle est légère, peu onéreuse et conserve bien ses enchantements. Cela en fait une parure de mage idéale. Cependant, en raison de leur héritage magique, ces robes enchantées ne peuvent être portées que par des mages monoclassés, à classes jumelées ou multiclassés.~
+// Formely @303
+@35    = ~Cette robe blanche est brodée des formes de nombreuses araignées sur l'ensemble de sa surface. Le porteur est immunisé à tous les effets qui affectent le déplacement, tels que Toile d'Araignée ou Lenteur. Cette robe annule les effets de la paralysie et des sorts d'immobilisation. Elle permet aussi au mage de lancer un sort d'immobilisation sur une cible, mais sa durée est limitée à un seul round.
+
+PARAMÈTRES :
+
+Classe d'Armure : 6
+Poids : 6
+Spécial : Action Libre (une fois mise) - protège le mage de tous les effets de sorts affectant le mouvement tels qu'Immobilisation ou Toile d'Araignée
+Permet au mage de lancer un sort d'Immobilisation
+Utilisable seulement par :
+ Mage (monoclassé, à classes jumelées ou multiclassé)~
+@36    = ~Dague~
+@37    = ~Dague +1~
+// Formely @213
+@38    =  ~La dague traditionnelle comporte une lame pointue généralement à double tranchant, contrairement au couteau, un peu plus court, ne possédant qu'un seul tranchant.
+
+PARAMÈTRES :
+
+Dégâts : 1D4
+Type de dégâts : perforant
+Poids : 1
+Facteur de vitesse : 2
+Type de compétence : dague
+Type : arme à 1 main
+Force nécessaire : 3
+Non utilisable par :
+ Clerc~
+// Formely @214
+@39    = ~Dague +1 : 'Dague de Défiance'
+Ces dagues furent d'abord créées à Myth Drannor. Cette dague a tout particulièrement orné aussi bien les mains de gredins, de voleurs que de bandits.
+
+PARAMÈTRES :
+
+Dégâts : 1D4 +2
+TAC0 : +1 
+Spécial : immunité à la Peur et au Charme
+  Bonus de +2 aux jets de sauvegarde contre les sorts
+Poids : 1
+Facteur de vitesse : 2
+Type de compétence : dague
+Type : arme à 1 main
+Force nécessaire : 3
+Utilisable par :
+ Voleur
+ Barde~
+@40    = ~Tambour~
+@41    = ~Tambour Kobold~
+@42    = ~Peut-être les plus anciens des instruments connus, les tambours sont de différents types et sont populaires parmi de nombreuses races pour leur capacité à susciter des émotions et à créer un tempo pour la danse. Aussi bien les Humains que les Nains, les Demi-Orques, les Hommes Lézards, les Kobolds, les Trolls, les Ogres et les plus bornés des Géants apprécient la musique simple du tambour.~
+// Formely @306
+@43    = ~Le tambourin ou Tambour à Timbre est l'un des préférés des Kobolds et des Nains. Tenu sous le bras ou devant le corps, le tambour peut produire une pulsation rythmique ferme. Joués en groupe, le son de ces tambours peut être confondu avec l'avancée d'une petite armée et peut effrayer la plupart des créatures à portée d'oreille.
+
+PARAMÈTRES :
+
+Spécial : quand on joue de ce tambour, la cible doit effectuer un jet de sauvegarde à -2 ou le son du tambour provoque sa panique
+Portée : 40
+Durée : 2 rounds
+Poids : 5
+Non utilisable par :~
+@44    = ~Tambour d'Ogre~
+// Formely @307
+@45    = ~Les tambours de ce type sont connus sous le nom de Congos et sont l'un des instruments favoris des créatures les plus grandes des Royaumes telles que les Ogres et les Géants, à cause de la profondeur de leur résonance. Quand plusieurs tambours sont utilisés à la fois, ils donnent l'impression d'une armée en marche pour la bataille, ce qui peut effrayer la plupart des créatures à portée d'oreille.
+
+PARAMÈTRES :
+
+Spécial : quand on joue de ce tambour, la cible doit effectuer un jet de sauvegarde à -2 ou le son du tambour provoque sa panique
+Portée : 60
+Durée : 2 rounds
+Poids : 8
+Non utilisable par :~
+@46    = ~Perle~
+@47    = ~Perle des Sirènes~
+@48    = ~Une perle est constituée de couches superposées d'aragonite qui se forment lentement et laborieusement autour d'un grain de sable présent dans une huître ou un autre mollusque. La perle résultant de ce processus a un bel aspect lustré. La plupart des perles des Royaumes sont blanches, bien qu'il en existe des spécimens arc-en-ciel et même noirs.~
+// Formely @308
+@49    = ~Cette perle apparemment normale irradie d'un faible enchantement si l'on effectue une détection de la magie. De toute manière, la pierre sera très belle et vaudra au moins 1000 pièces d'or sur cette seule base. Si son détenteur la tient fermement en main (ou sur la poitrine), et qu'il tente des actions liées aux sphères de pouvoir de la perle, ces dernières comprendront et il sera capable d'utiliser l'objet.
+La perle permet à son propriétaire de lancer Charme Néfaste sur une cible. La perle doit être tenue en main par son détenteur pour lui transmettre ses pouvoirs. De telles perles ont cependant un nombre de charges limité.
+
+PARAMÈTRES :
+
+Spécial : lance Charme Néfaste
+  Portée : 20
+  Durée : 4 rounds
+  Zone d'effet : 1 créature
+  Poids : 1
+  Jet de sauvegarde : annule
+Utilisable par :
+ Druide~
+@50    = ~Hallebarde~
+@51    = ~Hallebarde +1~
+// Formely @215
+@52    = ~De loin l'arme d'hast la plus ancienne et la plus répandue, la hallebarde se compose d'une hache en forme de couperet montée sur un bâton mesurant en moyenne 1,80 m de long. La hache est équilibrée à l'arrière par un barbillon et surmontée d'une pointe acérée, généralement de forme quadrangulaire. Le barbillon est parfois remplacé par un crochet utilisé pour faire tomber l'ennemi de cheval. La hallebarde est en réalité un croisement entre la lance et la hache.
+
+PARAMÈTRES :
+
+Dégâts : 1D10
+Type de dégâts : perforant
+Poids : 15
+Facteur de vitesse : 9
+Type de compétence : hallebarde
+Type : arme à 2 mains
+Force nécessaire : 13
+Non utilisable par :
+ Druide
+ Clerc
+ Mage
+ Voleur~
+// Formely @216
+@53    = ~Comme toutes ses pareilles, cette hallebarde se compose d'une hache en forme de couperet montée sur un bâton mesurant approximativeent 1,80 m de long. Elle a également été enchantée de façon à être plus efficace au combat. Ainsi, sa hache tranchera facilement dans la chair de l'ennemi pour trouver l'os, tandis que le barbillon cherchera les brèches dans son armure.
+
+PARAMÈTRES :
+
+Dégâts : 1D10 +2
+TAC0 : +1 
+Type de dégâts : perforant
+Poids : 14
+Facteur de vitesse : 8
+Type de compétence : hallebarde
+Type : arme à 2 mains
+Force nécessaire : 13
+Non utilisable par :
+ Druide
+ Clerc
+ Mage
+ Voleur~
+@54    = ~Marteau de guerre~
+@55    = ~Marteau de Glace +2~
+// Formely @217
+@56    = ~Les cavaliers peuvent difficilement manier les armes longues. C'est pourquoi de nombreuses armes ont été munies de manches plus courts pouvant être saisis d'une seule main. La masse et le fléau sont deux exemples d'armes longues qui ont suivi cette évolution ; le marteau de guerre en est un autre. Le marteau de guerre du cavalier est le descendant du marteau de Lucerne. Il est entièrement fabriqué en acier, avec des rondelles pour protéger et renforcer la prise. Les rondelles sont de petits disques métalliques, souvent en forme de motifs décoratifs. Le manche mesure environ 45 cm de longueur.
+
+PARAMÈTRES :
+
+Dégâts : 1D4 +1
+Type de dégâts : contondant
+Poids : 6
+Facteur de vitesse : 4
+Type de compétence : marteau de guerre
+Type : arme à 1 main
+Force nécessaire : 9
+Non utilisable par :
+ Barde
+ Druide
+ Mage
+ Voleur~
+// Formely @218
+@57    = ~Marteau de Glace +2 : 'Gel de Mydan'
+Nombre de ces marteaux furent fabriqués par des Géants du Froid pour faire des ravages dans les villages locaux. En colère contre les humains qui envahissaient leur territoire, la Déesse de Glace, Aurile, encouragea les Géants à créer des armes capables d'infliger de grands dommages. Un de leurs chefs, Mydan, créa ce marteau pour rendre hommage à sa Divinité. Satisfaite de l'offrande, la déesse enchanta l'arme en lui conférant le pouvoir de la glace.
+
+PARAMÈTRES :
+
+Dégâts : 1D4 +2 (+1D3 de dégâts de froid)
+TAC0 : +2 
+Résistance au froid : +30 %
+Type de dégâts : contondant
+Poids : 6
+Facteur de vitesse : 4
+Type de compétence : marteau de guerre
+Type : arme à 1 main
+Force nécessaire : 9
+Non utilisable par :
+ Barde
+ Druide
+ Mage
+ Voleur~
+@58    = ~Casque~
+@59    = ~Heaume du Cormyr~
+// Formely @309 (slightly different from @60), identical to BG1 @19724
+@60    = ~Ce type de casque d'apparat, fait de cuir ou de métal renforcé, couvre le visage et le crâne. Les trous pour les yeux et le nez ne sont pas de trop.
+
+PARAMÈTRES :
+
+Bonus à la Classe d'Armure : aucun
+Spécial : protège des coups critiques
+Poids : 2
+Non utilisable par :
+ Mage
+ Barde
+ Voleur~
+// Formely @321
+@61    = ~Ce heaume a été transmis de génération en génération parmi les Chevaliers du Dragon Pourpre. Le heaume a été doté de propriétés magiques afin qu'il protège son porteur contre certains enchantements.
+
+PARAMÈTRES :
+
+Bonus à la Classe d'Armure : aucun
+Spécial : protège des coups critiques
+Protège contre la Confusion, l'Obstination bornée et la Peur
+Poids : 2
+Non utilisable par :
+ Mage
+ Barde
+ Voleur~
+@62    = ~Heaume de Kalindra~
+// Formely @310
+@63    = ~Ce heaume miroite quand on le prend en main et le métal semble étrange au toucher. Le seul indice de son origine est le nom de Kalindra gravé à l'intérieur.  
+
+PARAMÈTRES :
+
+Bonus à la Classe d'Armure : aucun
+Spécial : protège des coups critiques
+Le porteur gagne un bonus de +5 aux jets de sauvegarde contre la pétrification et la métamorphose
+Poids : 2
+Non utilisable par :
+ Mage
+ Barde
+ Voleur~
+@64    = ~Corne naturelle~
+@65    = ~Corne d'invocation~
+@66    = ~Les cornes naturelles sont prélevées sur les taureaux ou autres monstres plus exotiques. Les cornes naturelles peuvent prendre toutes les formes, toutes les tailles et la plupart d'entre elles consistent en une pointe étroite reliée à un orifice plus large et circulaire par une tige creuse souvent incurvée. On en joue en soufflant dans l'extrémité étroite afin de produire une note. Des cornes de ce type sont populaires parmi toutes les races de Féérune.~
+// Formely @311
+@67    = ~Lorsqu'on joue de cette corne, un son profond et mugissant fait appel au Plan Démoniaque, et, depuis les Abysses, un démon mineur est invoqué afin d'aider son maître de la manière qu'il lui plaira. La créature ne peut rester dans le royaume que pendant deux rounds mais peut être réinvoquée en soufflant dans la corne. Quand le démon est présent, toute capacité à lancer des sorts est paralysée. La corne ne peut invoquer un démon qu'un nombre limité de fois, aussi est-il préférable de l'utiliser avec sagesse.
+
+PARAMÈTRES :
+
+Spécial : quand on en joue, un démon mineur est invoqué afin d'assister celui qui l'a appelé
+Durée : 2 rounds
+Poids : 3
+Utilisable seulement par :
+ Barde~
+@68    = ~Luth~
+@69    = ~Luth elfique~
+@70    = ~Le luth est composé d'une caisse piriforme et d'un col incurvé caractéristique avec des frettes pour les doigts. De quatre à huit cordes s'étirent entre la base de la caisse et le sommet du col. Les luths évoluent entre 75 et 90 cm de longueur, où la caisse représente à peu près les deux tiers du total. Le musicien gratte ou pince les cordes pour produire de la musique.~
+// Formely @312, effect strength +1 added compared to BGEE @71
+@71    = ~Luth de Cassandra 'Le courage du Lion'
+Cassandra commença à jouer du luth alors qu'elle avait cinq ans ; à quatorze ans, elle était maître artiste. Son père, Tarun Coriades, luthier elfe doué, créa un luth spécial pour son seizième anniversaire. Fabriqué à partir de bois mystiques proches du Lac des Rêves, le luth fut créé pour donner confiance et courage à qui en jouait. Cassandra traversa de nombreux pays et joua en de nombreux endroits de cet instrument. Lors d'une visite dans sa patrie, Eternelle-Rencontre, le navire qui la transportait rencontra les hautes mers et le luth fut perdu par-dessus bord. Le navire fit naufrage sur Araska mais Cassandra ne survécut jusqu'à ce jour que pour rechercher son luth.
+   
+PARAMÈTRES :
+
+Spécial : quand il en joue, l'artiste gagne confiance en soi et courage
+TAC0 : +1
+Force augmentée de 1
+Immunité à la Peur
+5 points de vie temporaires supplémentaires
+Durée : 5 rounds
+Poids : 7
+Utilisable seulement par :
+ Barde~
+@72    = ~Harmonica~
+@73    = ~L'Harmonica, ou plus vulgairement, Orgue de bouche, consiste en plusieurs petites anches de métal de taille dégressive enfermées dans les rainures d'une boîte courte et étroite, qui est placée contre les lèvres et déplacée d'un côté ou de l'autre en fonction de la note souhaitée. L'instrument est populaire parmi les petits-hommes et les gnomes.~
+// Formely @313
+@74    = ~Harmonica 'Chaleur de Tarmaniel'
+Cet Harmonica fut créé par Tarmaniel, barde humain bien connu à travers la Sembie. Tarmaniel avait la passion du voyage et aimait partager des informations avec ses compagnons bardes. Quand on joue de cet Harmonica, il rend un son inimitable qui réchauffe le coeur de ses auditeurs. Malheureusement, il avait aussi la passion du jeu et perdit l'Harmonica en jouant aux cartes quelque part à la Porte de Baldur.  
+
+PARAMÈTRES :
+
+Spécial : bonus de +1 au Charisme 
+Le groupe gagne un bonus de +1 à la classe d'armure 
+Durée : 3 rounds
+Portée : 20
+Poids : 1
+Utilisable seulement par :
+ Barde~
+@75    = ~Miroir~
+@76    = ~Miroir d'Illusion~
+@77    = ~Un miroir d'aspect quelconque~
+@78    = ~Instrument favori des Voleurs et des Maîtres Espions, le miroir a longtemps figuré dans l'arsenal des brigands parmi le matériel de vol. Ce miroir a été enchanté afin de lui donner la capacité de rendre son propriétaire flou pendant 4 rounds. Comme nombre d'objets magiques, le Miroir ne peut être utilisé qu'un nombre de fois limité.~
+@79    = ~Orbe~
+@80    = ~Orbe des Tempêtes~
+@81    = ~De nombreux orbes sont utilisés par les Sorciers ou les Druides pour jeter un coup d'oeil sur une autre partie des royaumes et certains, dit-on, peuvent montrer de possibles futurs. Certains orbes sont dits détenir des pouvoirs susceptibles de contrôler les éléments, bien qu'ils soient rares.~
+// Formely @314
+@82    = ~Cet orbe resplendit d'une flamme bleue ; des nuages commencent à se former comme vous le déplacez, et des charges électriques en balaient l'intérieur. Un mot de commande libère l'orbe de son énergie, il en résulte un éclair arraché au ciel. Toute personne frappée par la foudre doit effectuer un jet de sauvegarde à -3 ou encaisser 2D6 points de dégâts.
+
+PARAMÈTRES :
+
+Spécial : lance Éclair
+Dégâts : 2D6
+Portée : 30
+Poids : 3
+Jet de sauvegarde : annule
+Seulement utilisable par :
+ Druide
+ Mage
+ Barde~
+@83    = ~Anneau~
+@84    = ~Anneau d'invisibilité~
+@85    = ~Un anneau est une fine lanière de métal précieux. Il sert en général d'ornement. Plus rares, certains sont enchantés et permettent à quiconque les porte d'user de la magie qu'ils contiennent. Ils sont de ce fait très recherchés par les aventuriers.
+
+PARAMÈTRES :
+
+Poids : 0~
+// Formely @315
+@86    = ~Anneau d'invisibilité : 'L'évasion des voleurs'
+Cet anneau a appartenu autrefois à un capitaine du Calimshan appelé Josan Paris. Marin talentueux, Josan commandait un gros navire de guerre basé à Memnon dont le but était de délivrer des pirates la Mer Étincelante. L'anneau fut récupéré sur un navire pirate et Josan le garda en souvenir. Quand il découvrit sa capacité à rendre invisible, il changea de profession pour une carrière plus opportuniste et devint pour finir un pirate du même genre que ceux qu'il avait autrefois pourchassés. 
+
+PARAMÈTRES :
+
+Spécial : quand l'anneau est activé, son porteur devient invisible pendant 2 rounds
+Non utilisable par :~
+@87    = ~Ecu~
+@88    = ~Ecu du Milan Bleu~
+// Formely @219
+@89    = ~L'écu se porte comme la rondache. Mais contrairement à la rondache, son poids ne permet pas au combattant de porter autre chose. Les écus sont généralement fabriqués en métal ; ils mesurent entre 90 cm et 1,20 m de diamètre et peuvent avoir n'importe quelle forme (carrée, ronde ou comme les ailes déployées d'un dragon). Un bouclier médiéval typique ressemble à un triangle dont un des angles pointerait vers le bas. 
+
+PARAMÈTRES :
+
+Bonus à la classe d'armure : 1
+Poids : 7
+Force nécessaire : 12
+Non utilisable par :
+ Barde
+ Druide
+ Mage
+ Voleur~
+// Formely @220
+@90    = ~Les origines de cet étrange écu sont inconnues mais la forme décolorée d'une guivre bleue qui en décore l'extérieur pourrait indiquer qu'il provient de l'ancien empire de Mulhorande, proche des montagnes de Lamedragon. Aucune marque de l'armurier ne figure nulle part sur l'écu, et il ne porte pas trace de bataille – peut-être l'écu fut-il fabriqué avec des moyens magiques. Quelle que soit sa nature, sa patine bleue en fait une possession de prix.
+  
+PARAMÈTRES :
+
+Bonus à la classe d'armure : 2
+Poids : 7
+Spécial : 30 % de Protection contre le feu
+Force nécessaire : 12
+Non utilisable par :
+ Barde
+ Druide
+ Mage
+ Voleur~
+@91    = ~Rondache~
+@92    = ~Bouclier de tempête de Talos~
+// Formely @221
+@93    = ~La rondache est généralement ronde et se tient à bout de bras par la poignée. Comme elle est légère comparée à un écu, le combattant peut porter d'autres objets dans la même main, mais ne peut manier ou porter une autre arme. 
+ 
+PARAMÈTRES :
+
+Bonus à la classe d'armure : 1
+Spécial : pas de protection contre les armes à projectiles
+Poids : 3
+Force nécessaire : 4
+Non utilisable par :
+ Barde
+ Druide
+ Mage
+ Voleur~
+// Formely @222
+@94    = ~Loran Emarin, barde elfe appartenant à l'organisation des Ménestrels, entendit l'histoire d'un bouclier doré ayant la capacité de protéger contre les éléments. Intrigué par ce récit, le barde se lança dans la quête de cet objet. Après avoir cherché durant plusieurs années sans résultat, le barde avait presque abandonné lorsque par une nuit froide, dans une taverne de Padhiver, l'elfe surprit une conversation entre deux prêtres d'Oghma. Le bouclier était décrit comme la propriété d'un groupe de guerriers/clercs d'élite, sectateurs dévoués du Seigneur des Tempêtes, Talos. Le bouclier finit par être récupéré et vendu au clergé de Talos. Son destin depuis lors est inconnu.
+
+PARAMÈTRES :
+
+Bonus à la classe d'armure : 2
+Poids : 5
+Spécial : bonus de résistance à l'électricité de 30 %
+  30 % de Protection contre le froid
+  30 % de Protection contre le feu
+  Le bouclier recèle une petite charge électrique qui peut être déchargée sur la cible, avec 10 % de chance que le porteur soit également affecté
+Force nécessaire : 4
+Non utilisable par :
+ Barde
+ Druide
+ Mage
+ Voleur~
+@95    = ~Gemme~
+@96    = ~Pierre d'Askavar~
+@97    = ~Une petite pierre bleue de la taille d'un petit poing. La pierre d'Askavar est prétendument un artéfact elfique autrefois perdu lorsque l'ancienne communauté elfique d'Askavar tomba en ruines. Elle est réputée avoir d'immenses pouvoirs d'influence, mais vous n'avez aucune idée de la manière dont il faudrait l'utiliser.~
+@98    = ~Epée à deux mains~
+@99    = ~Grande épée +1~
+// Formely @223
+@100   = ~L'épée à deux mains est un dérivé de l'épée longue. Les forgerons d'armes ont toujours cherché à améliorer les armes de leur temps. Pour l'épée longue, ils ont allongé la lame. Après la lame, c'est la poignée qui s'est allongée. Il est alors devenu nécessaire d'utiliser les deux mains pour manier l'épée. La fonction première de l'épée à deux mains est de désarçonner les chevaliers montés et de désorganiser les haies de piques. 
+
+PARAMÈTRES :
+
+Dégâts : 1D10
+Type de dégâts : tranchant
+Poids : 15
+Facteur de vitesse : 10
+Type de compétence : épée à 2 mains
+Type : arme à 2 mains
+Force nécessaire : 14
+Non utilisable par :
+ Druide
+ Clerc
+ Mage 
+ Voleur~
+// Formely @224
+@101   = ~Grande Epée +1 : 'Le Saphir Étincelant'
+Un peu au nord d'Eauprofonde se situent le village d'Amphail et la demeure d'un Maître Forgeron Nain appelé Kathian Mainsmarteaux. Cette épée, ainsi que sa soeur, l'Oeil d'Emeraude, fut créée par le forgeron afin d'aider les Ménestrels dans leur lutte contre les espions du Zhentarim.
+
+PARAMÈTRES :
+
+Capacité spéciale : 
+  Détection du Mal
+
+Dégâts : 1D10 +1, +1D3 de dégâts de froid
+TAC0 : +1
+Type de dégâts : tranchant
+Poids : 10
+Facteur de vitesse : 8
+Type de compétence : épée à 2 mains
+Type : arme à 2 mains
+Force nécessaire : 14
+Non utilisable par :
+ Druide
+ Clerc
+ Mage 
+ Voleur~
+@102   = ~Epée bâtarde~
+@103   = ~Epée large de barbare~
+// Formely @225
+@104   = ~Egalement connue sous le nom d'épée à une main et demie, l'épée bâtarde tire son nom de son aspect intermédiaire entre l'épée à deux mains et l'épée longue. Elle possède une lame à double tranchant et une longue poignée, qui peut éventuellement accueillir les deux mains. La longueur de l'épée bâtarde varie entre 1,20 m et 1,50 m.
+
+PARAMÈTRES :
+
+Dégâts : 2D4
+Type de dégâts : tranchant
+Poids : 10
+facteur de vitesse : 8
+Type de compétence : épée bâtarde
+Type : arme à 1 main
+Force nécessaire : 11
+Non utilisable par :
+ Druide
+ Clerc
+ Mage 
+ Voleur~
+// Formely @226
+@105   = ~Faite pour les plaines de Toundra du grand Nord, l'épée large de Barbare a été modifiée en prévision d'un climat gelé. La chaleur du métal procure une résistance contre la rigueur du froid.
+
+PARAMÈTRES :
+
+Dégâts : 2D4 +1, + 1D3 de dégâts de feu
+TAC0 : +1
+Spécial : 30 % de Protection contre le froid
+Type de dégâts : tranchant
+Poids : 8
+Facteur de vitesse : 6
+Type de compétence : épée bâtarde
+Type : arme à 1 main
+Force nécessaire : 11
+Non utilisable par :
+ Druide
+ Clerc
+ Mage 
+ Voleur~
+@106   = ~Sabre~
+@107   = ~Sabre du Poing Rouge~
+// Formely @227
+@108   = ~Arme des Tuigan et des Nar, le sabre est une épée longue et lourde spécialisée dans les longues entailles usuelles dans le combat monté.
+
+PARAMÈTRES :
+
+Dégâts : 1D8
+Type de dégâts : tranchant
+Poids : 6
+Facteur de vitesse : 5
+Type de compétence : épée longue
+Type : arme à 1 main
+Force nécessaire : 6
+Non utilisable par :
+ Druide
+ Clerc
+ Mage 
+ Voleur~
+// Formely @228
+@109   = ~Ce sabre a autrefois appartenu au capitaine Ergern Conwell, officier de cavalerie du Poing Enflammé. Il reçut ce sabre en récompense de sa bravoure au combat. Les compétences du Capitaine à l'épée égalaient presque son affinité avec la majeure partie des femmes de la région. Aucun talent d'épéiste ne put cependant le sauver de la lame empoisonnée d'un soupirant fou de jalousie. 
+
+PARAMÈTRES :
+
+Dégâts : 1D8 +1
+TAC0 : +1 
+Spécial : 30 % de chance que la cible soit étourdie pendant 1 round
+Type de dégâts : tranchant
+Poids : 6
+Facteur de vitesse : 4
+Type de compétence : épée longue
+Type : arme à 1 main
+Force nécessaire : 6
+Non utilisable par :
+ Druide
+ Clerc
+ Mage 
+ Voleur~
+// Formely @229
+@110   = ~Epée longue +1 : 'L'Oeil d'émeraude'
+Un peu au nord d'Eauprofonde se situent le village d'Amphail et la demeure d'un Maître Forgeron Nain appelé Kathian Mainsmarteaux. Cette épée ainsi que sa soeur, le Saphir Étincelant, fut créée par le forgeron afin d'aider les Ménestrels dans leur lutte contre les espions du Zhentarim.
+
+PARAMÈTRES :
+
+Capacité spéciale : 
+  Détection du Mal
+
+Dégâts : 1D10 +1, +1D3 de dégâts de feu
+TAC0 : +1
+Type de dégâts : tranchant
+Poids : 10
+Facteur de vitesse : 8
+Type de compétence : épée longue
+Type : arme à 2 mains
+Force nécessaire : 14
+Non utilisable par :
+ Druide
+ Clerc
+ Mage 
+ Voleur~
+@111   = ~Talisman~
+@112   = ~Talisman d'Action Libre~
+@113   = ~Les talismans de ce genre sont censés apporter protection ou chance à leur porteur.~
+// Formely @316
+@114   = ~Talisman d'Action Libre : 'L'étoile d'Eloen'
+L'histoire de ce talisman est inconnue mais nombreux sont ceux qui ont été trouvés gravés du nom d'une femme elfe. Ce talisman a été gravé au nom d'Eloen. Très probablement le cadeau d'une fille elfe.
+
+PARAMÈTRES :
+
+Spécial : Le porteur est immunisé à tout ce qui, par la magie ou non, peut affecter la mobilité, bien qu'il puisse encore être accéléré. Attention cependant, il protègera aussi le porteur d'effets bénéfiques comme de celui des Bottes de Rapidité.
+
+Non utilisable par :~
+@115   = ~Talisman de Protection contre le Poison~
+// Formely @317
+@116   = ~Talisman de Protection contre le Poison : 'L'étoile de Merris'
+L'histoire de ce talisman est inconnue mais nombreux sont ceux qui ont été trouvés gravés du nom d'une femme elfe. Ce talisman a été gravé au nom de Merris. Très probablement le cadeau d'une fille elfe.
+
+PARAMÈTRES :
+
+Spécial : Le porteur est immunisé contre toute forme de poison et de maladie.
+
+Non utilisable par :~
+@117   = ~Talisman de Protection +1~
+// Formely @318
+@118   = ~Talisman de Protection +1 : 'L'étoile de Riona'
+L'histoire de ce talisman est inconnue mais nombreux sont ceux qui ont été trouvés gravés du nom d'une femme elfe. Ce talisman a été gravé au nom de Riona. Très probablement le cadeau d'une fille elfe.
+
+PARAMÈTRES :
+
+Bonus à la classe d'armure : 1
+Bonus aux jets de sauvegarde : 1
+
+Non utilisable par :~
+@119   = ~Talisman de Résistance au Feu~
+// Formely @319
+@120   = ~Talisman de Résistance au Feu : 'L'étoile d'Ishara'
+L'histoire de ce talisman est inconnue mais nombreux sont ceux qui ont été trouvés gravés du nom d'une femme elfe. Ce talisman a été gravé au nom d'Ishara. Très probablement le cadeau d'une fille elfe.
+
+PARAMÈTRES :
+
+Résistance au Feu : +30 %
+
+Non utilisable par :~
+@121   = ~Talisman de Résistance au Froid~
+// Formely @320
+@122   = ~Talisman de Résistance au Froid : 'L'étoile d'Ilithyia'
+L'histoire de ce talisman est inconnue mais nombreux sont ceux qui ont été trouvés gravés du nom d'une femme elfe. Ce talisman a été gravé au nom d'Ilithyia. Très probablement le cadeau d'une fille elfe.
+
+PARAMÈTRES :
+
+Résistance au froid : +30 %
+
+Non utilisable par :~
+@123   = ~Lettre~
+@124   = ~Aranor,
+
+ Nous avons fini par découvrir l'emplacement de la pierre elfique perdue. Nous avons réussi à nous creuser un chemin vers une ancienne entrée conduisant à une chambre souterraine. Malheureusement, mes éclaireurs ont signalé la présence de hobgobelins dans la région ; c'est pourquoi j'ai dû sceller l'entrée et la protéger contre toute intrusion. La pierre est sans nul doute dans la chambre. Son étrange éclat bleuté ne laissait pas de place à l'erreur. Pour l'instant, l'entrée demeure indétectable, mais je ne suis pas certain de la durée des protections. Avec cette lettre je vous ai envoyé les cinq talismans que Khelben nous a donnés.
+
+Je vous conseillerais de ne pas voyager à travers le bois des Dents Acérées en ce moment, pour quelque raison le bois grouille de bandits et de hobgobelins. 
+
+Durant la semaine à venir, je séjournerai à Nashkel. Un festival s'y produit, ainsi si vous avez besoin de moi vous pourrez m'y trouver.
+
+Votre ami....
+
+Cearwin~
+@125   = ~Note~
+@126   = ~Petite fille – maison de Bérégost non loin de l'auberge de Feldpost
+
+Mendiant – Rue de Bérégost
+
+Vieux sorcier – Bois des Jacinthes
+
+Nécromancien – Grotte sur une île au nord de Nashkel~
+@127   = ~Parchemin de protection~
+@128   = ~Parchemin maudit de Lizzy~
+@129   = ~Un parchemin de protection est un ensemble de runes magiques inscrites sur un parchemin enchanté. Ces parchemins sont uniques, en ce sens qu'ils peuvent être lus par un personnage de n'importe quelle classe, apte ou non à la magie. Quand on lit les runes à haute voix, la magie protectrice affecte la cible choisie par le lecteur. Il existe divers types de parchemins bénéfiques, mais la prudence s'impose face à un parchemin obtenu d'une source peu fiable.~
+@130   = ~Ce parchemin est maudit. Les tentatives de divination ne révèlent rien de sa nature. Il ne serait pas sage de le lire, car les effets pourraient être mortels.~
+@131   = ~Rubis~
+@132   = ~Rubis Coeur de Dragon~
+@133   = ~Un rubis est une pierre précieuse pourpre ou rose, d'un rouge profond.~
+@134   = ~Ce rubis ressemble à un autre mais quand vous regardez dans ses profondeurs, vous distinguez nettement la face d'un dragon qui vous observe attentivement.~
+@135   = ~Aranor,
+
+J'ai de bonnes et de mauvaises nouvelles. Nous avons fini par découvrir l'emplacement de la pierre elfique perdue. Nous avons réussi à nous creuser un chemin vers une ancienne entrée conduisant à une chambre souterraine. Malheureusement, mes éclaireurs ont signalé la présence de hobgobelins dans la région ; c'est pourquoi j'ai dû sceller l'entrée et la protéger contre toute intrusion. La pierre est sans nul doute dans la chambre. Son étrange éclat bleuté ne laissait pas de place à l'erreur. Pour l'instant, l'entrée demeure indétectable, mais je ne suis pas certain de la durée des protections. A l'origine, je vous avais envoyé les cinq talismans que Khelben nous avait donnés, mais mon messager a été tué sur la route de Bérégost par des suivants de Baine et les Talismans ont été perdus. Espérons que ce messager-ci vous atteindra. Pendant ce temps, je tenterai de retrouver la trace des Talismans. 
+
+Je vous conseillerais de ne pas voyager à travers le bois des Dents Acérées en ce moment, pour quelque raison le bois grouille de bandits et de hobgobelins. 
+
+Durant la semaine à venir je séjournerai à Nashkel. Un festival s'y produit, ainsi si vous avez besoin de moi vous pourrez m'y trouver.
+
+Votre ami....
+
+Cearwin~
+@136   = ~Parchemin~
+@137   = ~Appel du Héraut~
+@138   = ~Appel du Héraut (Enchantement / Charme)
+Niveau : 1
+Portée : 12 m
+Durée : 1 round
+Temps d'incantation : 0
+Zone d'effet : 7,5 m
+Jet de sauvegarde : annule
+Ce sort vous permet de produire un cri de stentor chargé d'un air d'autorité que les autres peuvent difficilement ignorer. Toute personne affectée doit faire un jet de sauvegarde contre les sorts à -2 ou être étourdie pendant un round. Ce sort ne peut être utilisé que par les bardes.~
+@139   = ~Dague de Glace~
+@140   = ~Dague de Glace (Enchantement) 
+Niveau  1
+Portée : 6 m + 1,5 m par niveau du lanceur de sort
+Durée : spéciale
+Temps d'incantation : 2
+Zone d'effet : spéciale
+Jet de sauvegarde : aucun
+En utilisant ce sort, le mage peut créer une dague magique qui est ensuite propulsée pour frapper une cible adverse. La dague inflige 1D4 dégâts de froid à la cible par niveau du lanceur de sort, pour un maximum de 5D4.~
+@141   = ~Bouclier magique~
+@142   = ~Bouclier magique (Abjuration)
+Niveau : 3
+Portée : 30 cm
+Durée : 1 tour
+Temps d'incantation : 3
+Zone d'effet : 1 cible
+Jet de sauvegarde : aucun
+Ce sort procure une résistance de 30 % à toute forme de dégâts magiques. L'effet ne dure qu'un tour. Tous les jets de sauvegarde sont automatiquement réussis.~
+@143   = ~Téléportation de Masse~
+@144   = ~Téléportation de Masse (Altération) 
+Niveau : 7
+Portée : champ de vision du lanceur
+Durée : instantanée 
+Temps d'incantation : 1
+Zone d'effet : spéciale
+Jet de sauvegarde : aucun
+Ce sort transporte le groupe en tout endroit situé dans le champ visuel du lanceur. Le sort peut être lancé très loin du groupe et être néanmoins efficace. Quand le sort est lancé, s'ouvre en face de chaque membre un portail dimensionnel qu'il traverse aussitôt.~
+@145   = ~Admonestation modérée de Nybor~
+@146   = ~Admonestation modérée de Nybor (Enchantement / Charme)
+Niveau : 3
+Portée : 7,5 m + 1,5 m / 2 niveaux
+Durée : 1 round / niveau
+Temps d'incantation : 8
+Zone d'effet : 1 cible 
+Jet de sauvegarde : spécial
+Cette version améliorée du Rappel Léger de Nybor entraîne chez le sujet une douleur intense. La cible doit effectuer un jet de sauvegarde contre les sorts ou être hébétée pendant 2 rounds et subir une pénalité de -2 à ses attaques, à ses jets de sauvegarde et à sa classe d'armure pendant toute la durée du sort ; cependant, le sujet reçoit aussi un bonus de +2 en Force.~
+@147   = ~Châtiment violent de Nybor~
+@148   = ~Châtiment violent de Nybor (Enchantement / Charme)
+Niveau : 8
+Portée : 7,5 m + 1,5 m / 2 niveaux
+Durée : 1 round / niveau
+Temps d'incantation : 8
+Zone d'effet : 1 cible 
+Jet de sauvegarde : spécial
+Le Châtiment violent de Nybor est une version encore plus puissante de la Réprimande sévère de Nybor. Elle provoque une douleur qui vous brise, ainsi que des convulsions violentes. La créature prise pour cible doit effectuer un jet de sauvegarde contre la Mort ou mourir sur le champ. La créature qui aura survécu bénéficie d'un jet de sauvegarde contre les sorts pour éviter de nouveaux effets. Les sujets qui ratent ce jet de sauvegarde sont étourdis pendant 4 rounds et souffrent d'une pénalité de -4 à leurs attaques, à leurs jets de sauvegarde et à leur classe d'armure pendant toute la durée du sort. L'inconvénient est que le sujet reçoit aussi un bonus de +2 en Force.~
+@149   = ~Rappel léger de Nybor~
+@150   = ~Rappel léger de Nybor (Enchantement / Charme)
+Niveau : 1
+Portée : 7,5 m
+Durée : 2 rounds
+Temps d'incantation : 8
+Zone d'effet : 1 cible 
+Jet de sauvegarde : spécial
+Le sujet endure une douleur aiguë, atroce, qui l'étourdit pendant 1 round. La cible subit une pénalité de -1 à ses attaques, à ses jets de sauvegarde et à sa classe d'armure pendant toute la durée du sort ; cependant, le sujet reçoit aussi un bonus de +2 en Force.~
+@151   = ~Réprimande sévère de Nybor~
+@152   = ~Réprimande sévère de Nybor (Enchantement / Charme)
+Niveau : 7
+Portée : 7,5 m + 1,5 m / 2 niveaux
+Durée : 1 round / niveau
+Temps d'incantation : 8
+Zone d'effet : 1 cible 
+Jet de sauvegarde : spécial
+Ce sort provoque des douleurs déchirantes plus grandes encore que le Rappel léger de Nybor et l'Admonestation modérée de Nybor. La créature prise pour cible doit effectuer un jet de sauvegarde contre la Mort ou mourir sur le champ. La créature qui aura survécu bénéficie d'un jet de sauvegarde contre les sorts pour éviter de nouveaux effets. Les sujets qui ratent ce jet de sauvegarde sont étourdis pendant deux rounds et souffrent d'une pénalité de -2 à leurs attaques, à leurs jets de sauvegarde et à leur classe d'armure pendant toute la durée du sort ; cependant, le sujet reçoit aussi un bonus de +2 en Force.~
+@153   = ~Armure de squelette~
+@154   = ~Armure de squelette (Nécromancie) 
+Niveau : 2
+Portée : 0
+Durée : 20 tours 
+Zone d'effet : lanceur 
+Jet de sauvegarde : aucun
+Le mage utilise le pouvoir de la non-vie pour créer un champ de force magique qui procure un bonus de classe d'armure de 4. Il est cumulable avec la Dextérité et, dans le cas des guerriers/mages, avec le bonus de bouclier. Le sort d'armure n'entrave pas le mouvement, n'ajoute aucun poids ni aucun encombrement, et n'empêche pas de lancer des sorts. Il dure jusqu'à son terme à moins d'une dissipation réussie.~
+@155   = ~Terreur~
+@156   = ~Terreur (Nécromancie) 
+Niveau : 6
+Portée : 9 m
+Durée: 3 rounds + 1 / niveau
+Temps d'incantation : 4 
+Zone d'effet : un cube de 9 mètres d'arête
+Jet de sauvegarde : annule
+Ce sort insuffle la Terreur à vos ennemis. Tous les ennemis dans la zone d'effet n'ayant pas atteint le niveau 4 n'ont pas de jet de sauvegarde et doivent fuir, terrorisés. Les ennemis supérieurs au 5e niveau bénéficient d'un jet de sauvegarde contre les sorts de –4 pour éviter l'effet.~
+@157   = ~Sanctuaire Amélioré~
+@158   = ~Sanctuaire Amélioré (Abjuration) 
+Niveau : 2
+Sphère : Protection 
+Portée : toucher
+Durée : 10 rounds
+Temps d'incantation : 4 
+Zone d'effet : créature touchée
+Jet de sauvegarde : aucun
+Ce sort fonctionne exactement comme le sort de sanctuaire de niveau 1 mais n'est pas limité au lanceur. Le sort régénère aussi de 8 points de vie pour sa durée.~
+@159   = ~Ingéniosité~
+@160   = ~Ingéniosité (Invocation)
+Niveau : 3
+Sphère : Combat 
+Portée : 0 
+Durée : 3 tours 
+Temps d'incantation : 5
+Zone d'effet : créature touchée
+Jet de sauvegarde : aucun 
+Ce sort accroît l'ingéniosité du personnage. Ainsi, le personnage devient plus intelligent et plus inventif. Quand cela survient, l'Intelligence, la Sagesse et la Dextérité sont élevées d'un point tous les 3 niveaux du lanceur. Un mage de 3ème niveau augmentera donc ces caractéristiques de 1 point, alors qu'un mage du 12ème niveau les augmentera de 4.~
+@161   = ~Liaison défensive de Khelben~
+@162   = ~Liaison défensive de Khelben (Abjuration)
+Niveau : 5
+Sphère : Loi
+Portée : 0
+Durée : 10 rounds
+Temps d'incantation : 2
+Zone d'effet : sphère de 4,5 m de rayon
+Jet de sauvegarde : aucun
+La Liaison défensive de Khelben fonctionne comme le sort de niveau 4 Harmonie Défensive, mais chaque créature affectée gagne un bonus de +4 à la classe d'armure. L'effet dure 10 rounds ou jusqu'à dissipation.~
+@163   = ~Andrath~
+@164   = ~Aranor~
+@165   = ~Carneth~
+@166   = ~Cearwin~
+@167   = ~Cileen~
+@168   = ~Hanwen~
+@169   = ~Eclaireur Ménestrel~
+@170   = ~Ithkim~
+@171   = ~Jonell~
+@172   = ~Lelthorn~
+@173   = ~Lizzy~
+@174   = ~Peleria~
+@175   = ~Pirn~
+@176   = ~Rebecca~
+@177   = ~Rondan~
+@178   = ~Sally~
+@179   = ~Shaerlee~
+@180   = ~Golem de pierre~
+@181   = ~Talmur~
+@182   = ~Agent de Teldorn~
+@183   = ~Archer de Teldorn~
+@184   = ~Prêtre bainite~
+@185   = ~Guerrier de Teldorn~
+@186   = ~Messager de Teldorn~
+@187   = ~Kalindra~
+@188   = ~Kalindra,
+
+ Il en va comme nous l'avions craint. Teldorn a envoyé en avant son groupe de mercenaires et poursuit sa route vers le sud en direction de la Côte des Epées. Ils ont quitté Voonlar il y a seulement cinq jours et avant que vous ne puissiez lire ce message, ils se seront retranchés dans la vieille tour de garde de Dystra. Nul doute que d'autres les y rejoindront jusqu'à ce que de nouveaux ordres leur soient donnés. La découverte de la Pierre Elfique et le déplacement de ces mercenaires ne sont pas une coïncidence. Teldorn recherche la pierre pour lui-même, il pourrait avec elle transformer les personnes dotées du tempérament le plus bienveillant en assassins aux esprits maléfiques. Nous ne pouvons permettre que cela arrive. Cette petite armée doit être arrêtée avant qu'ils n'atteignent le bois des Dents Acérées. Je vous confie cette tâche, mon amie, rassemblez autant de forces que vous pouvez en rallier mais hâtez-vous, car il n'y a pas de temps à perdre.
+
+Kathian~
+
+@193   = ~Guérison de Masse~
+@194   = ~Guérison de Masse (Nécromancie) 
+Niveau : 5 
+Sphère : Guérison 
+Portée : champ de vision du lanceur
+Durée : instantanée
+Temps d'incantation : 5 
+Zone d'effet : 10 mètres de rayon
+Jet de sauvegarde : aucun 
+Lorsqu'il lance ce sort, le prêtre doit se représenter précisément les traits de ses compagnons et se concentrer sur l'unité du groupe. Une fois l'incantation achevée, tous les membres du groupe récupèrent 1D8 pv +1/niveau du prêtre. Le sort fonctionne même si les compagnons sont séparés. 
+La guérison est permanente dans la mesure où la créature ne subit pas de nouveau dommage ; les blessures reçues guériront alors - ou pourront être guéries – comme n'importe quelle blessure normale.~
+@195   = ~Epée de Mordenkainen~
+
+
+@230   = ~Bois des Jacinthes~
+

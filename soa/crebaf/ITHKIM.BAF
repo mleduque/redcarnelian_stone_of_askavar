@@ -1,0 +1,17 @@
+IF
+	HitBy([ANYONE],POISON)
+	HasItem("%tutu_var%POTN20",Myself) // Antidote
+THEN
+	RESPONSE #100
+		UseItem("%tutu_var%POTN20",Myself) // Antidote
+END
+
+IF
+	HPPercentLT(Myself,50)
+	HasItem("%tutu_var%POTN08",Myself) // Potion of Healing
+THEN
+	RESPONSE #100
+		UseItem("%tutu_var%POTN08",Myself) // Potion of Healing
+END
+
+

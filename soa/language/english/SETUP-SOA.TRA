@@ -1,0 +1,121 @@
+/* Components:  */
+@189 = ~*       This file will install          *~
+@190 = ~*        in your BG directory           *~
+@191 = ~*Tales of the Swordcoast is not installed. Installation of The Stone of Askavar will not continue.*~
+@192 = ~The Stone of Askavar for TotSC/Tutu/BGT/BGEE~
+
+/* Setup feedback:  */
+@196 = ~Tales of the Sword Coast detected. Installing...~
+@197 = ~This mod should be installed in your BG1, EasyTutu, BGT or BGEE folder~
+@198 = ~Tutu installation detected. Using Tutu installation code...~
+@199 = ~The sounds and new areas will now be installed. Press enter to exit and wait for the install process to finish.~
+@200 = ~BGT installation detected. Using BGT installation code...~
+@231 = ~BGEE installation detected. Using BGEE installation code...~
+@232 = ~Updating worldmap...~
+@233 = ~Default version: areas connected by travel triggers~
+@234 = ~Supported platforms: TotSC, BGEE, BGT, Tutu. TotSC and ToB expansions are required for BGT/Tutu.~
+@235 = ~Installing creature animations...~
+@236 = ~BP-BGT Worldmap version: all areas added to worldmap (requires BP-BGT Worldmap)~
+@237 = ~Installing creature animations...~
+@238 = ~The Stone of Askavar for Tutu/BGT/BGEE~
+
+//Journal entries...
+
+//Deliver letter to Aranor in Beregost
+
+@10000  = ~Deliver letter to Aranor~
+
+//@34 (Cearwin.tra) @53(Aranor.tra)
+@10001  = ~Deliver letter to Aranor
+
+I have spoken to the bard Cearwin who requires a message delivering to Beregost. He has offered me 250 gold for the task.~
+
+//@16(Aranor.tra)
+@10002  = ~Deliver letter to Aranor
+
+I have delivered Cearwin's message to Aranor. I hope it was worth the trouble getting it here.~
+
+//@19(Aranor.tra)
+@10003  = ~Deliver letter to Aranor
+
+After a long journey I have finally delivered Cearwin's message to Aranor. I hope it was worth the trouble getting it here.~
+
+//Find the five lost talismans
+@10004  = ~Find the lost talismans~
+
+//@30(Aranor.tra) @62 (Cearwin.tra)
+@10005  = ~Find the lost talismans
+
+Cearwin's stolen talismans hold the key to gain access to the underground chamber where the stone is located. Aranor believes Teldorn, a follower of Bane will be unaware of their importance and suggests I travel back to Nashkel to see what news Cearwin has of them.~
+
+//@49 (Cearwin.tra)
+@10006  = ~Find the lost talismans
+
+Cearwin has discovered the location of the stolen talismans. Unfortunately it looks as if they are scattered around the Sword Coast. It will take some time to find them. There are rumours about mercenaries around Dystra's old watch tower, a place far to the east of here. I should investigate the area.~
+
+//Recover the stone Stone of Askavar
+
+@10007 = ~Recover the Stone of Askavar~
+
+//@59 (Cearwin.tra) 
+@10008 = ~Recover the Stone of Askavar
+
+With all the talismans in my hands Cearwin has directed me to the Wood of Sharp Teeth and the entrance to the underground chamber where the stone can be found. The entrance is located amongst the old temple ruins. Cearwin hopes the entrance still remains hidden.~
+
+//@54 (Aranor.tra)
+@10009 = ~Recover the Stone of Askavar
+
+I must recover the Stone of Askavar before Teldorn's Banite followers get their hands on it.~
+
+//@52 (Aranor.tra)
+@10010 = ~Recover the Stone of Askavar
+
+I recovered the Stone of Askavar and passed in on to Aranor. Do doubt Cearwin will be pleased. I hope the elven stone gives them the edge they need against the followers of Bane, Cyric and Mask.~
+
+//@20 (Lizzy.tra)
+@10011 = ~Rescue Rebecca~
+
+@10012 = ~Rescue Rebecca
+
+I met with a young girl called Lizzy whose mother was murdered and sister Rebecca kidnapped by a group of villains. I have agreed to help her. Lizzy said the town guard had followed them to the east of here past the temple.~
+
+@10013 = ~Rescue Rebecca
+
+I've rescued Rebecca from the villains. As a reward she gave me one of the talismans. I hope Rebecca and her sister will be well.~
+
+//Solve Carneth's puzzle
+@10014 = ~Solve Carneth's puzzle~
+
+@10015 = ~Solve Carneth's puzzle
+
+I must solve a puzzle for Carneth before he will give me any information.~
+
+@10016 = ~I have written Carneth's puzzle in my journal to test my travelling companions.
+
+I am four times as old as my daughter. In twenty years time I shall be twice as old as her. How old are we now.
+I am 60 and my daughter is 15.
+I am 28 and my daughter is 7.
+I am 36 and my daughter is 9.
+I am 40 and my daughter is 10.
+I am 48 and my daughter is 12.~
+
+@10017 = ~Solve Carneth's puzzle
+
+I have solved Carneth's fiendish puzzle.~
+
+//Dragons Heart Ruby
+@10018 = ~Acquire the Dragon's Heart ruby~
+
+//@33 (Carneth.tra)
+@10019 = ~Acquire the Dragon's Heart ruby
+
+Carneth wants me to acquire the Dragon's Heart ruby from the local store. It sounds like some magical artefact, no doubt it will be expensive.~
+
+//@34 (Carneth.tra)
+@10020 = ~Acquire the Dragon's Heart ruby
+
+After acquiring the Dragon's Heart ruby for Carneth he has given me the talisman I seek. The Star of Merris.~
+
+@10021  = ~Find the lost talismans
+
+After travelling up and down the Sword Coast I have retrieved all the lost talismans.~

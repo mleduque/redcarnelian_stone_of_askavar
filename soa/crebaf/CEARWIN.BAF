@@ -1,0 +1,19 @@
+IF
+	Global("playlute","LOCALS",1)
+THEN
+	RESPONSE #100
+		SetGlobal("playlute","LOCALS",3)
+		PlaySound("Tylam")
+		StartTimer(0,75)
+		Wait(90)
+END
+
+IF
+	Global("playlute","LOCALS",3)
+	TimerExpired(0)
+THEN
+	RESPONSE #100
+		SetGlobal("playlute","LOCALS",2)
+END
+
+

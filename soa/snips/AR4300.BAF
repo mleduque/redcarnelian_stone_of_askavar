@@ -1,0 +1,31 @@
+IF
+	Global("TeldornMessSpawn","GLOBAL",0)
+	GlobalGT("Chapter","GLOBAL",%tutu_chapter_4%)
+THEN
+	RESPONSE #100
+		CreateCreature("TELMESS1",[2142.1648]%FACE_8%) // Teldorn Messenger
+		CreateCreature("TELMESS2",[1960.1487]%FACE_2%) // Teldorn Messenger
+		CreateCreature("TELAGENT",[2072.1603]%FACE_10%) // Teldorn Agent
+		CreateCreature("HARPMESS",[2030.1620]%FACE_2%) // Dead Harper Scout
+		CreateCreature("TELFGHT1",[2080.1640]%FACE_10%) // Teldorn Fighter
+		CreateCreature("STONEGOL",[2080.1580]%FACE_10%) // Stone Golem
+		SetGlobal("TeldornMessSpawn","GLOBAL",1)
+END
+
+IF
+	GlobalLT("CearwinQuest","GLOBAL",2)
+	Global("CaveDoorInActive","%NorthNashkelRoad%",0)
+THEN
+	RESPONSE #100
+		SetGlobal("CaveDoorInActive","%NorthNashkelRoad%",1)
+		TriggerActivation("DoorS001",FALSE)
+END
+
+IF
+	GlobalGT("CearwinQuest","GLOBAL",1)
+	Global("CaveDoorActive","%NorthNashkelRoad%",0)
+THEN
+	RESPONSE #100
+		SetGlobal("CaveDoorActive","%NorthNashkelRoad%",1)
+		TriggerActivation("DoorS001",TRUE)
+END

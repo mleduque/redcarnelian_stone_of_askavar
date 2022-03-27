@@ -1,0 +1,188 @@
+/*
+ * The Stone of Askavar Mod
+ * Author: Red Carnelian
+ * This mod is supported and hosted by:
+ * http://chosenofmystra.net/forums/index.php
+ * Version 2.2, January 9th 2020
+*/
+
+/* Backup folder */
+BACKUP ~soa/backup~ 
+
+/* Author */
+AUTHOR ~Red Carnelian, http://chosenofmystra.net/forums/index.php~
+
+VERSION ~2.2~
+
+README ~soa/readme_soa.htm~
+
+ASK_EVERY_COMPONENT
+
+ALWAYS
+
+// only do this once per Weidu session
+  ACTION_IF NOT VARIABLE_IS_SET ~GameTypeDetected~ BEGIN
+  
+	  ACTION_IF GAME_IS ~BGEE~ BEGIN	  
+			//Enhanced Edition:
+			PRINT @231
+			INCLUDE ~soa\lib\soa_bgee_cpmvars.tpa~
+		END
+		ELSE  
+		ACTION_IF GAME_IS ~Tutu_TotSC~ BEGIN	  
+			//Tutu:
+			PRINT @198
+			INCLUDE ~soa\lib\soa_tutu_cpmvars.tpa~	
+		END			
+		ELSE
+		ACTION_IF GAME_IS ~BGT~ BEGIN	 
+			//BGT:	 	
+			PRINT @200
+			INCLUDE ~soa\lib\soa_bgt_cpmvars.tpa~	
+		END
+		ELSE
+		ACTION_IF GAME_IS ~TotSC~ BEGIN	 
+			//TotSC:
+			PRINT @196
+			INCLUDE ~soa\lib\soa_totsc_cpmvars.tpa~
+		END
+		
+		// copy ASCII or UTF8 versions of TRAs depending on the platform 
+//		COPY + ~soa\language\%LANGUAGE%\%SrcFolder%~ ~soa\language\%LANGUAGE%~
+//  		EVALUATE_BUFFER
+	// Isaya: use HANDLE_CHARSETS instead, all files can be in %LANGUAGE% directory from the start
+    // Code borrowed from Edwin Romance and adjusted: HANDLE_CHARSETS in now included in WeiDU 237
+    // For complete description check Edwin Romance and the WeiDU forum topic on HANDLE_CHARSETS
+
+    // Reload setup-soa.tra after conversion
+    ACTION_DEFINE_ARRAY soa_reload BEGIN setup-soa END
+    ACTION_DEFINE_ARRAY soa_noconvert BEGIN END
+
+    LAF HANDLE_CHARSETS
+      INT_VAR
+        infer_charset = 1
+      STR_VAR
+        tra_path = EVAL ~%MOD_FOLDER%/Language~
+        noconvert_array = soa_noconvert
+        reload_array = soa_reload
+    END
+
+  	// Load our finalized primary TRA
+	LOAD_TRA ~soa\Language\%LANGUAGE%\main.tra~
+    // Load an additional file to replace some texts from main.tra for some games
+    ACTION_IF GAME_IS ~BGEE~ BEGIN
+      //Enhanced Edition:
+      LOAD_TRA ~soa\Language\%LANGUAGE%\main_bgee.tra~
+    END
+    ELSE
+    ACTION_IF GAME_IS ~TotSC~ BEGIN
+      //TotSC:
+      LOAD_TRA ~soa\Language\%LANGUAGE%\main_totsc.tra~
+    END
+
+
+	// whitespace variable for use in REPLACE_TEXTUALLY
+	OUTER_PATCH wlib BEGIN
+		WRITE_LONG 0x0 0x090a0d20
+		READ_ASCII 0x0 ws(4) //detects any whitespace
+	END
+	
+	// Include macro definitions:
+	INCLUDE ~soa\lib\worldmap_update.tph~
+	INCLUDE ~soa\soa-core.tpa~
+		
+	OUTER_SET GameTypeDetected = 1		
+
+				  	
+  END  // IF NOT VARIABLE_IS_SET ~GameTypeDetected~
+
+END  // ALWAYS
+
+  
+ 
+AUTO_TRA ~soa/Language/%s~
+
+LANGUAGE ~English~
+         ~English~
+         ~soa/Language/english/setup-soa.tra~
+LANGUAGE ~French~
+         ~french~
+         ~soa/Language/french/setup-soa.tra~
+LANGUAGE ~Polish~
+         ~polish~
+         ~soa/Language/polish/setup-soa.tra~
+LANGUAGE ~Russian~
+         ~russian~
+         ~soa/Language/russian/setup-soa.tra~
+
+//////////////////////////////////////////////////////////////////
+//// Original version: new areas connected by travel triggers ////
+//////////////////////////////////////////////////////////////////
+
+BEGIN @233
+SUBCOMPONENT @192
+REQUIRE_PREDICATE GAME_IS ~TotSC BGT Tutu_TotSC BGEE~ @234
+
+LAM SOA_CORE_COMPONENT
+
+// Worldmap
+PRINT @232
+
+LAM WORLDMAP_UPDATE
+
+//  BP-BGT Worldmap compatibility (yes, the default version will work in BWP install with Worldmap mod too):
+
+//Do not do this for vanilla version
+
+ACTION_IF FILE_EXISTS ~Worldmap/map_mods_areas.tbl~ THEN BEGIN
+	COPY ~Worldmap/map_mods_areas.tbl~  ~Worldmap~
+	 APPEND_FILE ~soa/Worldmap/BPWM_areas_original.tbl~
+	COPY ~Worldmap/map_mods_links.tbl~  ~Worldmap~
+	 APPEND_FILE ~soa/Worldmap/%SrcFolderExact%/BPWM_links_original.tbl~
+	COPY ~Worldmap/map_mods_trans.tra~  ~Worldmap~
+	 APPEND_FILE ~soa/Language/%LANGUAGE%/BPWM_worldmap.tra~
+END
+ELSE BEGIN
+    MKDIR ~Worldmap~
+    COPY ~soa/Worldmap/BPWM_areas_original.tbl~ ~Worldmap/map_mods_areas.tbl~
+    COPY ~soa/Worldmap/%SrcFolderExact%/BPWM_links_original.tbl~ ~Worldmap/map_mods_links.tbl~
+    COPY ~soa/Language/%LANGUAGE%/BPWM_worldmap.tra~ ~Worldmap/map_mods_trans.tra~
+END
+
+
+BEGIN @236
+SUBCOMPONENT @192
+REQUIRE_PREDICATE GAME_IS ~BGT Tutu_TotSC BGEE~ @234
+
+LAM SOA_CORE_COMPONENT
+
+// Worldmap
+
+PRINT @232
+
+/* Unnecessary, since BPWM will overwrite this stuff anyway and without BPWM this subcomponent won't work properly in any case because of the changes below
+
+LAUNCH_ACTION_MACRO ~WORLDMAP_UPDATE~
+*/
+
+//  tell BP-BGT Worldmap what we need added to it:
+
+ACTION_IF FILE_EXISTS ~Worldmap/map_mods_areas.tbl~ THEN BEGIN
+	COPY ~Worldmap/map_mods_areas.tbl~  ~Worldmap~
+	 APPEND_FILE ~soa/Worldmap/BPWM_areas_all.tbl~
+	COPY ~Worldmap/map_mods_links.tbl~  ~Worldmap~
+	 APPEND_FILE ~soa/Worldmap/%SrcFolderExact%/BPWM_links_all.tbl~
+	COPY ~Worldmap/map_mods_trans.tra~  ~Worldmap~
+	 APPEND_FILE ~soa/Language/%LANGUAGE%/BPWM_worldmap.tra~
+END
+ELSE BEGIN
+    MKDIR ~Worldmap~
+    //AT_UNINSTALL ~call soa/deldir.bat Worldmap~
+    COPY ~soa/Worldmap/BPWM_areas_all.tbl~ ~Worldmap/map_mods_areas.tbl~
+    COPY ~soa/Worldmap/%SrcFolderExact%/BPWM_links_all.tbl~ ~Worldmap/map_mods_links.tbl~
+    COPY ~soa/Language/%LANGUAGE%/BPWM_worldmap.tra~ ~Worldmap/map_mods_trans.tra~
+END
+
+
+
+

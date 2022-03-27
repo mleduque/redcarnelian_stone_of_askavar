@@ -1,0 +1,19 @@
+IF
+	Global("CearwinQuest","GLOBAL",2)
+	Global("LizzySpawn","GLOBAL",0)
+THEN
+	RESPONSE #100
+	CreateCreature("LIZZY",[433.305],0) // Girl
+	SetGlobal("LizzySpawn","GLOBAL",1)
+END
+
+IF
+	Global("RebeccaRescue","GLOBAL",1)
+	Global("RebSpawn","GLOBAL",0)
+THEN
+	RESPONSE #100	
+	CreateCreature("REBECCA",[423.305],0) // Girl
+	SetGlobal("RebSpawn","GLOBAL",1)
+END
+
+

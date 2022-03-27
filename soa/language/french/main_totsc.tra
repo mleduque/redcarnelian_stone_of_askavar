@@ -1,0 +1,476 @@
+// TotSC specific texts
+
+//------------------------------------------------------------------------------------
+//  Creatures, characters, items, miscellaneous: TotSC specific variation
+//------------------------------------------------------------------------------------
+
+// Formely @201
+@2     = ~L'armure en cottes de mailles est constituée d'anneaux métalliques imbriqués les uns dans les autres. Elle est toujours portée par-dessus une couche de tissu matelassé ou de cuir souple pour empêcher le frottement et réduire l'impact des chocs. 
+
+PARAMÈTRES :
+
+Classe d'Armure : 5
+Poids : 40
+Non utilisable par :
+ Druide 
+ Mage
+ Voleur~
+// Formely @202
+@3     =~Cette cotte de mailles a été fabriquée pour l'elfe du soleil Mecorima Sylerim. Mecorima était une elfe dorée dont les ambitions s'étendaient loin au sein de la société elfique. Diplomate douée, Mecorima avait besoin d'un petit extra pour contrecarrer les factions rivales. Afin d'y parvenir, elle fit forger une cotte de mailles qui préserverait sa vie des tentatives d'assassinat et ferait ployer la volonté des seigneurs nobles.
+
+PARAMÈTRES :
+
+Classe d'Armure : 3
+Poids : 20
+Spécial : le porteur reçoit un bonus de +5 au jet de sauvegarde contre la Mort
+Charisme augmenté de 2
+Non utilisable par :
+ Druide
+ Mage
+ Voleur~
+
+// Formely @203
+@6     = ~L'armure de plates est une combinaison de cottes de mailles et de plaques métalliques recouvrant les zones vitales telles que le torse, l'abdomen et l'aine. De fabrication semblable à l'armure de plates en bronze, la véritable armure de plates est constituée de mailles et de cuir. 
+
+PARAMÈTRES :
+
+Classe d'Armure : 3
+Poids : 50
+Non utilisable par :
+ Druide
+ Mage
+ Voleur~
+// Formely @204
+@7     = ~Cette armure paraît presque vivante lorsque vous la soulevez. Le matériau dont elle est constituée est léger et enveloppe votre corps comme du cuir souple. Le seul indice de son origine est le nom de Kalindra gravé à l'intérieur.  
+
+PARAMÈTRES :
+
+Classe d'Armure : 2
+Poids : 30
+Spécial: jets de sauvegarde augmentés de 1
+Non utilisable par :
+ Barde 
+ Druide
+ Mage
+ Voleur~
+
+// Formely @205
+@10    =  ~La masse descend directement du simple gourdin ; elle n'est rien de plus qu'une hampe de bois avec une tête en pierre ou en fer fixée à l'extrémité. La forme de la tête varie ; certaines sont pointues, d'autres à rebord, et d'autres encore ont un pommeau pyramidal.
+
+PARAMÈTRES :
+
+Dégâts : 1D6 +1
+Type de dégâts : contondant
+Poids : 8
+Facteur de vitesse : 7
+Type de compétence : armes contondantes
+Type : arme à une main
+Non utilisable par :
+ Druide
+ Mage
+ Voleur~
+// Formely @206
+@11    = ~Masse +1 : 'Masse des Impavides'
+De nombreux suivants de Chauntea portent une masse semblable à celle-ci. La plupart d'entre elles sont offertes aux nouveaux clercs mais certaines sont renforcées par magie et offertes aux étudiants les plus doués. Voici l'une de ces armes.
+
+PARAMÈTRES :
+
+Dégâts : 1D6 +3
+TAC0 : +1 
+Spécial : 30 % de Résistance à la Peur
+Type de dégâts : contondant
+Poids : 7
+Facteur de vitesse : 5
+Type de compétence : armes contondantes
+Type : arme à une main
+Non utilisable par :
+ Druide
+ Mage
+ Voleur~
+// Formely @207
+@14    = ~La mailloche est un lourd marteau largement utilisé dans la construction de navires ou de bâtiments. Instrument domestique, la mailloche est populaire à travers tout Féérune, tout particulièrement auprès des constructeurs de navires d'Eauprofonde. Son poids imposant et son excellente maniabilité en font une arme mortelle au combat.
+
+PARAMÈTRES :
+
+Dégâts : 1D4 +1
+Type de dégâts : contondant
+Poids : 6
+Facteur de vitesse : 4
+Type de compétence : armes contondantes
+Type : arme à une main
+Non utilisable par :
+ Druide
+ Mage
+ Voleur~
+// Formely @208
+@15    = ~Mailloche +2 : 'Défonceur d'Ogre de Tholin'
+Cette lourde mailloche aussi connue sous le nom de 'Mailloche du Puissant' a essuyé les tempêtes d'innombrables guerres et batailles. A l'origine propriété d'un chef de la tribu des Elans, la mailloche fut forgée afin d'anéantir le nombre croissant d'ogres et d'orcs le long de la rivière Dessarin. 
+
+PARAMÈTRES :
+
+Dégâts : 1D4 +3
+TAC0 : +2
+Type de dégâts : contondant
+Poids : 7
+Facteur de vitesse : 5
+Type de compétence : armes contondantes
+Type : arme à une main
+Non utilisable par :
+ Druide
+ Mage
+ Voleur~
+// Formely @209
+@18    = ~Le morgenstern est un manche en bois couronné d'une tête en métal constituée d'une gaine de fer cloutée. Les morgensterns mesurent environ 1,20 m. Certaines de ces armes possèdent une tête de forme ronde, ovale ou cylindrique garnie de clous. Sur la plupart des têtes de morgenstern, quelle que soit leur forme, se trouve une longue pointe pour porter une attaque perforante. 
+
+PARAMÈTRES :
+
+Dégâts : 2D4
+Type de dégâts : contondant
+Poids : 12
+Facteur de vitesse : 7
+Type de compétence : armes à pointes
+Type : arme à une main
+Non utilisable par :
+ Druide
+ Mage 
+ Voleur~
+// Formely @210
+@19    = ~Morgenstern +2 : 'Présent d'Ishandar'
+Golain passa la plus grande partie de sa jeunesse avec son père, à explorer la Corne des Tempêtes dans le Cormyr. Son père lui apprit à se battre et à apprécier le pays qui l'entourait. Passionné d'aventure et de géographie, il devint Explorateur Royal pour le compte de la famille Obarskyr. Durant une longue expédition avec une équipe d'explorateurs chargée d'étudier le territoire des montagnes des Pics du Tonnerre, il remarqua une petite caverne digne de son attention. Après un bref combat contre des orques nombreux, il découvrit un petit coffre rempli d'or et un morgenstern qui brillait dans l'obscurité. Le morgenstern resta avec Golain durant quelques temps, jusqu'à ce qu'il perde la vie en combattant des Ogres dans la Corne des Tempêtes. 
+
+PARAMÈTRES :
+
+Dégâts : 2D4 +2
+TAC0 : +2
+Type de dégâts : contondant
+Poids : 10
+Facteur de vitesse : 6
+Type de compétence : armes à pointes
+Type : arme à une main
+Non utilisable par :
+ Druide
+ Mage 
+ Voleur~
+
+// Formely @211
+@26    = ~Les arcs composites sont des arcs longs ou courts dont les branches sont faites de plusieurs matériaux. Cela rend l'arc plus souple, ce qui fait que les flèches tirées par cet arc provoquent davantage de dégâts. Ceux-ci ont été conçus après l'arc long ordinaire.
+
+PARAMÈTRES :
+
+Dégâts : +2
+TAC0 : +1
+Poids : 10
+Facteur de vitesse : 7
+Type de compétence : arcs
+Type : arme à deux mains
+Non utilisable par :
+ Druide
+ Clerc
+ Mage 
+ Voleur
+ Barde~
+// Formely @212
+@27    = ~Arc long composite +2 : 'La Malédiction de la Méduse'
+Laeroth naquit durant l'année de la Lame Brisée. Dès son plus jeune âge, il acquit la maîtrise de l'arc, et c'était lui qui avait la vue la plus perçante parmi les elfes de son village. Des récits mentionnaient une Méduse cachée dans une grotte des montagnes alentours. En guise de test de courage, il incomba à Laeroth de livrer la tête de ce monstre. Quand il eut parlé aux anciens de son village, un arc fut fabriqué tout spécialement pour attaquer un ennemi de ce genre. Taillé dans un barral, l'arc était fait pour rester fidèle à son utilisateur et résister au regard de certaines créatures. S'ensuivit un long voyage avant que Laeroth ne puisse atteindre l'antre de la Méduse. A l'intérieur de la grotte, il employa une gemme de lumière afin de retrouver son chemin dans les profondeurs. Après avoir dépassé des formes pétrifiées, résultat d'innombrables tentatives avortées de capturer le monstre, Laeroth finit par tomber sur sa proie. Alors qu'il était face à face avec la Méduse, son regard tomba sur lui. Il fut d'abord paralysé, incapable de faire quoi que ce soit, mais grâce à l'arc qu'il tenait à la main, les effets du regard furent neutralisés et le combat pour la prédominance put commencer. Chacun armé d'un arc, les adversaires se préparèrent à l'affrontement. La Méduse tira la première et une flèche empoisonnée se logea dans son épaule juste au moment où l'arc de barral libérait sa propre flèche vers la tête de la Méduse. Le monstre se tordit de douleur tandis que Laeroth buvait un antidote, juste à temps pour assister aux derniers sursauts d'agonie de la Méduse. Il approcha la créature et, d'une main sûre, lui trancha la tête. Après son retour au village, celle-ci fut placée en lieu sûr afin d'être utilisée contre les orques en cas de nécessité. Laeroth voyagea durant les années qui suivirent et finit par vendre l'arc contre une importante somme d'argent.
+
+PARAMÈTRES :
+
+Dégâts : +3
+TAC0 : +2
+Spécial : Protection contre la Pétrification 
+Poids : 9
+Facteur de vitesse : 6
+Type de compétence : arcs
+Type : arme à deux mains
+Non utilisable par :
+ Druide
+ Clerc
+ Mage 
+ Voleur
+ Barde~
+
+// Formely @213
+@38    =  ~La dague traditionnelle comporte une lame pointue généralement à double tranchant, contrairement au couteau, un peu plus court, ne possédant qu'un seul tranchant.
+
+PARAMÈTRES :
+
+Dégâts : 1D4
+Type de dégâts : perforant
+Poids : 1
+Facteur de vitesse : 2
+Type de compétence : petite épée
+Type : arme à une main
+Non utilisable par :
+ Clerc~
+// Formely @214
+@39    = ~Dague +1 : 'Dague de Défiance'
+Ces dagues furent d'abord créées à Myth Drannor. Cette dague a tout particulièrement orné aussi bien les mains de gredins, de voleurs que de bandits.
+
+PARAMÈTRES :
+
+Dégâts : 1D4 +2
+TAC0 : +1 
+Spécial : immunité à la Peur et au Charme
+  Bonus de +2 aux jets de sauvegarde contre les sorts
+Poids : 1
+Facteur de vitesse : 2
+Type de compétence : petite épée
+Type : arme à une main
+Utilisable par :
+ Voleur
+ Barde~
+
+// Formely @215
+@52    = ~De loin l'arme d'hast la plus ancienne et la plus répandue, la hallebarde se compose d'une hache en forme de couperet montée sur un bâton mesurant en moyenne 1,80 m de long. La hache est équilibrée à l'arrière par un barbillon et surmontée d'une pointe acérée, généralement de forme quadrangulaire. Le barbillon est parfois remplacé par un crochet utilisé pour faire tomber l'ennemi de cheval. La hallebarde est en réalité un croisement entre la lance et la hache.
+
+PARAMÈTRES :
+
+Dégâts : 1D10
+Type de dégâts : perforant
+Poids : 15
+Facteur de vitesse : 9
+Type de compétence : épieu
+Type : arme à deux mains
+Non utilisable par :
+ Druide
+ Clerc
+ Mage
+ Voleur~
+// Formely @216
+@53    = ~Comme toutes ses pareilles, cette hallebarde se compose d'une hache en forme de couperet montée sur un bâton mesurant approximativeent 1,80 m de long. Elle a également été enchantée de façon à être plus efficace au combat. Ainsi, sa hache tranchera facilement dans la chair de l'ennemi pour trouver l'os, tandis que le barbillon cherchera les brèches dans son armure.
+
+PARAMÈTRES :
+
+Dégâts : 1D10 +2
+TAC0 : +1 
+Type de dégâts : perforant
+Poids : 14
+Facteur de vitesse : 8
+Type de compétence : épieu
+Type : arme à deux mains
+Non utilisable par :
+ Druide
+ Clerc
+ Mage
+ Voleur~
+
+// Formely @217
+@56    = ~Les cavaliers peuvent difficilement manier les armes longues. C'est pourquoi de nombreuses armes ont été munies de manches plus courts pouvant être saisis d'une seule main. La masse et le fléau sont deux exemples d'armes longues qui ont suivi cette évolution ; le marteau de guerre en est un autre. Le marteau de guerre du cavalier est le descendant du marteau de Lucerne. Il est entièrement fabriqué en acier, avec des rondelles pour protéger et renforcer la prise. Les rondelles sont de petits disques métalliques, souvent en forme de motifs décoratifs. Le manche mesure environ 45 cm de longueur.
+
+PARAMÈTRES :
+
+Dégâts : 1D4 +1
+Type de dégâts : contondant
+Poids : 6
+Facteur de vitesse : 4
+Type de compétence : armes contondantes
+Type : arme à une main
+Non utilisable par :
+ Barde
+ Druide
+ Mage
+ Voleur~
+// Formely @218
+@57    = ~Marteau de Glace +2 : 'Gel de Mydan'
+Nombre de ces marteaux furent fabriqués par des Géants du Froid pour faire des ravages dans les villages locaux. En colère contre les humains qui envahissaient leur territoire, la Déesse de Glace, Aurile, encouragea les Géants à créer des armes capables d'infliger de grands dommages. Un de leurs chefs, Mydan, créa ce marteau pour rendre hommage à sa Divinité. Satisfaite de l'offrande, la déesse enchanta l'arme en lui conférant le pouvoir de la glace.
+
+PARAMÈTRES :
+
+Dégâts : 1D4 +2 (+1D3 de dégâts de froid)
+TAC0 : +2 
+Résistance au froid : +30 %
+Type de dégâts : contondant
+Poids : 6
+Facteur de vitesse : 4
+Type de compétence : armes contondantes
+Type : arme à une main
+Non utilisable par :
+ Barde
+ Druide
+ Mage
+ Voleur~
+
+// Formely @219
+@89    = ~L'écu se porte comme la rondache. Mais contrairement à la rondache, son poids ne permet pas au combattant de porter autre chose. Les écus sont généralement fabriqués en métal ; ils mesurent entre 90 cm et 1,20 m de diamètre et peuvent avoir n'importe quelle forme (carrée, ronde ou comme les ailes déployées d'un dragon). Un bouclier médiéval typique ressemble à un triangle dont un des angles pointerait vers le bas. 
+
+PARAMÈTRES :
+
+Bonus à la classe d'armure : 1
+Poids : 7
+Non utilisable par :
+ Barde
+ Druide
+ Mage
+ Voleur~
+// Formely @220
+@90    = ~Les origines de cet étrange écu sont inconnues mais la forme décolorée d'une guivre bleue qui en décore l'extérieur pourrait indiquer qu'il provient de l'ancien empire de Mulhorande, proche des montagnes de Lamedragon. Aucune marque de l'armurier ne figure nulle part sur l'écu, et il ne porte pas trace de bataille – peut-être l'écu fut-il fabriqué avec des moyens magiques. Quelle que soit sa nature, sa patine bleue en fait une possession de prix.
+  
+PARAMÈTRES :
+
+Bonus à la classe d'armure : 2
+Poids : 7
+Spécial : 30 % de Protection contre le feu
+Non utilisable par :
+ Barde
+ Druide
+ Mage
+ Voleur~
+
+// Formely @221
+@93    = ~La rondache est généralement ronde et se tient à bout de bras par la poignée. Comme elle est légère comparée à un écu, le combattant peut porter d'autres objets dans la même main, mais ne peut manier ou porter une autre arme. 
+ 
+PARAMÈTRES :
+
+Bonus à la classe d'armure : 1
+Spécial : pas de protection contre les armes à projectiles
+Poids : 3
+Non utilisable par :
+ Barde
+ Druide
+ Mage
+ Voleur~
+// Formely @222
+@94    = ~Loran Emarin, barde elfe appartenant à l'organisation des Ménestrels, entendit l'histoire d'un bouclier doré ayant la capacité de protéger contre les éléments. Intrigué par ce récit, le barde se lança dans la quête de cet objet. Après avoir cherché durant plusieurs années sans résultat, le barde avait presque abandonné lorsque par une nuit froide, dans une taverne de Padhiver, l'elfe surprit une conversation entre deux prêtres d'Oghma. Le bouclier était décrit comme la propriété d'un groupe de guerriers/clercs d'élite, sectateurs dévoués du Seigneur des Tempêtes, Talos. Le bouclier finit par être récupéré et vendu au clergé de Talos. Son destin depuis lors est inconnu.
+
+PARAMÈTRES :
+
+Bonus à la classe d'armure : 2
+Poids : 5
+Spécial : bonus de résistance à l'électricité de 30 %
+  30 % de Protection contre le froid
+  30 % de Protection contre le feu
+  Le bouclier recèle une petite charge électrique qui peut être déchargée sur la cible, avec 10 % de chance que le porteur soit également affecté
+Non utilisable par :
+ Barde
+ Druide
+ Mage
+ Voleur~
+
+// Formely @223
+@100   = ~L'épée à deux mains est un dérivé de l'épée longue. Les forgerons d'armes ont toujours cherché à améliorer les armes de leur temps. Pour l'épée longue, ils ont allongé la lame. Après la lame, c'est la poignée qui s'est allongée. Il est alors devenu nécessaire d'utiliser les deux mains pour manier l'épée. La fonction première de l'épée à deux mains est de désarçonner les chevaliers montés et de désorganiser les haies de piques. 
+
+PARAMÈTRES :
+
+Dégâts : 1D10
+Type de dégâts : tranchant
+Poids : 15
+Facteur de vitesse : 10
+Type de compétence : grande épée
+Type : arme à deux mains
+Non utilisable par :
+ Druide
+ Clerc
+ Mage 
+ Voleur~
+// Formely @224
+@101   = ~Grande épée +1 : 'Le Saphir Étincelant'
+Un peu au nord d'Eauprofonde se situent le village d'Amphail et la demeure d'un Maître Forgeron Nain appelé Kathian Mainsmarteaux. Cette épée, ainsi que sa soeur, l'Oeil d'Emeraude, fut créée par le forgeron afin d'aider les Ménestrels dans leur lutte contre les espions du Zhentarim.
+
+PARAMÈTRES :
+
+Capacité spéciale : 
+  Détection du Mal
+
+Dégâts : 1D10 +1, +1D3 de dégâts de froid
+TAC0 : +1
+Type de dégâts : tranchant
+Poids : 10
+Facteur de vitesse : 8
+Type de compétence : grande épée
+Type : arme à deux mains
+Non utilisable par :
+ Druide
+ Clerc
+ Mage 
+ Voleur~
+ 
+// Formely @225
+@104   = ~Egalement connue sous le nom d'épée à une main et demie, l'épée bâtarde tire son nom de son aspect intermédiaire entre l'épée à deux mains et l'épée longue. Elle possède une lame à double tranchant et une longue poignée, qui peut éventuellement accueillir les deux mains. La longueur de l'épée bâtarde varie entre 1,20 m et 1,50 m.
+
+PARAMÈTRES :
+
+Dégâts : 2D4
+Type de dégâts : tranchant
+Poids : 10
+facteur de vitesse : 8
+Type de compétence : grande épée
+Type : arme à une main
+Non utilisable par :
+ Druide
+ Clerc
+ Mage 
+ Voleur~
+// Formely @226
+@105   = ~Faite pour les plaines de Toundra du grand Nord, l'épée large de Barbare a été modifiée en prévision d'un climat gelé. La chaleur du métal procure une résistance contre la rigueur du froid.
+
+PARAMÈTRES :
+
+Dégâts : 2D4 +1, +1D3 de dégâts de feu
+TAC0 : +1
+Spécial : 30 % de Protection contre le froid
+Type de dégâts : tranchant
+Poids : 8
+Facteur de vitesse : 6
+Type de compétence : grande épée
+Type : arme à une main
+Non utilisable par :
+ Druide
+ Clerc
+ Mage 
+ Voleur~
+ 
+// Formely @227
+@108   = ~Arme des Tuigan et des Nar, le sabre est une épée longue et lourde spécialisée dans les longues entailles usuelles dans le combat monté.
+
+PARAMÈTRES :
+
+Dégâts : 1D8
+Type de dégâts : tranchant
+Poids : 6
+Facteur de vitesse : 5
+Type de compétence : grande épée
+Type : arme à une main
+Non utilisable par :
+ Druide
+ Clerc
+ Mage 
+ Voleur~
+// Formely @228
+@109   = ~Ce sabre a autrefois appartenu au capitaine Ergern Conwell, officier de cavalerie du Poing Enflammé. Il reçut ce sabre en récompense de sa bravoure au combat. Les compétences du Capitaine à l'épée égalaient presque son affinité avec la majeure partie des femmes de la région. Aucun talent d'épéiste ne put cependant le sauver de la lame empoisonnée d'un soupirant fou de jalousie. 
+
+PARAMÈTRES :
+
+Dégâts : 1D8 +1
+TAC0 : +1 
+Spécial : 30 % de chance que la cible soit étourdie pendant 1 round
+Type de dégâts : tranchant
+Poids : 6
+Facteur de vitesse : 4
+Type de compétence : grande épée
+Type : arme à une main
+Non utilisable par :
+ Druide
+ Clerc
+ Mage 
+ Voleur~
+// Formely @229
+@110   = ~Epée longue +1 : 'L'Oeil d'émeraude'
+Un peu au nord d'Eauprofonde se situent le village d'Amphail et la demeure d'un Maître Forgeron Nain appelé Kathian Mainsmarteaux. Cette épée ainsi que sa soeur, le Saphir Étincelant, fut créée par le forgeron afin d'aider les Ménestrels dans leur lutte contre les espions du Zhentarim.
+
+PARAMÈTRES :
+
+Capacité spéciale : 
+  Détection du Mal
+
+Dégâts : 1D10 +1, +1D3 de dégâts de feu
+TAC0 : +1
+Type de dégâts : tranchant
+Poids : 10
+Facteur de vitesse : 8
+Type de compétence : grande épée
+Type : arme à deux mains
+Non utilisable par :
+ Druide
+ Clerc
+ Mage 
+ Voleur~

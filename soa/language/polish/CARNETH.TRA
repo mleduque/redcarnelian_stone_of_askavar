@@ -1,0 +1,37 @@
+// CARNETH translation file
+@1  = ~Datek? Datek dla biedaka? ~ 
+@2  = ~Dasz monetê, nieznajomy? W mieœcie noce bywaj¹ ch³odne.~ ~Dasz monetê, nieznajoma? W mieœcie noce bywaj¹ ch³odne.~
+@3  = ~Masz tu monetê, znajdŸ sobie przyzwoity nocleg na wieczór.~
+@4  = ~Wielceœ uprzejmy, nieznajomy. Czy jest coœ, w czym móg³bym ci pomóc?~ ~Wielceœ uprzejma, nieznajoma. Czy jest coœ, w czym móg³bym ci pomóc?~
+@5  = ~W³aœciwie, to jest. Szukam amuletu zakupionego ostatnio w Beregoœcie. Przypuszczam, ¿e wiesz, gdzie mo¿e byæ.~
+@6  = ~A zatem, chcesz odpowiedzi. Wygl¹da na to, ¿e w tych czasach ka¿dy ich szuka. Sally na przyk³ad bardzo lubi zagadki. Rozwi¹¿ jedn¹ z nich, a odpowiem na twoje pytanie.~
+@7  = ~Dobrze, co to za zagadka?~
+@8  = ~Jestem cztery razy starszy od mojej córki. Za dwadzieœcia lat bêdê od niej dwa razy starszy. Ile ka¿de z nas ma dziœ lat?~ 
+@9  = ~Ja mam 60, a moja córka 15.~
+@10 = ~Ja mam 28, a moja córka 7.~
+@11 = ~Ja mam 36, a moja córka 9.~
+@12 = ~Ja mam 40, a moja córka 10.~
+@13 = ~Ja mam 48, a moja córka 12.~
+@14 = ~Oj, to chyba nie to. Próbujesz dalej?~
+@15 = ~Dobra robota. Amulet, którego szukasz, zwany jest Gwiazd¹ Merris, to pradawny elfi artefakt. Niewiele ich stworzono i tylko przypadek sprawi³, ¿e natrafi³em na niego. Wymieniê siê z tob¹, lecz cena za niego bêdzie wysoka.~
+@16 = ~Jaka jest wiêc cena?~
+@17 = ~Nie mam ju¿ na to czasu. Daj mi amulet albo giñ.~
+@18 = ~W jednej z tutejszych karczm maj¹ do sprzedania pewien szczególny rubin. Zwie siê Smoczym Sercem. Przynieœ mi ten rubin, a ja wymieniê go za amulet.~
+@19 = ~Rubin Smocze Serce do kupienia, w którejœ z karczm w Beregoœcie. Bardzo dobrze, zdobêdê ten przedmiot dla ciebie.~
+@20 = ~GroŸbami niczego nie wskórasz przybyszu. Zabij mnie, a na zawsze stracisz amulet.~
+@21 = ~Dobrze... od razu widaæ, ¿e nie masz ochoty mi pomóc. To mów, jaka by³a ta cena za wymianê?~
+@22 = ~Nie dbam o to. Dzisiaj zginiesz.~
+@23 = ~Rubin.... czy masz go?~
+@24 = ~Jeszcze nie.~
+@25 = ~Tak, oto i on. A teraz, dokoñczmy wymianê ¿ebraku. Daj mi amulet i ruszam w dalsz¹ drogê.~
+@26 = ~Och, wspania³y to dzieñ. Nie wiem, jak ci dziêkowaæ. Wreszcie, po tylu¿ latach mam rubin Smocze Serce. Proszê, weŸ ten amulet. ¯yczê powodzenia w poszukiwaniach.~
+@27 = ~Nie mam na to czasu. Mam wa¿niejsze sprawy na g³owie.~
+@28 = ~Dobrze, zadaj tê zagadkê.~
+@29 = ~Jesteœ z powrotem, nieznajomy. Chcesz siê zmierzyæ z zagadk¹?~ ~Jesteœ z powrotem, nieznajoma. Chcesz siê zmierzyæ z zagadk¹?~
+
+//@20 = ~Osobliwa nazwa jak na kamieñ. Czy jest coœ jeszcze, co muszê wiedzieæ o nim, zanim go zdobêdê.~ 
+//@14 ~O tak, jest jeszcze coœ. Rubin ten posiada magiczne moce. Nie majstruj przy nim, bo mo¿esz doznaæ nieprzyjemnego szoku!~ 
+//@31 = ~Uliczny ¿ebrak za pewne informacje, którymi dysponuje, kaza³ mi odszukaæ s³oneczny kamieñ.~
+//@32 = ~W zamian za informacje o kolejnym amulecie zdobyliœmy kamieñ s³oneczny dla ¿ebraka Carnetha.~
+//@33 ~Carneth chce teraz, abyœmy kupili mu w Czarodziejskich Rozmaitoœciach rubin Smocze Serce. Nazwa sugeruje jakiœ magiczny artefakt. Nie mam w¹tpliwoœci, ¿e bêdzie kosztowny.~
+//@34 = ~Zdobyliœmy rubin Smocze Serce dla Carnetha, on z kolei da³ nam amulet, którego szukaliœmy - Gwiazdê Merris.~
